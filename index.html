@@ -472,6 +472,17 @@
                 color: white;
             }
 
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+            .video-container iframe {
+                border-radius: 12px;
+                box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+            }
+
     </style>
 </head>
 <body>
@@ -543,50 +554,339 @@
         const questionsData = {
             maths: {
                 "HCF LCM(Number System)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/sEzvJvh3oEQ"
+                    },
                 ],
                 "Average": [
+                    {
+                        q: "Top 50 Ques",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/uDSwrI_pBZY"
+                    },
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/z1c0YlmFyFI"
+                    },
                 ],
-                "Co-Ordinate(Geometry)": [
+                "CoOrdinate(Geometry)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/cH5U1_uGFqs"
+                    },
                 ],
-                "Circle(Geometry)": [
+                "Circle & Triangle(Geometry)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/2qXvCCqA9QA"
+                    },
                 ],
                 "Triangle(Geometry)": [
+                    {
+                        q: "Lines and Angles(Lec 1_5)",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/PLN9pMyRafA?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Angle Bisector",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/HCFV5jgb-VQ?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Cosine Rule",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/qVOWBn1V6bU?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Area of Triangle",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/WBAy0WZbAr0?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Formation of Triangle",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/exgFCRuJFCk?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Perimeter",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/ZUOX6Asp5lw?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Median",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/Oo9PguHYzlE?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "In-radius",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/ErOmb-xepYo?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Ex-radius",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/tjJWjdXvZeY?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Circumcenter",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/uYFRepmKX4g?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Orthocenter",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/1wmWcNYYZGU?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Isosceles",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/EGGEa4-sXgU?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Equilateral",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/ArnugYJGWqk?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Right angle",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/_xjJ0skrkno?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Similarity",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/TclbrU2jdQo?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Congruency",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/B-mMANQroPY?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                    {
+                        q: "Circle",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/jWnIxHyDdvI?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
+                ],
+                "Quadilateral(Geometry)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/2Qdc4Li7TAo?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
+                    },
                 ],
                 "CI(Interest)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/JZIH9WMouCs"
+                    },
                 ],
                 "SI(Interest)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/MglHly8UDdc"
+                    },
                 ],
                 "CI SI Difference(Interest)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/xHRfkr8RmRU"
+                    },
                 ],
                 "Installments(Interest)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/mVIBqWQ22w0"
+                    },
                 ],
                 "Partnership": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/X5jHltNq5Hc"
+                    },
                 ],
                 "Percentage(%)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/7MgG2vrt758"
+                    },
                 ],
                 "Succesive Discount(%)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/KWvDrhi8AYU"
+                    },
                 ],
                 "Profit & Loss": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/7IP1Qmaz3zg"
+                    },
                 ],
                 "Prism": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/a0R1krRpMw8"
+                    },
                 ],
                 "Pyramid": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: "https://www.youtube.com/embed/MJ6AlpecOwQ"
+                    },
                 ],
                 "Ratio & Proportion": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: ""
+                    },
                 ],
                 "Statistics": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: ""
+                    },
                 ],
                 "Time & Work(T&W)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: ""
+                    },
                 ],
                 "Pipes & Cistern((T&W))": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: ""
+                    },
                 ],
                 "Time, Speed & Distance(TSD)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: ""
+                    },
                 ],
                 "Race(TSD)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: ""
+                    },
                 ],
                 "Circular Race(TSD)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: ""
+                    },
                 ],
                 "Boats & Stream(TSD)": [
+                    {
+                        q: "",
+                        opts: [],
+                        correct: 0,
+                        difficulty: "",
+                        video: ""
+                    },
                 ],
             },
             reasoning: {
@@ -1215,9 +1515,22 @@
             const sectionDiv = document.createElement('div');
             sectionDiv.className = 'section question-section';
             sectionDiv.innerHTML = `
-                    <h3>${capitalize(currentSection)} - ${currentTopic}</h3>
-                    <div class="question">Q${currentQuestionIndex + 1}. ${questionObj.q}</div>
+                <h3>${capitalize(currentSection)} - ${currentTopic}</h3>
+                <div class="question">Q${currentQuestionIndex + 1}. ${questionObj.q}</div>
+            `;
+
+            // Show video if available
+            if (questionObj.video) {
+                const videoContainer = document.createElement('div');
+                videoContainer.className = 'video-container';
+                videoContainer.innerHTML = `
+                    <iframe width="560" height="315" src="${questionObj.video}"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 `;
+                sectionDiv.appendChild(videoContainer);
+            }
 
             const ul = document.createElement('ul');
             ul.className = 'options';
@@ -1236,7 +1549,6 @@
                     if (idx === questionObj.correct) {
                         li.classList.add('correct');
                     }
-                    // Optionally highlight wrong chosen option if you store it (not implemented here)
                 } else {
                     li.onclick = () => {
                         [...ul.children].forEach(c => c.style.pointerEvents = 'none');
@@ -1287,6 +1599,7 @@
             quizArea.appendChild(sectionDiv);
             sectionDiv.scrollIntoView({ behavior: "smooth" });
         }
+
 
         // Save answer correctness to localStorage
         function saveAnswer(section, topic, questionIndex, isCorrect) {
