@@ -123,7 +123,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 25px;
-            width: 100%;
+            width: 50%;
             max-width: 1000px;
             margin: auto;
         }
@@ -492,16 +492,6 @@
         <button id="clearBtn" title="Clear saved name">X</button>
     </div>
 
-    <!-- Global Search -->
-    <div id="searchContainer" aria-label="Global question search">
-        <input type="search" id="searchInput" placeholder="Search questions..." aria-label="Search questions" autocomplete="off" />
-        <div id="filterButtons" role="group" aria-label="Filter by difficulty">
-            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-btn" data-filter="easy" aria-pressed="false">Easy</button>
-            <button class="filter-btn" data-filter="hard" aria-pressed="false">Hard</button>
-        </div>
-    </div>
-
     <div class="container" id="mainContainer" aria-label="Main exam sections">
         <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('maths')">
             <h2>Mathematics</h2>
@@ -514,6 +504,16 @@
         </div>
         <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('gs')">
             <h2>General Studies</h2>
+        </div>
+    </div>
+
+    <!-- Global Search -->
+    <div id="searchContainer" aria-label="Global question search">
+        <input type="search" id="searchInput" placeholder="Search questions..." aria-label="Search questions" autocomplete="off" />
+        <div id="filterButtons" role="group" aria-label="Filter by difficulty">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="easy" aria-pressed="false">Easy</button>
+            <button class="filter-btn" data-filter="hard" aria-pressed="false">Hard</button>
         </div>
     </div>
 
