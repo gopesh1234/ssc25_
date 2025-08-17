@@ -483,47 +483,6 @@
                 box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
             }
 
-        .section-menu {
-            display: flex;
-            gap: 1rem; /* space between items */
-            overflow-x: auto; /* horizontal scroll if needed */
-            padding: 0.5rem 1rem;
-            scroll-behavior: smooth;
-            margin-left: 318px;
-        }
-
-            .section-menu p {
-                flex: 0 0 auto; /* prevents shrinking */
-                margin: 0;
-                padding: 0.6rem 1.2rem;
-                background-color: darkslategrey; /* green button */
-                color: white;
-                font-weight: 600;
-                border-radius: 8px;
-                cursor: pointer;
-                user-select: none;
-                transition: all 0.2s ease;
-                white-space: nowrap;
-                text-align: center;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            }
-
-                .section-menu p:hover {
-                    background-color: #45a049;
-                    transform: translateY(-3px);
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-                }
-
-                .section-menu p:active {
-                    transform: translateY(1px);
-                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-                }
-
-            /* Optional: hide scrollbar for better look */
-            .section-menu::-webkit-scrollbar {
-                display: none;
-            }
-
     </style>
 </head>
 <body>
@@ -533,20 +492,28 @@
         <button id="clearBtn" title="Clear saved name">X</button>
     </div>
 
-    <div class="section-menu">
-        <p onclick="showSection('maths')">Maths</p>
-        <p onclick="showSection('reasoning')">Reas</p>
-        <p onclick="showSection('english')">Eng</p>
-        <p onclick="showSection('gs')">GS</p>
-    </div>
     <!-- Global Search -->
     <div id="searchContainer" aria-label="Global question search">
         <input type="search" id="searchInput" placeholder="Search questions..." aria-label="Search questions" autocomplete="off" />
-        <br /><br />
         <div id="filterButtons" role="group" aria-label="Filter by difficulty">
             <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
             <button class="filter-btn" data-filter="easy" aria-pressed="false">Easy</button>
             <button class="filter-btn" data-filter="hard" aria-pressed="false">Hard</button>
+        </div>
+    </div>
+
+    <div class="container" id="mainContainer" aria-label="Main exam sections">
+        <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('maths')">
+            <h2>Mathematics</h2>
+        </div>
+        <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('reasoning')">
+            <h2>Reasoning</h2>
+        </div>
+        <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('english')">
+            <h2>English</h2>
+        </div>
+        <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('gs')">
+            <h2>General Studies</h2>
         </div>
     </div>
 
