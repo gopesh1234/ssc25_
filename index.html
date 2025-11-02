@@ -147,6 +147,7 @@
             <button class="filter-btn" data-filter="easy">Easy</button>
             <button class="filter-btn" data-filter="hard">Hard</button>
             <button class="filter-btn red" data-filter="wrong">Wrong</button>
+            <button class="filter-btn red" id="openPdf">OWS Pdf</button>
         </div>
 
         <input type="text" id="searchInput" class="search-bar" placeholder="Search questions..." />
@@ -159,6 +160,33 @@
         const searchInput = document.getElementById('searchInput');
         const filterButtons = document.querySelectorAll('.filter-btn');
         const sectionButtons = document.querySelectorAll('.section-btn');
+
+        document.getElementById("openPdf").addEventListener("click", () => {
+
+            const activeBtn = document.querySelector('.section-btn.active');
+            var linkUrl = '';
+            var activeSection = '';
+
+            if (activeBtn) {
+                activeSection = activeBtn.dataset.section;
+                console.log("Active Section:", activeSection);
+            }
+
+            switch (activeSection) {
+                // English
+                case 'ows': linkUrl = ''; break;
+
+                case 'pv': linkUrl = 'https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link'; break;
+
+                case 'vocab': linkUrl = ''; break;
+
+                default:
+                    console.log("Unknown section");
+            }
+
+            if (linkUrl != '')
+                window.open(linkUrl, "_blank");
+        });
 
         // ------------------- DATA -------------------
         const questionSets = {
@@ -181,6 +209,9 @@
                 { q: "Put through", opts: ["Face difficult situation"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Get through", opts: ["Pass an exam very easily or without any efforts"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Go through", opts: ["Go through the letter"], correct: 0, difficulty: "easy", currentSec: "english" },
+            ],
+            idioms: [
+                { q: "Break a leg", opts: ["Good luck", "Break someone's leg"], correct: 0, difficulty: "easy", currentSec: "english" },
             ],
             vocab: [
                 { q: "Abrogate", opts: ["repeal", "destroy", "delay", "uphold"], correct: 0, difficulty: "easy", currentSec: "english" },
@@ -767,10 +798,36 @@
             btn.addEventListener('click', () => {
                 sectionButtons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
+                changePdfBtn();
                 currentSection = btn.dataset.section;
                 renderQuestions(document.querySelector('.filter-btn.active').dataset.filter, searchInput.value);
             });
         });
+
+        function changePdfBtn() {
+            const actvBtn = document.querySelector('.section-btn.active');
+            var activeSec = '';
+
+            if (actvBtn) {
+                activeSec = actvBtn.dataset.section;
+                console.log("Active Section:", activeSec);
+
+            }
+
+            switch (activeSec) {
+                // English
+                case 'idioms': document.getElementById("openPdf").textContent = "Idioms Pdf"; break;
+
+                case 'ows': document.getElementById("openPdf").textContent = "OWS Pdf"; break;
+
+                case 'pv': document.getElementById("openPdf").textContent = "PV Pdf"; break;
+
+                case 'vocab': document.getElementById("openPdf").textContent = "Vocab Pdf"; break;
+
+                default:
+                    document.getElementById("openPdf").textContent = "Open Pdf"; break;
+            }
+        }
 
         // Filter buttons logic
         document.getElementById('filterButtons').addEventListener('click', (e) => {
