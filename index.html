@@ -122,6 +122,9 @@
                 <button class="section-btn" data-section="ows">OWS</button>
                 <button class="section-btn" data-section="pv">Phrasal Verb</button>
                 <button class="section-btn active" data-section="vocab">Vocab</button>
+                <hr /><hr />
+                <button class="section-btn" data-section="cogeo">Co-ordinate Geo</button>
+                <hr /><hr />
             </div>
         </div>
 
@@ -154,7 +157,7 @@
                 { q: "Put up (3 meanings)", opts: ["Reside or stay >> Display on board >> Build something"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Put up with", opts: ["Tolerate or Endure"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Bear with", opts: ["Tolerate"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put aside", opts: ["Ignore >> Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put aside (2 meanings)", opts: ["Ignore >> Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Put by", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Lay aside", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Put on (3 meanings)", opts: ["Wear smile or dress >> Gain weight >> Pretend"], correct: 0, difficulty: "easy", currentSec: "english" },
@@ -164,11 +167,6 @@
                 { q: "Put through", opts: ["Face difficult situation"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Get through", opts: ["Pass an exam very easily or without any efforts"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Go through", opts: ["Go through the letter"], correct: 0, difficulty: "easy", currentSec: "english" },
-
-
-
-
-
             ],
             vocab: [
                 { q: "Abrogate", opts: ["repeal", "destroy", "delay", "uphold"], correct: 0, difficulty: "easy", currentSec: "english" },
@@ -734,9 +732,9 @@
                 const select = document.createElement('select');
                 select.className = 'difficulty-select';
                 select.innerHTML = `
-                          <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
-                          <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
-                        `;
+                                  <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
+                                  <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
+                                `;
 
                 select.onchange = () => {
                     savedDifficulty[question.q] = select.value;
