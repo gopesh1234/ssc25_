@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Competitive Exam Hub</title>
     <style>
-        /* Reset & base */
         * {
             margin: 0;
             padding: 0;
@@ -503,20 +501,8 @@
     </div>
 
     <div class="container" id="mainContainer" aria-label="Main exam sections">
-        <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('maths')">
-            <h2 id="maths">Mathematics</h2>
-            <h5>keywords: small, medium, large</h5>
-        </div>
-        <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('reasoning')">
-            <h2 id="reas">Reasoning</h2>
-            <h5>keywords: small, medium, large</h5>
-        </div>
         <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('english')">
             <h2 id="eng">English</h2>
-            <h5>keywords: easy, hard</h5>
-        </div>
-        <div class="card" tabindex="0" role="button" aria-pressed="false" onclick="showSection('gs')">
-            <h2 id="gs">General Studies</h2>
             <h5>keywords: easy, hard</h5>
         </div>
     </div>
@@ -552,977 +538,10 @@
         // Questions data with difficulty tags
         const questionsData = {
             maths: {
-                "ALL": [
-                    {
-                        q: "Successive Discount",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/KWvDrhi8AYU",
-                        VID: "KWvDrhi8AYU"
-                    },
-                    {
-                        q: "Successive Discount",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/KWvDrhi8AYU",
-                        VID: "KWvDrhi8AYU"
-                    },
-                ],
-                "Eduquity Mocks": [
-                    {
-                        q: "Mock20",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/x_yb7w99Kwk",
-                        VID: "x_yb7w99Kwk"
-                    },
-                ],
-                "Binary Number System": [
-                    {
-                        q: "Binary (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/KK80DIROly0",
-                        VID: "KK80DIROly0"
-                    },
-                    {
-                        q: "Binary (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/4JViisE5hzI",
-                        VID: "4JViisE5hzI"
-                    },
-                    {
-                        q: "Binary (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/dynu6CUUwDo",
-                        VID: "dynu6CUUwDo"
-                    },
-                    {
-                        q: "Binary (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/P0F5-QZHhhw",
-                        VID: "P0F5-QZHhhw"
-                    },
-                ],
-                "Number System(All topics)": [
-                    {
-                        q: "Decimal",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "Unit Digit",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "No of Digits",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "HCF LCM (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/sEzvJvh3oEQ",
-                        VID: "sEzvJvh3oEQ"
-                    },
-                    {
-                        q: "Divisibilty",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "Classification of Numbers",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "Remainder Theorem",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "Power Surds Indices",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "Factors",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "Fraction",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "Series",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "Sum of Digits",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "Componendo Dividendo",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                ],
-                "Algebra": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                ],
-                "Trigonometry": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                ],
-                "Height & Distance": [
-                    {
-                        q: "Height (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/6DwdDWu1QtI",
-                        VID: "6DwdDWu1QtI"
-                    },
-                ],
-                "Polynomial": [
-                    {
-                        q: "Quadratic Equation (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/KN8ixx8iRUI",
-                        VID: "KN8ixx8iRUI"
-                    },
-                    {
-                        q: "Remainder (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/wAgcT8gW-J8",
-                        VID: "wAgcT8gW-J8"
-                    },
-                    {
-                        q: "Cubic Equation (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/tZo7-th-1e0",
-                        VID: "tZo7-th-1e0"
-                    },
-                ],
-                "Circle & Triangle(Geometry)": [
-                    {
-                        q: "Circle (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/2qXvCCqA9QA",
-                        VID: "2qXvCCqA9QA"
-                    },
-                ],
-                "Triangle(Geometry)": [
-                    {
-                        q: "Lines and Angles(Lec 1_6) (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/PLN9pMyRafA?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "PLN9pMyRafA?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Angle Bisector (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/HCFV5jgb-VQ?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "HCFV5jgb-VQ?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Cosine Rule (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/qVOWBn1V6bU?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "qVOWBn1V6bU?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Area of Triangle (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/WBAy0WZbAr0?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "WBAy0WZbAr0?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Formation of Triangle (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/exgFCRuJFCk?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "exgFCRuJFCk?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Perimeter (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/ZUOX6Asp5lw?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "ZUOX6Asp5lw?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Median (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/Oo9PguHYzlE?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "Oo9PguHYzlE?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "In-radius (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/ErOmb-xepYo?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "ErOmb-xepYo?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Ex-radius (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/tjJWjdXvZeY?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "tjJWjdXvZeY?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Circumcenter (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/uYFRepmKX4g?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "uYFRepmKX4g?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Orthocenter (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/1wmWcNYYZGU?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "1wmWcNYYZGU?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Isosceles (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/EGGEa4-sXgU?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "EGGEa4-sXgU?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Equilateral (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/ArnugYJGWqk?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "ArnugYJGWqk?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Right angle (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/_xjJ0skrkno?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "_xjJ0skrkno?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Similarity (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/TclbrU2jdQo?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "TclbrU2jdQo?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Congruency (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/B-mMANQroPY?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "B-mMANQroPY?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                    {
-                        q: "Circle (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/jWnIxHyDdvI?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "jWnIxHyDdvI?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                ],
-                "Quadilateral(Geometry)": [
-                    {
-                        q: "Quadilateral (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/2Qdc4Li7TAo?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS",
-                        VID: "2Qdc4Li7TAo?list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS"
-                    },
-                ],
-                "CoOrdinate(Geometry)": [
-                    {
-                        q: "CoOrdinate (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/cH5U1_uGFqs",
-                        VID: "cH5U1_uGFqs"
-                    },
-                ],
-                "CI(Interest)": [
-                    {
-                        q: "CI (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/JZIH9WMouCs",
-                        VID: "JZIH9WMouCs"
-                    },
-                ],
-                "SI(Interest)": [
-                    {
-                        q: "SI (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/MglHly8UDdc",
-                        VID: "MglHly8UDdc"
-                    },
-                ],
-                "CI SI Difference(Interest)": [
-                    {
-                        q: "CI - SI (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/xHRfkr8RmRU",
-                        VID: "xHRfkr8RmRU"
-                    },
-                ],
-                "Installment(Interest)": [
-                    {
-                        q: "Installment (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/mVIBqWQ22w0",
-                        VID: "mVIBqWQ22w0"
-                    },
-                ],
-                "Percentage(%)": [
-                    {
-                        q: "Percent (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/7MgG2vrt758",
-                        VID: "7MgG2vrt758"
-                    },
-                ],
-                "Succesive Discount(%)": [
-                    {
-                        q: "Discount (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/KWvDrhi8AYU",
-                        VID: "KWvDrhi8AYU"
-                    },
-                ],
-                "Elections(%)": [
-                    {
-                        q: "Elections (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/tstcyQ1pqso",
-                        VID: "tstcyQ1pqso"
-                    },
-                    {
-                        q: "Elections (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/pYN-3AlkB8w",
-                        VID: "pYN-3AlkB8w"
-                    },
-                ],
-                "Income-Expenditure(%)": [
-                    {
-                        q: "Income (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/zacSvtiqjJs",
-                        VID: "zacSvtiqjJs"
-                    },
-                ],
-                "Price-Consumption(%)": [
-                    {
-                        q: "Price (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/KNJntHXUrOA",
-                        VID: "KNJntHXUrOA"
-                    },
-                ],
-                "Pass-Fail(%)": [
-                    {
-                        q: "Pass (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/IBgS_vlbC5U",
-                        VID: "IBgS_vlbC5U"
-                    },
-                ],
-                "Partnership(%)": [
-                    {
-                        q: "Partnership (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/X5jHltNq5Hc",
-                        VID: "X5jHltNq5Hc"
-                    },
-                ],
-                "Profit & Loss(P&L)": [
-                    {
-                        q: "Profit (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/7IP1Qmaz3zg",
-                        VID: "7IP1Qmaz3zg"
-                    },
-                ],
-                "Dishonest Shopkeeper(P&L)": [
-                    {
-                        q: "Dishonest (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/a8j_uh_8agA",
-                        VID: "a8j_uh_8agA"
-                    },
-                ],
-                "MP Discount(P&L)": [
-                    {
-                        q: "MP (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/uzfnNdsj29c",
-                        VID: "uzfnNdsj29c"
-                    },
-                ],
-                "Time & Work(T&W)": [
-                    {
-                        q: "Time (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/UhFof5oxyoc",
-                        VID: "UhFof5oxyoc"
-                    },
-                ],
-                "Pipes & Cistern(T&W)": [
-                    {
-                        q: "Pipes (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/ZtOOfYt1wHk",
-                        VID: "ZtOOfYt1wHk"
-                    },
-                ],
-                "Time, Speed & Distance(TSD)": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                ],
-                "Race(TSD)": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                ],
-                "Circular Race(TSD)": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                ],
-                "Boats & Stream(TSD)": [
-                    {
-                        q: "Boats (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/PPU0rrEA4OY",
-                        VID: "PPU0rrEA4OY"
-                    },
-                    {
-                        q: "Boats (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/pTX8_GN2imM",
-                        VID: "pTX8_GN2imM"
-                    },
-                ],
-                "Average": [
-                    {
-                        q: "Average (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/uDSwrI_pBZY",
-                        VID: "uDSwrI_pBZY"
-                    },
-                ],
-                "Ratio & Proportion": [
-                    {
-                        q: "Ratio (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/rDZaD-Vel6c",
-                        VID: "rDZaD-Vel6c"
-                    },
-                    {
-                        q: "Ratio (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/G33S-aEIfds",
-                        VID: "G33S-aEIfds"
-                    },
-                ],
-                "Mixture & Alligation": [
-                    {
-                        q: "Mixture (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/c2ULnLjXztQ",
-                        VID: "c2ULnLjXztQ"
-                    },
-                ],
-                "Mensuration 2D-3D(Mens)": [
-                    {
-                        q: "Mens (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/HM2wAAVPVJY",
-                        VID: "HM2wAAVPVJY"
-                    },
-                ],
-                "Prism(Mens)": [
-                    {
-                        q: "Prism (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/a0R1krRpMw8",
-                        VID: "a0R1krRpMw8"
-                    },
-                ],
-                "Pyramid(Mens)": [
-                    {
-                        q: "Pyramid (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/MJ6AlpecOwQ",
-                        VID: "MJ6AlpecOwQ"
-                    },
-                ],
-                "Cutting Figure(Mens)": [
-                    {
-                        q: "Cutting (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/jThaZAG1pz8",
-                        VID: "jThaZAG1pz8"
-                    },
-                ],
-                "PnC": [
-                    {
-                        q: "PnC (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/rlytJkWwwPI",
-                        VID: "rlytJkWwwPI"
-                    },
-                    {
-                        q: "PnC (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/D8kqur25s3w",
-                        VID: "D8kqur25s3w"
-                    },
-                ],
-                "Monty Hall": [
-                    {
-                        q: "PnC (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                    {
-                        q: "PnC (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: ""
-                    },
-                ],
-                "Probability": [
-                    {
-                        q: "Prob (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/gojfyL_MJEk",
-                        VID: "gojfyL_MJEk"
-                    },
-                    {
-                        q: "Prob (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/t3N6qRNlyTU",
-                        VID: "t3N6qRNlyTU"
-                    },
-                    {
-                        q: "Prob Baye's Theorem (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/740r0bmBkAo",
-                        VID: "740r0bmBkAo"
-                    },
-                    {
-                        q: "Prob Monty Hall (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/fUy-W07Xdlo",
-                        VID: "fUy-W07Xdlo"
-                    },
-                ],
-                "Binomial Distribution": [
-                    {
-                        q: "Binomial (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/HfadNojCnO0",
-                        VID: "HfadNojCnO0"
-                    },
-                    {
-                        q: "Binomial (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/JhtYTIbADpw",
-                        VID: "JhtYTIbADpw"
-                    },
-                ],
-                "Statistics(Stat)": [
-                    {
-                        q: "Stat (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/dAAUe1BntHc",
-                        VID: "dAAUe1BntHc"
-                    },
-                ],
-                "Quartile(All new topics, Stats)": [
-                    {
-                        q: "Quartile (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/pEYBDrw5TkM",
-                        VID: "pEYBDrw5TkM"
-                    },
-                    {
-                        q: "Quartile (medium)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/iD-qRdLinwE",
-                        VID: "iD-qRdLinwE"
-                    },
-                ],
-                "Mod/Modular Arithmetc ✅": [
-                    {
-                        q: "Modular (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/yCCQ85duYes",
-                        VID: "yCCQ85duYes"
-                    },
-                ],
-                "Karl Pearson": [
-                    {
-                        q: "Karl (small)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/9oTaQi7wAK0",
-                        VID: "9oTaQi7wAK0"
-                    },
-                ],
             },
             reasoning: {
-                "Eduquity Mocks": [
-                    {
-                        q: "Mock01",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/sgbjiGNZIwg",
-                        VID: "sgbjiGNZIwg"
-                    },
-                ],
-                "Mod/Modular Arithmetic ✅": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/b6GmPgFr1Z4",
-                        VID: "b6GmPgFr1Z4"
-                    },
-                ],
-                "Analytical Reasoning": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/K83uBTBwb0c",
-                        VID: "K83uBTBwb0c"
-                    },
-                ],
-                "Fallacy": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/HAe7x5QHXVQ",
-                        VID: "HAe7x5QHXVQ"
-                    },
-                ],
-                "Machine I/O O/P": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/d1Gyzos17y4",
-                        VID: "HAe7x5QHXVQ"
-                    },
-                ],
-                "Social and Emotional Intelliegence": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/QBum2aIoT_Y",
-                        VID: "QBum2aIoT_Y"
-                    },
-                ],
-                "Calendar": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/QAQu7Gt1iRo",
-                        VID: "QAQu7Gt1iRo"
-                    },
-                ],
             },
             english: {
-                "Qualifier and Quantifier": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/D_qBFKytY78",
-                        VID: "D_qBFKytY78"
-                    },
-
-                ],
-                "Idioms": [ 
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/b6GmPgFr1Z4",
-                        VID: "b6GmPgFr1Z4"
-                    },
-                    { q: "", opts: [""], correct: 0, difficulty: "easy", currentSec: "english" },
-
-
-                ],
-                "Synonyms": [
-                    {
-                        q: "syno (large)",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/wbPhE1N1bPw",
-                        VID: "wbPhE1N1bPw"
-                    },
-
-                ],
-                "Antonyms": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/b6GmPgFr1Z4",
-                        VID: "b6GmPgFr1Z4"
-                    },
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/b6GmPgFr1Z4",
-                        VID: "b6GmPgFr1Z4"
-                    },
-
-                ],
-                "Phrasal Verb": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/b6GmPgFr1Z4",
-                        VID: "b6GmPgFr1Z4"
-                    },
-
-                ],
-                "Preposition": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/b6GmPgFr1Z4",
-                        VID: "b6GmPgFr1Z4"
-                    },
-                ],
                 "OWS": [
                     { q: "An area where animals are slaughtered for food", opts: ["Slaughterhouse", "Abattoir", "Butchery", "Dairy"], correct: 1, difficulty: "easy", currentSec: "english" },
                     { q: "Act of giving up the throne", opts: ["Coronation", "Monarchy", "Abdication", "Usurpation"], correct: 2, difficulty: "easy", currentSec: "english" },
@@ -1551,7 +570,6 @@
                     { q: "A partial or a total loss of memory", opts: ["Alzheimer", "Forgetfulness", "Amnesia", "Delirium"], correct: 2, difficulty: "easy", currentSec: "english" },
                     { q: "Animal that can live both on land and in water", opts: ["Mammal", "Amphibian", "Aquatic", "Reptile"], correct: 1, difficulty: "easy", currentSec: "english" },
                     { q: "A person who has had one or more limbs removed", opts: ["Disabled", "Injured", "Lame", "Amputee"], correct: 3, difficulty: "easy", currentSec: "english" },
-
                     { q: "A person who believes in or tries to bring about anarchy", opts: ["Apostate", "Atheist", "Anarchist", "Activist"], correct: 2, difficulty: "easy", currentSec: "english" },
                     { q: "A letter, poem etc. whose author is unknown", opts: ["Epigraph", "Anthology", "Autograph", "Anonymous"], correct: 3, difficulty: "easy", currentSec: "english" },
                     { q: "A remedy to counteract the effects of poison", opts: ["Antibiotic", "Antidote", "Vaccine", "Sedative"], correct: 1, difficulty: "easy", currentSec: "english" },
@@ -2010,126 +1028,153 @@
                     { q: "One who is not sure about the existence of god", opts: ["Agnostic", "Atheist", "Skeptic", "Theist"], correct: 0, difficulty: "easy", currentSec: "english" },
                     { q: "The study of fossils", opts: ["Geology", "Archaeology", "Paleontology", "Anthropology"], correct: 2, difficulty: "easy", currentSec: "english" },
                     { q: "The practice of having more than one husband at a time", opts: ["Bigamy", "Polygamy", "Monogamy", "Polyandry"], correct: 3, difficulty: "easy", currentSec: "english" },
+                ],
+                "Vocab": [
+                    { q: "A Series", opts: [""], correct: 0, difficulty: "easy", currentSec: "english" },
+                    { q: "Abrogate", opts: ["repeal", "destroy", "delay", "uphold"], correct: 0, difficulty: "easy", currentSec: "english" },
+                    { q: "Adulation", opts: ["duration", "argument", "flattery", "institution"], correct: 2, difficulty: "easy", currentSec: "english" },
+                    { q: "Amicable", opts: ["poisonous", "friendly", "satisfying", "heartening"], correct: 1, difficulty: "easy", currentSec: "english" },
+                    { q: "Ablution", opts: ["censure", "forgiveness", "flattery", "washing"], correct: 3, difficulty: "easy", currentSec: "english" },
+                    { q: "Assertive", opts: ["emphasis", "timorous", "domineering", "unobtrusive"], correct: 2, difficulty: "moderate", currentSec: "english" },
+                    { q: "Alert", opts: ["hostile", "watchful", "brave", "quick"], correct: 1, difficulty: "easy", currentSec: "english" },
 
-                
                 ],
             },
             gs: {
-                "GS": [
+                "Capital&Currency": [
                     {
-                        q: "gs",
+                        q: "What is the Capital and Currency of Russia? (Northern Asia)",
+                        opts: ["Beijing - Yuan", "Tokyo - Yen", "Moscow - Ruble", "Seoul - Won"],
+                        correct: 2,
+                        difficulty: "easy"
+                    },
+                    {
+                        q: "What is the Capital and Currency of Mongolia? (Eastern Asia)",
+                        opts: ["Taipei - New Taiwan Dollar", "Ulaanbaatar - Tögrög", "Seoul - Won", "Hanoi - Dong"],
+                        correct: 1,
+                        difficulty: "hard"
+                    },
+                    {
+                        q: "What is the Capital and Currency of China? (Eastern Asia)",
+                        opts: ["Tokyo - Yen", "Moscow - Ruble", "Seoul - Won", "Beijing(Peking) - Yuan (Renminbi)"],
+                        correct: 3,
+                        difficulty: "easy"
+                    },
+                    {
+                        q: "What is the Capital and Currency of Taiwan? (Eastern Asia)",
+                        opts: ["Taipei - New Taiwan Dollar", "Ulaanbaatar - Tögrög", "Beijing - Yuan", "Seoul - Won"],
+                        correct: 0,
+                        difficulty: "hard"
+                    },
+                    {
+                        q: "What is the Capital and Currency of North Korea? (Eastern Asia)",
+                        opts: ["Seoul - South Korean Won", "Pyongyang - North Korean Won", "Beijing - Yuan", "Tokyo - Yen"],
+                        correct: 1,
+                        difficulty: "easy"
+                    },
+                    {
+                        q: "What is the Capital and Currency of South Korea? (Eastern Asia)",
+                        opts: ["Pyongyang - North Korean Won", "Tokyo - Yen", "Beijing - Yuan", "Seoul - South Korean Won"],
+                        correct: 3,
+                        difficulty: "easy"
+                    },
+                    {
+                        q: "What is the Capital and Currency of Japan? (Eastern Asia)",
+                        opts: ["Tokyo - Yen", "Seoul - Won", "Beijing - Yuan", "Moscow - Ruble"],
+                        correct: 0,
+                        difficulty: "easy"
+                    },
+                    {
+                        q: "Central Asia",
                         opts: [],
                         correct: 0,
-                        difficulty: "",
-                        video: "",
-                        VID: "x_yb7w99Kwk"
+                        difficulty: "easy"
                     },
-                    
-                ],
-                "Static GK": [
                     {
-                        q: "Very Large",
+                        q: "What is the Capital and Currency of Tajikistan? (Central Asia)",
+                        opts: ["Tashkent - Uzbekistani Som", "Dushanbe - Somoni", "Astana - Tenge", "Bishkek - Som"],
+                        correct: 1,
+                        difficulty: "hard"
+                    },
+                    {
+                        q: "What is the Capital and Currency of Kyrgyzstan? (Central Asia)",
+                        opts: ["Dushanbe - Somoni", "Tashkent - Uzbekistani Som", "Astana - Tenge", "Bishkek - Kyrgyzstani Som"],
+                        correct: 3,
+                        difficulty: "hard"
+                    },
+                    {
+                        q: "What is the Capital and Currency of Kazakhstan? (Central Asia)",
+                        opts: ["Bishkek - Som", "Tashkent - Uzbekistani Som", "Nur-Sultan (Astana) - Tenge", "Dushanbe - Somoni"],
+                        correct: 2,
+                        difficulty: "hard"
+                    },
+                    {
+                        q: "What is the Capital and Currency of Uzbekistan? (Central Asia)",
+                        opts: ["Bishkek - Som", "Tashkent - Uzbekistani Som", "Dushanbe - Somoni", "Astana - Tenge"],
+                        correct: 1,
+                        difficulty: "easy"
+                    },
+                    {
+                        q: "What is the Capital and Currency of Turkmenistan? (Central Asia)",
+                        opts: ["Ashgabat - Manat", "Tashkent - Uzbekistani Som", "Bishkek - Som", "Dushanbe - Somoni"],
+                        correct: 0,
+                        difficulty: "hard"
+                    },
+                    {
+                        q: "South Asia",
                         opts: [],
                         correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/SVKceLcS2DA",
-                        VID: "SVKceLcS2DA"
+                        difficulty: "easy"
                     },
                     {
-                        q: "World Population Day",
-                        opts: ["July 11"],
-                        correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
+                        q: "What is the Capital and Currency of Nepal? (South Asia)",
+                        opts: ["Thimphu - Ngultrum", "Kathmandu - Nepalese Rupee", "Dhaka - Taka", "Colombo - Sri Lankan Rupee"],
+                        correct: 1,
+                        difficulty: "easy"
                     },
                     {
-                        q: "7th Census of Independent India",
-                        opts: ["Census 2011"],
-                        correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
+                        q: "What is the Capital and Currency of Bhutan? (South Asia)",
+                        opts: ["Kathmandu - Nepalese Rupee", "Dhaka - Taka", "Colombo - Sri Lankan Rupee", "Thimphu - Ngultrum"],
+                        correct: 3,
+                        difficulty: "hard"
                     },
                     {
-                        q: "15th Census of India",
-                        opts: ["Census 2011"],
+                        q: "What is the Capital and Currency of India? (South Asia)",
+                        opts: ["New Delhi - Indian Rupee", "Islamabad - Pakistani Rupee", "Colombo - Sri Lankan Rupee", "Dhaka - Taka"],
                         correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
+                        difficulty: "easy"
                     },
                     {
-                        q: "First census of Independent India",
-                        opts: ["1951"],
-                        correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
+                        q: "What is the Capital and Currency of Bangladesh? (South Asia)",
+                        opts: ["Kathmandu - Nepalese Rupee", "Dhaka - Taka", "Islamabad - Pakistani Rupee", "Thimphu - Ngultrum"],
+                        correct: 1,
+                        difficulty: "easy"
                     },
                     {
-                        q: "First census of India",
-                        opts: ["1872"],
+                        q: "What is the Capital and Currency of Pakistan? (South Asia)",
+                        opts: ["Islamabad - Pakistani Rupee", "New Delhi - Indian Rupee", "Dhaka - Taka", "Colombo - Sri Lankan Rupee"],
                         correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
+                        difficulty: "easy"
                     },
                     {
-                        q: "First census of India",
-                        opts: ["Lord Mayo's time"],
-                        correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
+                        q: "What is the Capital and Currency of Afghanistan? (South Asia)",
+                        opts: ["Islamabad - Pakistani Rupee", "New Delhi - Indian Rupee", "Kabul - Afghani", "Dhaka - Taka"],
+                        correct: 2,
+                        difficulty: "easy"
                     },
                     {
-                        q: "Regular census in India",
-                        opts: ["1881"],
-                        correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
+                        q: "What is the Capital and Currency of Sri Lanka? (South Asia)",
+                        opts: ["Thimphu - Ngultrum", "Dhaka - Taka", "New Delhi - Indian Rupee", "Colombo(Exec and Jud capital), Kotte(Leg Capital) - Sri Lankan Rupee"],
+                        correct: 3,
+                        difficulty: "hard"
                     },
                     {
-                        q: "Regular census in India",
-                        opts: ["Lord Ripon's time"],
+                        q: "What is the Capital and Currency of Maldives? (South Asia)",
+                        opts: ["Malé - Maldivian Rufiyaa", "Colombo - Sri Lankan Rupee", "Dhaka - Taka", "Thimphu - Ngultrum"],
                         correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
-                    },
-                    {
-                        q: "Great divison of Indian population",
-                        opts: ["1921"],
-                        correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
-                    },
-                    {
-                        q: "India's Population, 2011 census",
-                        opts: ["121.05 cr"],
-                        correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
-                    },
-                    {
-                        q: "India's Population to World's Population, 2011 census",
-                        opts: ["17.5%"],
-                        correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
-                    },
-                    {
-                        q: "Female's Population, 2011 census",
-                        opts: ["58.74 cr, 48.53%"],
-                        correct: 0,
-                        difficulty: "easy",
-                        currentSec: "GS"
+                        difficulty: "hard"
                     },
 
-                ],
-                "Solar System": [
-                    {
-                        q: "",
-                        opts: [],
-                        correct: 0,
-                        difficulty: "",
-                        video: "https://www.youtube.com/embed/itXqdUKaM0k",
-                        VID: "itXqdUKaM0k"
-                    },
                 ],
             },
         };
@@ -2268,20 +1313,20 @@
             const sectionDiv = document.createElement('div');
             sectionDiv.className = 'section question-section';
             sectionDiv.innerHTML = `
-                <h3>${capitalize(currentSection)} - ${currentTopic}</h3>
-                <div class="question">Q${currentQuestionIndex + 1}. ${questionObj.q}</div>
-            `;
+                        <h3>${capitalize(currentSection)} - ${currentTopic}</h3>
+                        <div class="question">Q${currentQuestionIndex + 1}. ${questionObj.q}</div>
+                    `;
 
             // Show video if available
             if (questionObj.video) {
                 const videoContainer = document.createElement('div');
                 videoContainer.className = 'video-container';
                 videoContainer.innerHTML = `
-                    <iframe width="560" height="315" src="${questionObj.video}"
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                `;
+                            <iframe width="560" height="315" src="${questionObj.video}"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        `;
                 sectionDiv.appendChild(videoContainer);
             }
 
@@ -2448,22 +1493,22 @@
                 if (res.questionObj.video) {
                     const videoId = res.questionObj.VID; // handle if only ID is stored
                     videoHtml = `
-                        <div class="video-container" style="margin:10px 0;">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/${videoId}"
-                                frameborder="0" allowfullscreen>
-                            </iframe>
-                        </div>
-                    `;
+                                <div class="video-container" style="margin:10px 0;">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/${videoId}"
+                                        frameborder="0" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            `;
                 }
 
                 div.innerHTML = `
-                    <h4>${capitalize(res.section)} &raquo; ${res.topic}</h4>
-                    <small>Difficulty: <span class="difficulty ${difficultyClass}">${capitalize(res.questionObj.difficulty)}</span></small>
-                    <div class="question-text">Q: ${res.questionObj.q}</div>
-                    ${videoHtml}
-                    <ul class="search-options"></ul>
-                `;
+                            <h4>${capitalize(res.section)} &raquo; ${res.topic}</h4>
+                            <small>Difficulty: <span class="difficulty ${difficultyClass}">${capitalize(res.questionObj.difficulty)}</span></small>
+                            <div class="question-text">Q: ${res.questionObj.q}</div>
+                            ${videoHtml}
+                            <ul class="search-options"></ul>
+                        `;
 
                 const ul = div.querySelector('ul');
                 res.questionObj.opts.forEach((opt, i) => {
