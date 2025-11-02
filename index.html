@@ -114,6 +114,9 @@
             background: #1e293b;
             color: white;
         }
+        .red{
+            background-color:red;
+        }
     </style>
 </head>
 <body>
@@ -147,6 +150,7 @@
         // ------------------- DATA -------------------
         const questionSets = {
             vocab: [
+                { q: "A Series", opts: [""], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Abrogate", opts: ["repeal", "destroy", "delay", "uphold"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Adulation", opts: ["duration", "argument", "flattery", "institution"], correct: 2, difficulty: "easy", currentSec: "english" },
                 { q: "Amicable", opts: ["poisonous", "friendly", "satisfying", "heartening"], correct: 1, difficulty: "easy", currentSec: "english" },
@@ -155,11 +159,9 @@
                 { q: "Alert", opts: ["hostile", "watchful", "brave", "quick"], correct: 1, difficulty: "easy", currentSec: "english" },
             ],
             ows: [
-                { q: "One who eats too much", opts: ["Gourmet", "Glutton", "Epicure", "Omnivore"], correct: 1, difficulty: "easy" },
                 { q: "A person who talks in sleep", opts: ["Somnambulist", "Somniloquist", "Egoist", "Pedant"], correct: 1, difficulty: "hard" },
                 { q: "A person who knows everything", opts: ["Omniscient", "Omnipresent", "Omnipotent", "Egoist"], correct: 0, difficulty: "easy" },
                 { q: "A person who loves books", opts: ["Bibliophile", "Philatelist", "Numismatist", "Audiophile"], correct: 0, difficulty: "easy" },
-                { q: "One who cannot be corrected", opts: ["Incurable", "Infallible", "Incorrigible", "Indelible"], correct: 2, difficulty: "hard" },
                 { q: "An area where animals are slaughtered for food", opts: ["Slaughterhouse", "Abattoir", "Butchery", "Dairy"], correct: 1, difficulty: "easy", currentSec: "english" },
                 { q: "Act of giving up the throne", opts: ["Coronation", "Monarchy", "Abdication", "Usurpation"], correct: 2, difficulty: "easy", currentSec: "english" },
                 { q: "To go away suddenly and secretly", opts: ["Depart", "Abscond", "Arrive", "Escape"], correct: 1, difficulty: "easy", currentSec: "english" },
