@@ -121,8 +121,9 @@
         <div class="header">
             <h2>Daily Practice</h2>
             <div class="section-tabs">
-                <button class="section-btn active" data-section="vocab">Vocab</button>
                 <button class="section-btn" data-section="ows">OWS</button>
+                <button class="section-btn" data-section="pv">Phrasal Verb</button>
+                <button class="section-btn active" data-section="vocab">Vocab</button>
             </div>
         </div>
 
@@ -146,6 +147,31 @@
 
         // ------------------- DATA -------------------
         const questionSets = {
+            pv: [
+                { q: "Put off", opts: ["Delay or Postpone"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Call off", opts: ["Cancel"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put out (3 meanings)", opts: ["Extinguish >> Sad or Disappointed >> Publish"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put down (2 meanings)", opts: ["Write down >> Crush or Suppress"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Look down upon", opts: ["Insult or Suppress"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put up (3 meanings)", opts: ["Reside or stay >> Display on board >> Build something"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put up with", opts: ["Tolerate or Endure"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Bear with", opts: ["Tolerate"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put aside", opts: ["Ignore >> Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put by", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Lay aside", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put on (3 meanings)", opts: ["Wear smile or dress >> Gain weight >> Pretend"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put in (2 meanings)", opts: ["Efforts >> Request"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put across", opts: ["Explain an idea clearly"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put forward", opts: ["Only suggest an idea"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put through", opts: ["Face difficult situation"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Get through", opts: ["Pass an exam very easily or without any efforts"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Go through", opts: ["Go through the letter"], correct: 0, difficulty: "easy", currentSec: "english" },
+
+
+
+
+
+            ],
             vocab: [
                 { q: "Abrogate", opts: ["repeal", "destroy", "delay", "uphold"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Adulation", opts: ["duration", "argument", "flattery", "institution"], correct: 2, difficulty: "easy", currentSec: "english" },
@@ -155,7 +181,7 @@
                 { q: "Alert", opts: ["hostile", "watchful", "brave", "quick"], correct: 1, difficulty: "easy", currentSec: "english" },
             ],
             ows: [
-                { q: "A person who talks in sleep", opts: ["Somnambulist", "Somniloquist", "Egoist", "Pedant"], correct: 1, difficulty: "hard" },
+                { q: "A person who talks in sleep", opts: ["Somnambulist", "Somniloquist", "Egoist", "Pedant"], correct: 1, difficulty: "easy" },
                 { q: "A person who knows everything", opts: ["Omniscient", "Omnipresent", "Omnipotent", "Egoist"], correct: 0, difficulty: "easy" },
                 { q: "A person who loves books", opts: ["Bibliophile", "Philatelist", "Numismatist", "Audiophile"], correct: 0, difficulty: "easy" },
                 { q: "An area where animals are slaughtered for food", opts: ["Slaughterhouse", "Abattoir", "Butchery", "Dairy"], correct: 1, difficulty: "easy", currentSec: "english" },
@@ -710,9 +736,9 @@
                 const select = document.createElement('select');
                 select.className = 'difficulty-select';
                 select.innerHTML = `
-                  <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
-                  <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
-                `;
+                          <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
+                          <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
+                        `;
 
                 select.onchange = () => {
                     savedDifficulty[question.q] = select.value;
