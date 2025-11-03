@@ -150,9 +150,8 @@
 
                 <button class="section-btn maths" data-section="triplets">Triplets</button>
                 <button class="section-btn maths" data-section="squares">Squares</button>
-                <button class="section-btn maths" data-section="squRt">Squ Root</button>
                 <button class="section-btn maths" data-section="cubes">Cubes</button>
-                <button class="section-btn maths" data-section="cbRt">Cube Root</button>
+                <button class="section-btn maths" data-section="prime">Prime No</button>
                 <button class="section-btn maths" data-section="ptf">%toFrac</button>
                 <button class="section-btn maths" data-section="ftp">Fracto%</button>
                 <hr class="maths" /><hr class="maths" />
@@ -195,32 +194,6 @@
         const sectionButtons = document.querySelectorAll('.section-btn');
         const sectionButtons1 = document.querySelectorAll('.section-btn1');
 
-        document.getElementById("openPdf").addEventListener("click", () => {
-
-            const activeBtn = document.querySelector('.section-btn.active');
-            var linkUrl = '';
-            var activeSection = '';
-
-            if (activeBtn) {
-                activeSection = activeBtn.dataset.section;
-                console.log("Active Section:", activeSection);
-            }
-
-            switch (activeSection) {
-                // English
-                case 'ows': linkUrl = ''; break;
-
-                case 'pv': linkUrl = 'https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link'; break;
-
-                case 'vocab': linkUrl = ''; break;
-
-                default:
-                    console.log("Unknown section");
-            }
-
-            if (linkUrl != '')
-                window.open(linkUrl, "_blank");
-        });
 
         // ------------------- DATA -------------------
         const questionSets = {
@@ -838,6 +811,75 @@
             });
         });
 
+        function changePdfBtn() {
+            const actvBtn = document.querySelector('.section-btn.active');
+            var activeSec = '';
+
+            if (actvBtn) {
+                activeSec = actvBtn.dataset.section;
+                console.log("Active Section:", activeSec);
+
+            }
+
+            switch (activeSec) {
+                // English
+                case 'idioms': document.getElementById("openPdf").textContent = "Idioms Pdf"; break;
+
+                case 'ows': document.getElementById("openPdf").textContent = "OWS Pdf"; break;
+
+                case 'pv': document.getElementById("openPdf").textContent = "PV Pdf"; break;
+
+                case 'vocab': document.getElementById("openPdf").textContent = "Vocab Pdf"; break;
+
+
+                // Maths Daily Practice
+                case 'triplets': document.getElementById("openPdf").textContent = "Triplets Img"; break;
+                case 'squares': document.getElementById("openPdf").textContent = "Squares Img"; break;
+                case 'cubes': document.getElementById("openPdf").textContent = "Cubes Img"; break;
+                case 'prime': document.getElementById("openPdf").textContent = "Prime Pdf"; break;
+                case 'ptf': document.getElementById("openPdf").textContent = "%toFrac Img"; break;
+                case 'ftp': document.getElementById("openPdf").textContent = "Fracto% Img"; break;
+
+                // Maths
+
+
+                default:
+                    document.getElementById("openPdf").textContent = "Open Pdf"; break;
+            }
+        }
+
+        document.getElementById("openPdf").addEventListener("click", () => {
+
+            const activeBtn = document.querySelector('.section-btn.active');
+            var linkUrl = '';
+            var activeSection = '';
+
+            if (activeBtn) {
+                activeSection = activeBtn.dataset.section;
+                console.log("Active Section:", activeSection);
+            }
+
+            switch (activeSection) {
+                // English
+                case 'ows': linkUrl = ''; break;
+
+                case 'pv': linkUrl = 'https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link'; break;
+
+
+                //Maths
+                case 'triplets': linkUrl = 'https://drive.google.com/file/d/1V5DrJSW4JUqdmTXb8c5K4jeU-zIW-ymW/view?usp=drive_link'; break;
+                case 'squares': linkUrl = 'https://drive.google.com/file/d/1HZlTiwoTCjKCnXNjRbtNVeiuIRPv1YxO/view?usp=drive_link'; break;
+                case 'cubes': linkUrl = 'https://drive.google.com/file/d/19FodBNU-iIhz52I9YQppWv1AcZ1N1aCl/view?usp=drive_link'; break;
+
+
+                default:
+                    console.log("Unknown section");
+            }
+
+            if (linkUrl != '')
+                window.open(linkUrl, "_blank");
+        });
+
         sectionButtons1.forEach(btn => {
             btn.addEventListener('click', () => {
                 sectionButtons1.forEach(b => b.classList.remove('active'));
@@ -921,30 +963,7 @@
         });
 
 
-        function changePdfBtn() {
-            const actvBtn = document.querySelector('.section-btn.active');
-            var activeSec = '';
-
-            if (actvBtn) {
-                activeSec = actvBtn.dataset.section;
-                console.log("Active Section:", activeSec);
-
-            }
-
-            switch (activeSec) {
-                // English
-                case 'idioms': document.getElementById("openPdf").textContent = "Idioms Pdf"; break;
-
-                case 'ows': document.getElementById("openPdf").textContent = "OWS Pdf"; break;
-
-                case 'pv': document.getElementById("openPdf").textContent = "PV Pdf"; break;
-
-                case 'vocab': document.getElementById("openPdf").textContent = "Vocab Pdf"; break;
-
-                default:
-                    document.getElementById("openPdf").textContent = "Open Pdf"; break;
-            }
-        }
+        
 
         // Filter buttons logic
         document.getElementById('filterButtons').addEventListener('click', (e) => {
