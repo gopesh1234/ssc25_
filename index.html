@@ -47,6 +47,20 @@
                 background: #16a34a;
             }
 
+        .section-btn1 {
+            background: #1e293b;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            margin: 3px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+            .section-btn1.active, .section-btn1:hover {
+                background: #16a34a;
+            }
+
         .filter-btn {
             background: #1e293b;
             color: white;
@@ -113,32 +127,50 @@
             background: #1e293b;
             color: white;
         }
+        
     </style>
 </head>
 <body>
     <div class="container" id="mainContainer">
         <div class="header">
             <div class="section-tabs">
-                <button class="section-btn active" data-section="ows">OWS</button>
-                <button class="section-btn" data-section="idioms">Idioms</button>
-                <button class="section-btn" data-section="pv">Phrasal Verb</button>
-                <button class="section-btn" data-section="vocab">Vocab</button>
                 <hr /><hr />
 
-                <button class="section-btn" data-section="cogeo">Co-ordinate Geo</button>
-                <button class="section-btn" data-section="statistics">Statistics</button>
-                <button class="section-btn" data-section="mens2d">Mens2D</button>
-                <button class="section-btn" data-section="mens3d">Mens3D</button>
-                <button class="section-btn" data-section="circle">Circle</button>
-                <button class="section-btn" data-section="triangle">Triangle</button>
-                <button class="section-btn" data-section="quad">Quadilaterals</button>
+                <button class="section-btn1 active eng1" data-section="eng">English</button>
+                <button class="section-btn1 maths1" data-section="maths">Maths</button>
+                <button class="section-btn1 reas1" data-section="reas">Reasoning</button>
+                <button class="section-btn1 gs1" data-section="gs">GS</button>
                 <hr /><hr />
 
-                <button class="section-btn" data-section="syllogism">Syllogism</button>
-                <hr /><hr />
+                <button class="section-btn active eng" data-section="ows">OWS*</button>
+                <button class="section-btn eng" data-section="idioms">Idioms</button>
+                <button class="section-btn eng" data-section="pv">Phrasal Verb</button>
+                <button class="section-btn eng" data-section="vocab">Vocab</button>
+                <hr class="eng" /><hr class="eng" />
 
-                <button class="section-btn" data-section="economics">Economics</button>
-                <hr /><hr />
+                <button class="section-btn maths" data-section="triplets">Triplets</button>
+                <button class="section-btn maths" data-section="squares">Squares</button>
+                <button class="section-btn maths" data-section="squRt">Squ Root</button>
+                <button class="section-btn maths" data-section="cubes">Cubes</button>
+                <button class="section-btn maths" data-section="cbRt">Cube Root</button>
+                <button class="section-btn maths" data-section="ptf">%toFrac</button>
+                <button class="section-btn maths" data-section="ftp">Fracto%</button>
+                <hr class="maths" /><hr class="maths" />
+
+                <button class="section-btn maths" data-section="circle">Circle</button>
+                <button class="section-btn maths" data-section="cogeo">Co-ordinate Geo</button>
+                <button class="section-btn maths" data-section="statistics">Statistics</button>
+                <button class="section-btn maths" data-section="mens2d">Mens2D</button>
+                <button class="section-btn maths" data-section="mens3d">Mens3D</button>
+                <button class="section-btn maths" data-section="triangle">Triangle</button>
+                <button class="section-btn maths" data-section="quad">Quadilaterals</button>
+                <hr class="maths" /><hr class="maths" />
+
+                <button class="section-btn reas" data-section="syllogism">Syllogism</button>
+                <hr class="reas" /><hr class="reas" />
+
+                <button class="section-btn gs" data-section="economics">Economics</button>
+                <hr class="gs" /><hr class="gs" />
             </div>
         </div>
 
@@ -153,6 +185,7 @@
         <input type="text" id="searchInput" class="search-bar" placeholder="Search questions..." />
 
         <div id="quizArea"></div>
+        <footer>(*) means the section is completed; new questions will be added if available.</footer>
     </div>
 
     <script>
@@ -160,6 +193,7 @@
         const searchInput = document.getElementById('searchInput');
         const filterButtons = document.querySelectorAll('.filter-btn');
         const sectionButtons = document.querySelectorAll('.section-btn');
+        const sectionButtons1 = document.querySelectorAll('.section-btn1');
 
         document.getElementById("openPdf").addEventListener("click", () => {
 
@@ -803,6 +837,89 @@
                 renderQuestions(document.querySelector('.filter-btn.active').dataset.filter, searchInput.value);
             });
         });
+
+        sectionButtons1.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sectionButtons1.forEach(b => b.classList.remove('active'));
+                hideClasses(btn.classList[1]);
+                btn.classList.add('active');
+                
+            });
+        });
+
+        function hideClasses(className){
+
+            switch (className) {
+
+                case 'eng1':
+
+                    showCertainClass('eng');
+                    hideCertainClass('maths');
+                    hideCertainClass('reas');
+                    hideCertainClass('gs');
+
+                    break;
+
+                case 'maths1':
+
+                    showCertainClass('maths');
+                    hideCertainClass('eng');
+                    hideCertainClass('reas');
+                    hideCertainClass('gs');
+
+                    break;
+
+                case 'reas1':
+
+                    showCertainClass('reas');
+                    hideCertainClass('maths');
+                    hideCertainClass('eng');
+                    hideCertainClass('gs');
+
+                    break;
+
+                case 'gs1':
+
+                    showCertainClass('gs');
+                    hideCertainClass('maths');
+                    hideCertainClass('reas');
+                    hideCertainClass('eng');
+
+                    break;
+
+                default:
+                     break;
+            }
+        }
+
+        function hideCertainClass(cls) {
+
+            let elements = document.getElementsByClassName(cls);
+
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = 'none';
+            }
+        }
+        function showCertainClass(cls) {
+
+            let elements = document.getElementsByClassName(cls);
+
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = '';
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            let classesToHide = ['maths', 'gs', 'reas'];
+
+            classesToHide.forEach(cls => {
+                let elements = document.getElementsByClassName(cls);
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].style.display = 'none';
+                }
+            });
+        });
+
 
         function changePdfBtn() {
             const actvBtn = document.querySelector('.section-btn.active');
