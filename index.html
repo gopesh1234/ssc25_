@@ -19,6 +19,7 @@
 
         .container {
             padding: 20px;
+            margin-top: -41px;
         }
 
         .header {
@@ -131,6 +132,10 @@
     </style>
 </head>
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="420" height="100" viewBox="0 0 420 100" role="img" aria-label="SSC CGL logo - Option A">
+        <rect width="100%" height="100%" fill="transparent" />
+        <text id="clearStorageBtn" x="20" y="62" font-family="Poppins, Inter, system-ui, sans-serif" font-weight="700" font-size="46" fill="#133b7a" style="cursor:pointer">SSC CGL</text>
+    </svg>
     <div class="container" id="mainContainer">
         <div class="header">
             <div class="section-tabs">
@@ -196,6 +201,12 @@
         const sectionButtons = document.querySelectorAll('.section-btn');
         const sectionButtons1 = document.querySelectorAll('.section-btn1');
 
+        document.getElementById("clearStorageBtn").addEventListener("click", function () {
+            if (confirm("Are you sure you want to clear all local storage data?")) {
+                localStorage.clear();
+                location.reload(); // Optional: reloads the page
+            }
+        });
 
         // ------------------- DATA -------------------
         const questionSets = {
