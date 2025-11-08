@@ -128,7 +128,6 @@
             background: #1e293b;
             color: white;
         }
-        
     </style>
 </head>
 <body>
@@ -211,7 +210,6 @@
         //
 
         document.getElementById("openPdf").addEventListener("click", () => {
-
             const activeBtn = document.querySelector('.section-btn.active');
             var pdfLinks = '';
             var activeSection = '';
@@ -302,16 +300,13 @@
 
             if (pdfLinks.length === 0) return;
 
-
+            // ✅ Auto-convert for Drive + YouTube
             const embedLinks = pdfLinks.map(link => {
                 if (link.includes("drive.google.com")) {
-                    // Convert Google Drive links
                     return link.replace("/view", "/preview");
                 } else if (link.includes("youtube.com/watch")) {
-                    // Convert YouTube links
                     return link.replace("watch?v=", "embed/").split("&")[0];
                 } else {
-                    // Leave other links as-is
                     return link;
                 }
             });
@@ -320,28 +315,21 @@
 
             // Overlay background
             const overlay = document.createElement("div");
-            overlay.style.position = "fixed";
-            overlay.style.top = 0;
-            overlay.style.left = 0;
-            overlay.style.width = "100vw";
-            overlay.style.height = "100vh";
-            overlay.style.background = "rgba(0,0,0,0.7)";
-            overlay.style.display = "flex";
-            overlay.style.alignItems = "center";
-            overlay.style.justifyContent = "center";
-            overlay.style.zIndex = "9999";
+            overlay.style = `
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0,0,0,0.7); display: flex; align-items: center;
+            justify-content: center; z-index: 9999;
+          `;
 
             // Popup box
             const popup = document.createElement("div");
-            popup.style.position = "relative";
-            popup.style.width = "80%";
-            popup.style.height = "80%";
-            popup.style.background = "#fff";
-            popup.style.borderRadius = "10px";
-            popup.style.overflow = "hidden";
-            popup.style.boxShadow = "0 0 20px rgba(0,0,0,0.5)";
+            popup.style = `
+            position: relative; width: 80%; height: 80%;
+            background: #fff; border-radius: 10px;
+            overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
+          `;
 
-            // PDF iframe
+            // PDF / YouTube iframe
             const iframe = document.createElement("iframe");
             iframe.src = embedLinks[currentIndex];
             iframe.width = "100%";
@@ -349,71 +337,74 @@
             iframe.style.border = "none";
             popup.appendChild(iframe);
 
-            // Navigation buttons
+            // ⬅ Left button
             const leftBtn = document.createElement("button");
             leftBtn.textContent = "⟵";
             Object.assign(leftBtn.style, {
-                position: "absolute",
-                left: "15px",
-                top: "50%",
-                transform: "translateY(-50%)",
-                padding: "10px 15px",
-                border: "none",
-                borderRadius: "50%",
-                background: "rgba(0,0,0,0.6)",
-                color: "#fff",
-                fontSize: "18px",
-                cursor: "pointer"
+                position: "absolute", left: "15px", top: "50%",
+                transform: "translateY(-50%)", padding: "10px 15px",
+                border: "none", borderRadius: "50%", background: "rgba(0,0,0,0.6)",
+                color: "#fff", fontSize: "18px", cursor: "pointer"
             });
 
+            // ➡ Right button
             const rightBtn = document.createElement("button");
             rightBtn.textContent = "⟶";
             Object.assign(rightBtn.style, {
-                position: "absolute",
-                right: "15px",
-                top: "50%",
-                transform: "translateY(-50%)",
-                padding: "10px 15px",
-                border: "none",
-                borderRadius: "50%",
-                background: "rgba(0,0,0,0.6)",
-                color: "#fff",
-                fontSize: "18px",
-                cursor: "pointer"
+                position: "absolute", right: "15px", top: "50%",
+                transform: "translateY(-50%)", padding: "10px 15px",
+                border: "none", borderRadius: "50%", background: "rgba(0,0,0,0.6)",
+                color: "#fff", fontSize: "18px", cursor: "pointer"
             });
 
-            // Close button
+            // ✖ Close button
             const closeBtn = document.createElement("button");
             closeBtn.textContent = "✖";
             Object.assign(closeBtn.style, {
-                position: "absolute",
-                top: "10px",
-                right: "15px",
-                border: "none",
-                background: "rgba(0,0,0,0.6)",
-                color: "white",
-                fontSize: "18px",
-                padding: "5px 10px",
-                borderRadius: "5px",
-                cursor: "pointer"
+                position: "absolute", top: "10px", right: "15px",
+                border: "none", background: "rgba(0,0,0,0.6)",
+                color: "white", fontSize: "18px", padding: "5px 10px",
+                borderRadius: "5px", cursor: "pointer"
             });
 
-            // Navigation logic
+            // ⬇ Download button
+            const downloadBtn = document.createElement("a");
+            downloadBtn.textContent = "⬇ PDF";
+            downloadBtn.target = "_blank";
+            Object.assign(downloadBtn.style, {
+                position: "absolute", bottom: "10px", right: "15px",
+                background: "#007bff", color: "white", textDecoration: "none",
+                padding: "8px 14px", borderRadius: "6px", fontWeight: "500",
+                fontFamily: "sans-serif", boxShadow: "0 2px 5px rgba(0,0,0,0.3)"
+            });
+
+            // Update viewer + download logic
+            function updateViewer() {
+                iframe.src = embedLinks[currentIndex];
+                const currentLink = pdfLinks[currentIndex];
+
+                if (currentLink.includes("drive.google.com")) {
+                    const fileId = currentLink.match(/\/d\/(.*?)\//)?.[1];
+                    if (fileId) {
+                        downloadBtn.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
+                        downloadBtn.style.display = "block";
+                    }
+                } else {
+                    downloadBtn.style.display = "none";
+                }
+            }
+
             leftBtn.addEventListener("click", () => {
                 currentIndex = (currentIndex - 1 + embedLinks.length) % embedLinks.length;
-                iframe.src = embedLinks[currentIndex];
+                updateViewer();
             });
 
             rightBtn.addEventListener("click", () => {
                 currentIndex = (currentIndex + 1) % embedLinks.length;
-                iframe.src = embedLinks[currentIndex];
+                updateViewer();
             });
 
-            closeBtn.addEventListener("click", () => {
-                document.body.removeChild(overlay);
-            });
-
-            // Close on outside click
+            closeBtn.addEventListener("click", () => document.body.removeChild(overlay));
             overlay.addEventListener("click", e => {
                 if (e.target === overlay) document.body.removeChild(overlay);
             });
@@ -421,8 +412,11 @@
             popup.appendChild(leftBtn);
             popup.appendChild(rightBtn);
             popup.appendChild(closeBtn);
+            popup.appendChild(downloadBtn);
             overlay.appendChild(popup);
             document.body.appendChild(overlay);
+
+            updateViewer(); // initial load
         });
 
         //
@@ -1098,9 +1092,9 @@
                 const select = document.createElement('select');
                 select.className = 'difficulty-select';
                 select.innerHTML = `
-                                  <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
-                                  <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
-                                `;
+                                          <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
+                                          <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
+                                        `;
 
                 select.onchange = () => {
                     savedDifficulty[question.q] = select.value;
@@ -1160,128 +1154,17 @@
             }
         }
 
-        // document.getElementById("openPdf").addEventListener("click", () => {
-
-        //     const activeBtn = document.querySelector('.section-btn.active');
-        //     var pdfLinks = '';
-        //     var activeSection = '';
-
-        //     if (activeBtn) {
-        //         activeSection = activeBtn.dataset.section;
-        //         console.log("Active Section:", activeSection);
-        //     }
-
-        //     switch (activeSection) {
-
-        //         // English
-        //         case 'idioms':
-        //             pdfLinks = [
-        //                 "https://drive.google.com/file/d/1GB5Swr-iIUaxb_jqM6Vm25hKYy1JwYNq/view?usp=drive_link",
-        //                 "https://www.youtube.com/watch?v=5fdQ5ef3rBo&t=2441s",
-        //             ];
-
-        //             break;
-        //         case 'pv':
-
-        //             pdfLinks = [
-        //                 "https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link",
-        //                 "https://www.youtube.com/watch?v=gw3e7vEnFhE&t=2366s",
-        //             ];
-
-        //             break;
-
-
-
-
-
-
-        //         //Maths Daily Revision
-        //         case 'triplets':
-        //             pdfLinks = [
-        //                 "https://drive.google.com/file/d/1V5DrJSW4JUqdmTXb8c5K4jeU-zIW-ymW/view?usp=drive_link",
-        //             ];
-
-        //             break;
-        //         case 'squares':
-        //             pdfLinks = [
-        //                 "https://drive.google.com/file/d/1HZlTiwoTCjKCnXNjRbtNVeiuIRPv1YxO/view?usp=drive_link",
-        //             ];
-
-        //             break;
-        //         case 'cubes':
-        //             pdfLinks = [
-        //                 "https://drive.google.com/file/d/19FodBNU-iIhz52I9YQppWv1AcZ1N1aCl/view?usp=drive_link"
-        //             ];
-
-
-        //             break;
-
-
-
-
-
-        //         //Maths
-
-        //         case 'soc':
-        //             pdfLinks = [
-        //                 "https://www.youtube.com/watch?v=96F3TnapUnE&t=2984s",
-        //             ];
-
-        //             break;
-
-        //         case 'part':
-        //             pdfLinks = [
-        //                 "https://www.youtube.com/watch?v=X5jHltNq5Hc&t=4864s",
-        //             ];
-
-        //             break;
-
-
-
-
-
-
-
-
-
-        //         //Reas
-
-        //         case 'sylog':
-        //             pdfLinks = [];
-
-        //             break;
-
-        //         //GS
-
-        //         case 'eco':
-        //             pdfLinks = [
-        //                 "https://www.youtube.com/watch?v=coxlG4yPKJ0&t=2812s",
-        //             ];
-
-        //             break;
-
-
-        //         default:
-        //             console.log("Unknown section");
-        //     }
-
-        //     if (pdfLinks.length != 0) {
-        //         pdfLinks.forEach(link => {
-        //             window.open(link, "_blank");
-        //         });
-        //     }
-        // });
 
         sectionButtons1.forEach(btn => {
             btn.addEventListener('click', () => {
                 sectionButtons1.forEach(b => b.classList.remove('active'));
                 hideClasses(btn.classList[1]);
                 btn.classList.add('active');
-                
+
             });
         });
 
-        function hideClasses(className){
+        function hideClasses(className) {
 
             switch (className) {
 
@@ -1322,7 +1205,7 @@
                     break;
 
                 default:
-                     break;
+                    break;
             }
         }
 
