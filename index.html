@@ -223,6 +223,8 @@
             const activeBtn = document.querySelector('.section-btn.active');
             var pdfLinks = '';
             var activeSection = '';
+            var driveLink = '';
+            var driveLink2 = '';
 
             if (activeBtn) {
                 activeSection = activeBtn.dataset.section;
@@ -234,6 +236,8 @@
                 // English
 
                 case 'article':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=sd-_IuuEQQU",
                         "https://www.youtube.com/watch?v=2cd297z8jPM",
@@ -242,22 +246,29 @@
                     break;
 
                 case 'fillups':
+                    driveLink = "https://drive.google.com/file/d/1HJLt1Km2f3KqroqWTdWNXARNYzmRDe7u/view?usp=drive_link";
+
                     pdfLinks = [
+                        driveLink,
                         "https://www.youtube.com/watch?v=ahCn6eYrzXk&list=PLM9OY0jASMM1O5hzHiTBQIVkumVktDKi5&index=8",
                     ];
 
                     break;
 
                 case 'idioms':
+                    driveLink = "https://drive.google.com/file/d/1-1XF2y8XniiwleFqWMo2ev7mMbvF2xsR/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1GB5Swr-iIUaxb_jqM6Vm25hKYy1JwYNq/view?usp=drive_link";
+
                     pdfLinks = [
-                        "https://drive.google.com/file/d/1-1XF2y8XniiwleFqWMo2ev7mMbvF2xsR/view?usp=drive_link",
-                        "https://drive.google.com/file/d/1GB5Swr-iIUaxb_jqM6Vm25hKYy1JwYNq/view?usp=drive_link",
+                        driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=WgHnTcYJFac",
                     ];
 
                     break;
 
                 case 'narr':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=RMZt3m-C3T4",
                     ];
@@ -265,14 +276,18 @@
                     break;
 
                 case 'ows':
+                    driveLink = "https://drive.google.com/file/d/145T13r_Sf39H_r3JgudJXgaOzrGaXPBB/view?usp=drive_link";
+
                     pdfLinks = [
-                        "https://drive.google.com/file/d/145T13r_Sf39H_r3JgudJXgaOzrGaXPBB/view?usp=drive_link",
+                        driveLink,
                         "https://www.youtube.com/watch?v=NoNFAPhEuPQ",
                     ];
 
                     break;
 
                 case 'paraJumb':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=AB1jf3hZ_Fg",
                     ];
@@ -280,6 +295,8 @@
                     break;
 
                 case 'prep':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=YUtcACpnWYQ",
                     ];
@@ -287,15 +304,19 @@
                     break;
 
                 case 'pv':
+                    driveLink = "https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1vbPajTU-zUYEaLdLFKUgmYTrcmebQ5H3/view?usp=drive_link";
+
                     pdfLinks = [
-                        "https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link",
-                        "https://drive.google.com/file/d/1vbPajTU-zUYEaLdLFKUgmYTrcmebQ5H3/view?usp=drive_link",
+                        driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=gw3e7vEnFhE",
                     ];
 
                     break;
 
                 case 'questag':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=5Twsbv1C_iY",
                     ];
@@ -303,15 +324,20 @@
                     break;
 
                 case 'sentImp':
+                    driveLink = "https://drive.google.com/file/d/1NJolIcNlcbBPaLTWlIT2LiNqDZ0nFUqT/view?usp=drive_link";
+
                     pdfLinks = [
-                        "https://drive.google.com/file/d/1NJolIcNlcbBPaLTWlIT2LiNqDZ0nFUqT/view?usp=drive_link",
+                        driveLink,
                         "https://www.youtube.com/watch?v=uPyx_dtkoN",
                     ];
 
                     break;
 
                 case 'spotErr':
+                    driveLink = "https://drive.google.com/file/d/1VumxUJW9jzQAvUBAOvLtqPbiYol7SIT5/view?usp=drive_link";
+
                     pdfLinks = [
+                        driveLink,
                         "https://www.youtube.com/watch?v=2mn234qz1A8",
                         "https://www.youtube.com/watch?v=Rvz1KKWasH4",
                         "https://www.youtube.com/watch?v=9Wdh5_oyc-k",
@@ -320,6 +346,8 @@
                     break;
 
                 case 'sva':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=7FWOB_QJES8",
                     ];
@@ -327,15 +355,18 @@
                     break;
 
                 case 'vocab':
+                    driveLink = "https://drive.google.com/file/d/1D1_vkzq_YWL3JDWaTw4PWHCPy5Lzs-us/view?usp=drive_link";
+
                     pdfLinks = [
-                        "https://drive.google.com/file/d/1D1_vkzq_YWL3JDWaTw4PWHCPy5Lzs-us/view?usp=drive_link",
+                        driveLink,
                         "https://www.youtube.com/watch?v=88cW3hOWcpI&list=PLM9OY0jASMM3TkcJVbOoWNMctJdryouLe&index=3",
                     ];
 
                     break;
 
-
                 case 'voice':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=dq7d8xPBwlU",
                     ];
@@ -344,20 +375,27 @@
 
                 //Maths Daily Revision
                 case 'triplets':
+                    driveLink = "https://drive.google.com/file/d/1V5DrJSW4JUqdmTXb8c5K4jeU-zIW-ymW/view?usp=drive_link";
+
                     pdfLinks = [
-                        "https://drive.google.com/file/d/1V5DrJSW4JUqdmTXb8c5K4jeU-zIW-ymW/view?usp=drive_link",
+                        driveLink,
                     ];
 
                     break;
+
                 case 'squares':
+                    driveLink = "https://drive.google.com/file/d/1HZlTiwoTCjKCnXNjRbtNVeiuIRPv1YxO/view?usp=drive_link";
+
                     pdfLinks = [
-                        "https://drive.google.com/file/d/1HZlTiwoTCjKCnXNjRbtNVeiuIRPv1YxO/view?usp=drive_link",
+                        driveLink,
                     ];
 
                     break;
                 case 'cubes':
+                    driveLink = "https://drive.google.com/file/d/19FodBNU-iIhz52I9YQppWv1AcZ1N1aCl/view?usp=drive_link";
+
                     pdfLinks = [
-                        "https://drive.google.com/file/d/19FodBNU-iIhz52I9YQppWv1AcZ1N1aCl/view?usp=drive_link"
+                        driveLink,
                     ];
 
                     break;
@@ -365,6 +403,8 @@
                 //Maths
 
                 case 'soc':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=96F3TnapUnE",
                     ];
@@ -372,6 +412,8 @@
                     break;
 
                 case 'part':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=X5jHltNq5Hc",
                     ];
@@ -382,6 +424,8 @@
                 //Reas
 
                 case 'sylog':
+                    driveLink = "";
+
                     pdfLinks = [];
 
                     break;
@@ -389,6 +433,8 @@
                 //GS
 
                 case 'eco':
+                    driveLink = "";
+
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=coxlG4yPKJ0&t=2812s",
                     ];
