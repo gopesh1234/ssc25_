@@ -146,10 +146,20 @@
                 <button class="section-btn1 gs1" data-section="gs">GS</button>
                 <hr /><hr />
 
+                <button class="section-btn eng" data-section="vocab">Vocab</button>
                 <button class="section-btn active eng" data-section="ows">OWS(488*)</button>
                 <button class="section-btn eng" data-section="idioms">Idioms</button>
                 <button class="section-btn eng" data-section="pv">Phrasal Verb</button>
-                <button class="section-btn eng" data-section="vocab">Vocab</button>
+                <button class="section-btn eng" data-section="narr">Narration</button>
+                <button class="section-btn eng" data-section="voice">Voice</button>
+                <button class="section-btn eng" data-section="article">Articles</button>
+                <button class="section-btn eng" data-section="prep">Preposition</button>
+                <button class="section-btn eng" data-section="spotErr">Spotting Error</button>
+                <button class="section-btn eng" data-section="sentImp">Sentence Improvement</button>
+                <button class="section-btn eng" data-section="fillups">Fill Ups</button>
+                <button class="section-btn eng" data-section="paraJumb">Para Jumbled</button>
+                <button class="section-btn eng" data-section="sva">Subject Verb Agreement</button>
+                <button class="section-btn eng" data-section="questag">Question Tag</button>
                 <hr class="eng" /><hr class="eng" />
 
                 <button class="section-btn maths" data-section="triplets">Triplets</button>
@@ -222,18 +232,110 @@
             switch (activeSection) {
 
                 // English
-                case 'idioms':
+
+                case 'vocab':
                     pdfLinks = [
-                        "https://drive.google.com/file/d/1GB5Swr-iIUaxb_jqM6Vm25hKYy1JwYNq/view?usp=drive_link",
-                        "https://www.youtube.com/watch?v=5fdQ5ef3rBo&t=2441s",
+                        "https://drive.google.com/file/d/1D1_vkzq_YWL3JDWaTw4PWHCPy5Lzs-us/view?usp=drive_link",
+                        "https://www.youtube.com/watch?v=88cW3hOWcpI&list=PLM9OY0jASMM3TkcJVbOoWNMctJdryouLe&index=3",
                     ];
 
                     break;
-                case 'pv':
 
+                case 'ows':
+                    pdfLinks = [
+                        "https://drive.google.com/file/d/145T13r_Sf39H_r3JgudJXgaOzrGaXPBB/view?usp=drive_link",
+                        "https://www.youtube.com/watch?v=NoNFAPhEuPQ",
+                    ];
+
+                    break;
+
+                case 'idioms':
+                    pdfLinks = [
+                        "",
+                        "https://drive.google.com/file/d/1GB5Swr-iIUaxb_jqM6Vm25hKYy1JwYNq/view?usp=drive_link",
+                        "https://www.youtube.com/watch?v=WgHnTcYJFac",
+                    ];
+
+                    break;
+
+                case 'pv':
                     pdfLinks = [
                         "https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link",
-                        "https://www.youtube.com/watch?v=gw3e7vEnFhE&t=2366s",
+                        "https://drive.google.com/file/d/1vbPajTU-zUYEaLdLFKUgmYTrcmebQ5H3/view?usp=drive_link",
+                        "https://www.youtube.com/watch?v=gw3e7vEnFhE",
+                    ];
+
+                    break;
+
+                case 'narr':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=RMZt3m-C3T4",
+                    ];
+
+                    break;
+
+                case 'voice':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=dq7d8xPBwlU",
+                    ];
+
+                    break;
+
+                case 'article':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=sd-_IuuEQQU",
+                        "https://www.youtube.com/watch?v=2cd297z8jPM",
+                    ];
+
+                    break;
+
+                case 'prep':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=YUtcACpnWYQ",
+                    ];
+
+                    break;
+
+                case 'spotErr':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=2mn234qz1A8",
+                        "https://www.youtube.com/watch?v=Rvz1KKWasH4",
+                        "https://www.youtube.com/watch?v=9Wdh5_oyc-k",
+                    ];
+
+                    break;
+
+                case 'sentImp':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=uPyx_dtkoN",
+                    ];
+
+                    break;
+
+                case 'fillups':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=ahCn6eYrzXk&list=PLM9OY0jASMM1O5hzHiTBQIVkumVktDKi5&index=8",
+                    ];
+
+                    break;
+
+                case 'paraJumb':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=AB1jf3hZ_Fg",
+                    ];
+
+                    break;
+
+                case 'sva':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=7FWOB_QJES8",
+                    ];
+
+                    break;
+
+                case 'questag':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=5Twsbv1C_iY",
                     ];
 
                     break;
@@ -256,21 +358,20 @@
                         "https://drive.google.com/file/d/19FodBNU-iIhz52I9YQppWv1AcZ1N1aCl/view?usp=drive_link"
                     ];
 
-
                     break;
 
                 //Maths
 
                 case 'soc':
                     pdfLinks = [
-                        "https://www.youtube.com/watch?v=96F3TnapUnE&t=2984s",
+                        "https://www.youtube.com/watch?v=96F3TnapUnE",
                     ];
 
                     break;
 
                 case 'part':
                     pdfLinks = [
-                        "https://www.youtube.com/watch?v=X5jHltNq5Hc&t=4864s",
+                        "https://www.youtube.com/watch?v=X5jHltNq5Hc",
                     ];
 
                     break;
@@ -422,112 +523,6 @@
         //
         // ------------------- DATA -------------------
         const questionSets = {
-            pv: [
-                { q: "Put off", opts: ["Delay or Postpone"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Call off", opts: ["Cancel"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put out (3 meanings)", opts: ["Extinguish >> Sad or Disappointed >> Publish"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put down (2 meanings)", opts: ["Write down >> Crush or Suppress"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Look down upon", opts: ["Insult or Suppress"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put up (3 meanings)", opts: ["Reside or stay >> Display on board >> Build something"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put up with", opts: ["Tolerate or Endure"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Bear with", opts: ["Tolerate"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put aside (2 meanings)", opts: ["Ignore >> Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put by", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Lay aside", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put on (3 meanings)", opts: ["Wear smile or dress >> Gain weight >> Pretend"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put in (2 meanings)", opts: ["Efforts >> Request"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put across", opts: ["Explain an idea clearly"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put forward", opts: ["Only suggest an idea"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put through", opts: ["Face difficult situation"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Get through", opts: ["Pass an exam very easily or without any efforts"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Go through", opts: ["Go through the letter"], correct: 0, difficulty: "easy", currentSec: "english" },
-            ],
-            idioms: [
-                { q: "A backseat driver", opts: ["One who gives unwanted advice", "A person who drives very fast", "A driver without license", "A passenger sitting behind the driver"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A baker's dozen", opts: ["Twelve", "A group of Thirteen", "Fifteen", "Ten"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A bad egg", opts: ["A lazy person", "A dishonest person", "A good person", "An intelligent person"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A bed of roses", opts: ["A decorated place", "A life full of troubles", "A bed made of flowers", "An easy and comfortable life"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "A bird in the hand is worth two in the bush", opts: ["Something you already have is better than what you might get", "Chasing two things at once", "A bird is valuable", "Risk everything to gain more"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A bird's eye view", opts: ["Aerial view", "A close look", "A detailed study", "A narrow perspective"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A black sheep", opts: ["A lucky person", "A disgrace to the family or group", "An innocent person", "A hard-working person"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A blessing in disguise", opts: ["A curse", "A good thing that seemed bad at first", "A hidden danger", "A direct help"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A bolt from the blue", opts: ["A common occurrence", "A calm situation", "A planned surprise", "A sudden and unexpected event"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "A bone of contention", opts: ["A matter of friendship", "A reason for joy", "A subject of dispute", "A solved issue"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A bull in a china shop", opts: ["A clumsy person", "A careful worker", "A polite speaker", "A gentle man"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A cake walk", opts: ["A competition", "A difficult journey", "An easy task", "A sweet dessert"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A change of heart", opts: ["Heart surgery", "A change in attitude or feelings", "A romantic feeling", "A loss of hope"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A catch 22 situation", opts: ["A dilemma with no escape", "A lucky chance", "An easy choice", "A confusing story"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A child's play", opts: ["Difficult task", "A serious matter", "A school activity", "A very easy task"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "A chip off the old block", opts: ["Someone very similar to their parent", "A rude child", "A hardworking person", "An honest worker"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A close-fisted person", opts: ["A kind man", "A generous person", "A miser", "A bold leader"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A close shave", opts: ["A narrow escape", "A haircut", "A clean shave", "A near victory"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A cock and bull story", opts: ["A love story", "A foolish or concocted story", "A true incident", "A comic tale"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A dark horse", opts: ["A failure", "An unexpected winner", "A popular person", "A powerful ruler"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A dime a dozen", opts: ["A rare item", "Something very costly", "Something very common", "A unique person"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A dog's life", opts: ["A life full of troubles", "A luxurious life", "A short life", "A lonely life"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A drop in the bucket or ocean", opts: ["Very large contribution", "A very small or insignificant amount", "A major part", "A full effort"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A dry run", opts: ["A practice session", "A desert trip", "A failed attempt", "A boring task"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A fair-weathered friend", opts: ["A friend who supports you in difficulties", "A loyal friend", "A childhood friend", "A friend who deserts you in difficulties"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "A fish out of water", opts: ["A person uncomfortable in a situation", "A happy traveler", "A skilled worker", "A calm observer"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A fool's paradise", opts: ["A real heaven", "A state of false happiness", "A peaceful place", "A rich country"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A green horn", opts: ["An inexperienced person", "A clever man", "A skilled worker", "A senior officer"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A gut feeling", opts: ["Pain in stomach", "An instinctive feeling", "A nervous fear", "A firm decision"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A hard or tough nut to crack", opts: ["A difficult problem or person", "An easy issue", "A soft-hearted person", "A fun challenge"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A hornet's nest", opts: ["Good situation", "A situation full of trouble", "A peaceful family", "A small argument"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A hot potato", opts: ["A dead issue", "A controversial issue", "A funny story", "An easy topic"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A leopard can't change his spots", opts: ["A person cannot change their character", "People can easily change", "A clever person adapts", "Character is temporary"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A live wire", opts: ["A dead person", "A lazy person", "A very energetic person", "A silent worker"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A man of letters", opts: ["A person who writes letters", "A postman", "A scholar or well-educated and wise person", "A businessman"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A mare's nest", opts: ["A real discovery", "A false invention or a confused situation", "A peaceful place", "A hidden treasure"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A needle in a haystack", opts: ["Something extremely difficult or impossible to find", "A small useful thing", "A sharp object", "A simple task"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A pipe dream", opts: ["A musical tune", "A plumbing issue", "A sleeping disorder", "An illusory plan or unreal hope on your part"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "A red letter day", opts: ["An unlucky day", "A memorable and important day", "A public holiday", "A day marked in red"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A shot in the arm", opts: ["An injection", "A sudden pain", "A medical treatment", "A boost or stimulant"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "A skeleton in the cupboard", opts: ["An embarrassing fact to be kept secret", "A hidden treasure", "A family heirloom", "A frightening memory"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A snake in the grass", opts: ["A visible danger", "A hidden enemy", "A loyal friend", "A wild creature"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A square deal", opts: ["An honest and fair transaction or trade", "A business loss", "A risky investment", "A secret agreement"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A square deal", opts: ["An honest and fair transaction or trade", "A business loss", "A risky investment", "A secret agreement"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A storm in a tea cup", opts: ["A serious problem", "A major crisis", "A lot of anger and worry about trivial things", "A natural disaster"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A wet blanket", opts: ["A boring event", "Someone who ruins other people's fun", "A lazy person", "A serious critic"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A white elephant", opts: ["A rare animal", "A lucky charm", "A profitable venture", "A costly but useless possession"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "A wild goose chase", opts: ["A hunting game", "A futile search or effort", "A long journey", "A thrilling adventure"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A wolf in sheep's clothing", opts: ["A kind-hearted person", "A loyal friend", "A dangerous person pretending to be harmless", "A humble leader"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "Above board", opts: ["Secretive", "Dishonest", "Hidden", "Honest and frank"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "Actions speak louder than words", opts: ["Speaking kindly matters greatly", "What you do is more important than what you say", "Words can change the world quickly", "Promises should always be fulfilled"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "Add fuel to the fire", opts: ["To make peace in a tense moment", "To ignore a problem intentionally", "To calm the situation completely", "To worsen an already bad situation"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "Add insult to injury", opts: ["To apologize for one’s mistake", "To make someone laugh loudly", "To make a bad situation worse", "To avoid a direct argument"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "Against the clock", opts: ["In a great hurry to do something", "Working slowly without concern", "Without any fixed deadline", "Taking extra time for completion"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "All and sundry", opts: ["Only close and dear friends", "Selective and chosen people", "Everyone without distinction", "Important persons of high rank"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "All bark and no bite", opts: ["A bold and fearless person", "Full of talk but low on action", "A silent and humble worker", "A dangerous and violent individual"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "All Greek to me", opts: ["Incomprehensible to understand", "Easy to grasp and learn", "Familiar and simple to read", "Interesting and clearly written"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "All in all", opts: ["Completely lost in confusion", "Partly responsible for results", "Very tired after hard work", "Having all authority and control"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "An Achilles' heel", opts: ["A strong and reliable quality", "A brave and daring action", "A vulnerable point or fault in one's character", "A hidden and rare talent"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "An apple of one's eye", opts: ["A person who loves eating apples", "A very lovable and precious person", "A selfish and greedy person", "A close and trusted relative"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "An arm and a leg", opts: ["Very expensive to afford", "Very cheap and easy", "Easily available everywhere", "Completely free of cost"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "An axe to grind", opts: ["A personal reason for being involved in something", "A personal motive behind being part of an issue", "A secret purpose for taking part in something", "A hidden agenda for joining any situation"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A feather in one's cap", opts: ["A stylish decoration showing pride and success", "A lucky charm believed to bring recognition", "An achievement to be proud of and remembered", "A small honor earned after a great effort"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A flash in the pan", opts: ["A permanent success that lasts for many years", "A bright moment that quickly fades away", "A sudden rise that disappears immediately", "Something that is successful for a short time"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "An eagle eye", opts: ["Sharp vision or ability to observe keenly", "Accurate sight or talent to notice everything", "Powerful observation skill with full attention", "Strong eyesight or capacity to detect errors"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Apple of discord", opts: ["A pleasant thing that causes great unity", "A charming object creating love and care", "The cause of dispute, misunderstanding or fight", "A beautiful thing leading to total agreement"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "Apples and oranges", opts: ["A healthy mixture of different food types", "An unequal and unfair comparison of things", "Two different items that can’t be compared", "A balanced combination of fruits and colors"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "Argus-eyed", opts: ["Carefully observant or attentive in nature", "Constantly alert and watching everything", "Always mindful and quick to catch mistakes", "Extremely cautious and careful at all times"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A French leave", opts: ["A sudden absence without prior permission", "Leaving secretly without informing anyone", "A quick exit without notifying authorities", "An unauthorised leave from official duty"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "As cool as a cucumber", opts: ["Easily provoked and quick to lose temper", "Calm and composed even under pressure", "Very nervous and trembling during stress", "Extremely worried and full of anxiety"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "As fit as a fiddle", opts: ["Physically weak and unable to perform well", "Completely inactive and lacking energy", "Mentally tired and physically exhausted", "In good health and excellent condition"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "As hard as nails", opts: ["Very soft-hearted and emotional in nature", "Physically or mentally strong and tough", "Easily broken or fragile under pressure", "Cold and distant showing no compassion"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "A good turn", opts: ["A sudden event that brings good results", "A favorable action done to help someone", "A small gesture showing kindness to others", "A helpful act or kind deed towards someone"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "At a stone's throw", opts: ["Very far from the location or area", "Quite close to the spot or destination", "Almost near to the given reference point", "Within easy reach from the current place"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "At a stretch", opts: ["Occasionally or after small intervals", "With effort and focus for a long time", "Continuously or at one time without break", "After a short rest or interval period"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A grey area", opts: ["An unclear situation or matter of doubt", "A confusing rule that lacks clear limits", "A doubtful case with uncertain outcomes", "An issue not clearly defined or resolved"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "At an arm's length", opts: ["Very close yet avoiding full contact", "In a friendly but careful relationship", "Close enough but still maintaining space", "At a distance with someone intentionally"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "At cross purposes", opts: ["Working together but for different aims", "Disagreeing with each other's ideas", "Talking politely but misunderstanding intent", "Thinking similarly though expressing differently"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "At daggers drawn with somebody", opts: ["Bitterly hostile towards each other", "Completely friendly and full of trust", "Acting politely but holding deep anger", "Indifferent to one another’s situations"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "A herculean", opts: ["A simple job requiring very little strength", "A short task finished without much effort", "A job that requires a large amount of physical strength", "A mental task demanding great patience"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "A Hobson's choice", opts: ["A random decision with no better option", "A free selection that appears limited", "An option offered but not truly available", "A choice forced upon someone unwillingly"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "At large", opts: ["In a small group", "Under control", "Not caught, free", "Hidden somewhere"], correct: 2, difficulty: "easy", currentSec: "english" },
-
-
-            ],
             vocab: [
                 { q: "Abrogate", opts: ["repeal", "destroy", "delay", "uphold"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Adulation", opts: ["duration", "argument", "flattery", "institution"], correct: 2, difficulty: "easy", currentSec: "english" },
@@ -537,6 +532,20 @@
                 { q: "Alert", opts: ["hostile", "watchful", "brave", "quick"], correct: 1, difficulty: "easy", currentSec: "english" },
             ],
             ows: [
+                { q: "Because the politician's speech was high-flown and pretentious, it gained popularity.", opts: ["Bombastic", "Schematising", "Austere", "Mnemonic"], correct: 0, difficulty: "easy" },
+                { q: "The minister went to visit the monuments set up for people who were buried in other countries.", opts: ["Graves", "Cenotaphs", "Cemetery", "Coffins"], correct: 1, difficulty: "medium" },
+                { q: "Exactly the same words as were used originally.", opts: ["Factual", "Precise", "Ornate", "Verbatim"], correct: 3, difficulty: "easy" },
+                { q: "A room in a hospital used especially for sunbathing or therapeutic exposure to light.", opts: ["Sanatorium", "Planetarium", "Solarium", "Podium"], correct: 2, difficulty: "medium" },
+                { q: "The place where soldiers live.", opts: ["Unit", "Brigade", "Regiment", "Barracks"], correct: 3, difficulty: "easy" },
+                { q: "The analysis of a person's handwriting to determine his/her personality.", opts: ["Numismatics", "Graphology", "Philology", "Calligraphy"], correct: 1, difficulty: "medium" },
+                { q: "The branch of geography that studies mountains and their formation.", opts: ["Palaeography", "Orography", "Orthography", "Mythography"], correct: 1, difficulty: "medium" },
+                { q: "A policy that separates people on the basis of race.", opts: ["Apostasy", "Apartheid", "Apostle", "Apiary"], correct: 1, difficulty: "easy" },
+                { q: "The tailor was called to stitch the long gowns worn by priests and choristers.", opts: ["Frocks", "Cassocks", "Raincoats", "Tuxedos"], correct: 1, difficulty: "medium" },
+                { q: "Can you please stop *continuously complaining* about the student's shortcomings?", opts: ["Grunting", "Whining", "Crying", "Jesting"], correct: 1, difficulty: "easy" },
+                { q: "The old library had a *musty smell* from years of neglect.", opts: ["Casual", "Fusty", "Stale", "Fresh"], correct: 2, difficulty: "easy" },
+                { q: "The *land that is best suitable for growing crops*.", opts: ["Arable", "Chiriful", "Barren", "Rustic"], correct: 0, difficulty: "easy" },
+                { q: "A *serpent having many heads in Greek mythology*.", opts: ["Hydra", "Cobra", "Python", "Eopsin"], correct: 0, difficulty: "medium" },
+                { q: "A *person who loves music*.", opts: ["Achromatophilic", "Astrophile", "Discophile", "Melophile"], correct: 3, difficulty: "medium" },
                 { q: "A person who talks in sleep", opts: ["Somnambulist", "Somniloquist", "Egoist", "Pedant"], correct: 1, difficulty: "easy" },
                 { q: "A person who knows everything", opts: ["Omniscient", "Omnipresent", "Omnipotent", "Egoist"], correct: 0, difficulty: "easy" },
                 { q: "A person who loves books", opts: ["Bibliophile", "Philatelist", "Numismatist", "Audiophile"], correct: 0, difficulty: "easy" },
@@ -1025,7 +1034,122 @@
                 { q: "One who is not sure about the existence of god", opts: ["Agnostic", "Atheist", "Skeptic", "Theist"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "The study of fossils", opts: ["Geology", "Archaeology", "Paleontology", "Anthropology"], correct: 2, difficulty: "easy", currentSec: "english" },
                 { q: "The practice of having more than one husband at a time", opts: ["Bigamy", "Polygamy", "Monogamy", "Polyandry"], correct: 3, difficulty: "easy", currentSec: "english" },
-            ]
+            ],
+            idioms: [
+                { q: "A backseat driver", opts: ["One who gives unwanted advice to others", "A person who drives the vehicle very fast", "A driver who moves a vehicle without license", "A passenger sitting behind the main driver"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A baker's dozen", opts: ["A total count usually fixed at twelve", "A group of thirteen counted together", "Fifteen items taken in one single lot", "Ten pieces collected in one complete set"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A bad egg", opts: ["A lazy person avoiding every duty", "A dishonest person not to be trusted", "A good person respected by everyone", "An intelligent person admired by people"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A bed of roses", opts: ["A decorated place arranged beautifully", "A life full of troubles and problems", "A bed made of flowers placed together", "An easy and comfortable life to live"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "A bird in the hand is worth two in the bush", opts: ["Something you already have is better than what you might get", "Chasing two things at once brings no success", "A bird is valuable when held carefully", "Risk everything to gain even more later"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A bird's eye view", opts: ["Aerial view showing the whole area", "A close look examining tiny details", "A detailed study covering every point", "A narrow perspective with limited range"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A black sheep", opts: ["A lucky person admired by everyone", "A disgrace to the family or group", "An innocent person with a clean mind", "A hard-working person respected widely"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A blessing in disguise", opts: ["A curse harming someone unexpectedly", "A good thing that seemed bad at first", "A hidden danger unknown to others", "A direct help offered openly"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A bolt from the blue", opts: ["A common occurrence happening often", "A calm situation without disturbance", "A planned surprise arranged earlier", "A sudden and unexpected event"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "A bone of contention", opts: ["A matter of friendship creating unity", "A reason for joy bringing happiness", "A subject of dispute causing arguments", "A solved issue with no disagreement"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A bull in a china shop", opts: ["A clumsy person causing accidental damage", "A careful worker handling things slowly", "A polite speaker known for good manners", "A gentle man behaving very calmly"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A cake walk", opts: ["A competition held for participants", "A difficult journey requiring effort", "An easy task completed without trouble", "A sweet dessert enjoyed by people"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A change of heart", opts: ["Heart surgery done on a patient", "A change in attitude or feelings", "A romantic feeling developed suddenly", "A loss of hope affecting decisions"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A catch 22 situation", opts: ["A dilemma with no escape possible", "A lucky chance occurring suddenly", "An easy choice made without worry", "A confusing story lacking clarity"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A child's play", opts: ["Difficult task requiring great effort", "A serious matter needing attention", "A school activity done by children", "A very easy task requiring no effort"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "A chip off the old block", opts: ["Someone very similar to their parent", "A rude child behaving badly often", "A hard-working person praised by many", "An honest worker trusted by everyone"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A close-fisted person", opts: ["A kind man helping everyone freely", "A generous person sharing openly", "A miser unwilling to spend money", "A bold leader inspiring many people"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A close shave", opts: ["A narrow escape from a danger", "A haircut done at a salon", "A clean shave removing all hair", "A near victory achieved barely"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A cock and bull story", opts: ["A love story narrated beautifully", "A foolish or concocted(to make something unusual by mixing different things together) story", "A true incident that actually occurred", "A comic tale made for amusement"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A dark horse", opts: ["A complete failure in competitions", "An unexpected winner in a contest", "A well-known popular individual", "A powerful ruler with authority"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A dime a dozen", opts: ["A rare item found very rarely", "Something very costly to purchase", "Something very common and easily found", "A unique person with special traits"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A dog's life", opts: ["A life full of troubles and misery", "A luxurious life enjoyed peacefully", "A short life ending very quickly", "A lonely life lived without support"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A drop in the bucket or ocean", opts: ["A very large contribution to something", "A very small or insignificant amount", "A major part contributing heavily", "A full effort put into a task"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A dry run", opts: ["A practice session before the real event", "A desert trip done for adventurous fun", "A failed attempt that leads nowhere", "A boring task performed repeatedly"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A fair-weathered friend", opts: ["A friend who supports you in difficulties", "A loyal friend who always stays beside you", "A childhood friend known for many years", "A friend who deserts you in difficulties"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "A fish out of water", opts: ["A person uncomfortable in a situation", "A happy traveler exploring new places", "A skilled worker performing expertly", "A calm observer who watches quietly"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A fool's paradise", opts: ["A real heaven experienced by someone", "A state of false happiness or illusion", "A peaceful place filled with serenity", "A rich country admired by many people"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A green horn", opts: ["An inexperienced person or beginner", "A clever man who knows everything", "A skilled worker with expertise", "A senior officer with authority"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A gut feeling", opts: ["Pain in stomach caused by stress", "An instinctive feeling one strongly senses", "A nervous fear occurring suddenly", "A firm decision made confidently"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A hard or tough nut to crack", opts: ["A difficult problem or person to handle", "An easy issue solved effortlessly", "A soft-hearted person who forgives", "A fun challenge enjoyed by many"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A hornet's nest", opts: ["A good situation bringing comfort", "A situation full of trouble and danger", "A peaceful family living happily", "A small argument without impact"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A hot potato", opts: ["A dead issue forgotten by everyone", "A controversial issue difficult to handle", "A funny story told for amusement", "An easy topic discussed casually"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A leopard can't change his spots", opts: ["A person cannot change their character", "People can easily change their habits", "A clever person adapts to situations", "Character is temporary and flexible"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A live wire", opts: ["A dead person with no energy left", "A lazy person who avoids work", "A very energetic person full of life", "A silent worker who stays unnoticed"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A man of letters", opts: ["A person who writes letters formally", "A postman who delivers messages", "A scholar or well-educated and wise person", "A businessman involved in trade"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A mare's nest", opts: ["A real discovery found after effort", "A false invention or a confused situation", "A peaceful place offering relaxation", "A hidden treasure buried secretly"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A needle in a haystack", opts: ["Something extremely difficult or impossible to find", "Something surprisingly tricky to locate in a place", "Something quite hard to spot in any given area", "Something seemingly simple yet not easy to find"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A pipe dream", opts: ["A musical pattern imagined without real purpose", "A plumbing issue believed to occur unexpectedly", "A sleeping disorder assumed without evidence", "An illusory plan or unreal hope on your part"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "A red letter day", opts: ["An unlucky moment remembered for wrong reasons", "A memorable and important day", "A public holiday celebrated in many regions", "A day marked specially in official records"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A shot in the arm", opts: ["An injection given to boost someone’s health", "A sudden pain felt sharply for a moment", "A medical treatment prescribed during illness", "A boost or stimulant"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "A skeleton in the cupboard", opts: ["An embarrassing fact to be kept secret", "An old hidden matter nobody should discover", "A private wrongdoing buried from everyone", "A shameful detail concealed from others"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A snake in the grass", opts: ["A visible danger present before everyone", "A hidden enemy", "A loyal companion trusted completely", "A wild creature living quietly outdoors"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A square deal", opts: ["An honest and fair transaction or trade", "A business decision taken with equal benefit", "A balanced exchange where both sides agree", "A transparent arrangement without deception"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A storm in a tea cup", opts: ["A serious problem causing widespread panic", "A major crisis affecting many people badly", "A lot of anger and worry about trivial things", "A natural disturbance occurring unexpectedly"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A wet blanket", opts: ["A boring event that spoils everyone’s mood", "Someone who ruins other people's fun", "A lazy person who avoids social activities", "A serious critic discouraging enjoyment"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A white elephant", opts: ["A rare animal considered highly precious", "A lucky charm believed to bring fortune", "A profitable venture producing steady gain", "A costly but useless possession"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "A wild goose chase", opts: ["A hunting game played for recreation", "A futile search or effort", "A long journey undertaken without rest", "A thrilling adventure involving great risk"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A wolf in sheep's clothing", opts: ["A kind-hearted person trusted by everyone", "A loyal friend who always supports you", "A dangerous person pretending to be harmless", "A humble leader respected by many people"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "Above board", opts: ["Secretive behavior hidden from everyone", "Dishonest actions done with bad intent", "Hidden dealings avoided by most people", "Honest and frank"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "Actions speak louder than words", opts: ["Speaking kindly matters greatly", "What you do is more important than what you say", "Words can change the world quickly", "Promises should always be fulfilled"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "Add fuel to the fire", opts: ["To make peace in a tense moment", "To ignore a problem intentionally", "To calm the situation completely", "To worsen an already bad situation"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "Add insult to injury", opts: ["To apologize for one’s mistake", "To make someone laugh loudly", "To make a bad situation worse", "To avoid a direct argument"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "Against the clock", opts: ["In a great hurry to do something", "Working slowly without concern", "Without any fixed deadline", "Taking extra time for completion"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "All and sundry", opts: ["Only close and dear friends", "Selective and chosen people", "Everyone without distinction", "Important persons of high rank"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "All bark and no bite", opts: ["A bold and fearless person", "Full of talk but low on action", "A silent and humble worker", "A dangerous and violent individual"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "All Greek to me", opts: ["Incomprehensible to understand", "Easy to grasp and learn", "Familiar and simple to read", "Interesting and clearly written"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "All in all", opts: ["Completely lost in confusion", "Partly responsible for results", "Very tired after hard work", "Having all authority and control"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "An Achilles' heel", opts: ["A strong and reliable quality", "A brave and daring action", "A vulnerable point or fault in one's character", "A hidden and rare talent"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "An apple of one's eye", opts: ["A person who loves eating apples", "A very lovable and precious person", "A selfish and greedy person", "A close and trusted relative"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "An arm and a leg", opts: ["Very expensive to afford", "Very cheap and easy", "Easily available everywhere", "Completely free of cost"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "An axe to grind", opts: ["A personal reason for being involved in something", "A personal motive behind being part of an issue", "A secret purpose for taking part in something", "A hidden agenda for joining any situation"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A feather in one's cap", opts: ["A stylish decoration showing pride and success", "A lucky charm believed to bring recognition", "An achievement to be proud of and remembered", "A small honor earned after a great effort"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A flash in the pan", opts: ["A permanent success that lasts for many years", "A bright moment that quickly fades away", "A sudden rise that disappears immediately", "Something that is successful for a short time"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "An eagle eye", opts: ["Sharp vision or ability to observe keenly", "Accurate sight or talent to notice everything", "Powerful observation skill with full attention", "Strong eyesight or capacity to detect errors"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Apple of discord", opts: ["A pleasant thing that causes great unity", "A charming object creating love and care", "The cause of dispute, misunderstanding or fight", "A beautiful thing leading to total agreement"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "Apples and oranges", opts: ["A healthy mixture of different food types", "An unequal and unfair comparison of things", "Two different items that can’t be compared", "A balanced combination of fruits and colors"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "Argus-eyed", opts: ["Carefully observant or attentive in nature", "Constantly alert and watching everything", "Always mindful and quick to catch mistakes", "Extremely cautious and careful at all times"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A French leave", opts: ["A sudden absence without prior permission", "Leaving secretly without informing anyone", "A quick exit without notifying authorities", "An unauthorised leave from official duty"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "As cool as a cucumber", opts: ["Easily provoked and quick to lose temper", "Calm and composed even under pressure", "Very nervous and trembling during stress", "Extremely worried and full of anxiety"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "As fit as a fiddle", opts: ["Physically weak and unable to perform well", "Completely inactive and lacking energy", "Mentally tired and physically exhausted", "In good health and excellent condition"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "As hard as nails", opts: ["Very soft-hearted and emotional in nature", "Physically or mentally strong and tough", "Easily broken or fragile under pressure", "Cold and distant showing no compassion"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "A good turn", opts: ["A sudden event that brings good results", "A favorable action done to help someone", "A small gesture showing kindness to others", "A helpful act or kind deed towards someone"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "At a stone's throw", opts: ["Very far from the location or area", "Quite close to the spot or destination", "Almost near to the given reference point", "Within easy reach from the current place"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "At a stretch", opts: ["Occasionally or after small intervals", "With effort and focus for a long time", "Continuously or at one time without break", "After a short rest or interval period"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A grey area", opts: ["An unclear situation or matter of doubt", "A confusing rule that lacks clear limits", "A doubtful case with uncertain outcomes", "An issue not clearly defined or resolved"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "At an arm's length", opts: ["Very close yet avoiding full contact", "In a friendly but careful relationship", "Close enough but still maintaining space", "At a distance with someone intentionally"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "At cross purposes", opts: ["Working together but for different aims", "Disagreeing with each other's ideas", "Talking politely but misunderstanding intent", "Thinking similarly though expressing differently"], correct: 1, difficulty: "easy", currentSec: "english" },
+                { q: "At daggers drawn with somebody", opts: ["Bitterly hostile towards each other", "Completely friendly and full of trust", "Acting politely but holding deep anger", "Indifferent to one another’s situations"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "A herculean", opts: ["A simple job requiring very little strength", "A short task finished without much effort", "A job that requires a large amount of physical strength", "A mental task demanding great patience"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "A Hobson's choice", opts: ["A random decision with no better option", "A free selection that appears limited", "An option offered but not truly available", "A choice forced upon someone unwillingly"], correct: 3, difficulty: "easy", currentSec: "english" },
+                { q: "At large", opts: ["In a small group", "Under control", "Not caught, free", "Hidden somewhere"], correct: 2, difficulty: "easy", currentSec: "english" },
+
+            ],
+            pv: [
+                { q: "Put off", opts: ["Delay or Postpone"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Call off", opts: ["Cancel"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put out (3 meanings)", opts: ["Extinguish >> Sad or Disappointed >> Publish"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put down (2 meanings)", opts: ["Write down >> Crush or Suppress"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Look down upon", opts: ["Insult or Suppress"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put up (3 meanings)", opts: ["Reside or stay >> Display on board >> Build something"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put up with", opts: ["Tolerate or Endure"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Bear with", opts: ["Tolerate"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put aside (2 meanings)", opts: ["Ignore >> Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put by", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Lay aside", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put on (3 meanings)", opts: ["Wear smile or dress >> Gain weight >> Pretend"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put in (2 meanings)", opts: ["Efforts >> Request"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put across", opts: ["Explain an idea clearly"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put forward", opts: ["Only suggest an idea"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Put through", opts: ["Face difficult situation"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Get through", opts: ["Pass an exam very easily or without any efforts"], correct: 0, difficulty: "easy", currentSec: "english" },
+                { q: "Go through", opts: ["Go through the letter"], correct: 0, difficulty: "easy", currentSec: "english" },
+            ],
+            narr: [],
+            voice: [],
+            article: [],
+            prep: [],
+            spotErr: [],
+            sentImp: [],
+            fillups: [],
+            paraJumb: [],
+            sva: [],
+            questag: [],
+
         };
 
         let currentSection = "ows";
