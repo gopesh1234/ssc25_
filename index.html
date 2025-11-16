@@ -146,20 +146,20 @@
                 <button class="section-btn1 gs1" data-section="gs">GS</button>
                 <hr /><hr />
 
-                <button class="section-btn eng" data-section="vocab">Vocab</button>
-                <button class="section-btn active eng" data-section="ows">OWS(488*)</button>
-                <button class="section-btn eng" data-section="idioms">Idioms</button>
-                <button class="section-btn eng" data-section="pv">Phrasal Verb</button>
-                <button class="section-btn eng" data-section="narr">Narration</button>
-                <button class="section-btn eng" data-section="voice">Voice</button>
                 <button class="section-btn eng" data-section="article">Articles</button>
-                <button class="section-btn eng" data-section="prep">Preposition</button>
-                <button class="section-btn eng" data-section="spotErr">Spotting Error</button>
-                <button class="section-btn eng" data-section="sentImp">Sentence Improvement</button>
                 <button class="section-btn eng" data-section="fillups">Fill Ups</button>
+                <button class="section-btn eng" data-section="idioms">Idioms</button>
+                <button class="section-btn eng" data-section="narr">Narration</button>
+                <button class="section-btn active eng" data-section="ows">OWS</button>
                 <button class="section-btn eng" data-section="paraJumb">Para Jumbled</button>
-                <button class="section-btn eng" data-section="sva">Subject Verb Agreement</button>
+                <button class="section-btn eng" data-section="prep">Preposition</button>
+                <button class="section-btn eng" data-section="pv">Phrasal Verb</button>
                 <button class="section-btn eng" data-section="questag">Question Tag</button>
+                <button class="section-btn eng" data-section="sentImp">Sentence Improvement</button>
+                <button class="section-btn eng" data-section="spotErr">Spotting Error</button>
+                <button class="section-btn eng" data-section="sva">Subject Verb Agreement</button>
+                <button class="section-btn eng" data-section="vocab">Vocab</button>
+                <button class="section-btn eng" data-section="voice">Voice</button>
                 <hr class="eng" /><hr class="eng" />
 
                 <button class="section-btn maths" data-section="triplets">Triplets</button>
@@ -233,10 +233,33 @@
 
                 // English
 
-                case 'vocab':
+                case 'article':
                     pdfLinks = [
-                        "https://drive.google.com/file/d/1D1_vkzq_YWL3JDWaTw4PWHCPy5Lzs-us/view?usp=drive_link",
-                        "https://www.youtube.com/watch?v=88cW3hOWcpI&list=PLM9OY0jASMM3TkcJVbOoWNMctJdryouLe&index=3",
+                        "https://www.youtube.com/watch?v=sd-_IuuEQQU",
+                        "https://www.youtube.com/watch?v=2cd297z8jPM",
+                    ];
+
+                    break;
+
+                case 'fillups':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=ahCn6eYrzXk&list=PLM9OY0jASMM1O5hzHiTBQIVkumVktDKi5&index=8",
+                    ];
+
+                    break;
+
+                case 'idioms':
+                    pdfLinks = [
+                        "https://drive.google.com/file/d/1-1XF2y8XniiwleFqWMo2ev7mMbvF2xsR/view?usp=drive_link",
+                        "https://drive.google.com/file/d/1GB5Swr-iIUaxb_jqM6Vm25hKYy1JwYNq/view?usp=drive_link",
+                        "https://www.youtube.com/watch?v=WgHnTcYJFac",
+                    ];
+
+                    break;
+
+                case 'narr':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=RMZt3m-C3T4",
                     ];
 
                     break;
@@ -249,11 +272,16 @@
 
                     break;
 
-                case 'idioms':
+                case 'paraJumb':
                     pdfLinks = [
-                        "",
-                        "https://drive.google.com/file/d/1GB5Swr-iIUaxb_jqM6Vm25hKYy1JwYNq/view?usp=drive_link",
-                        "https://www.youtube.com/watch?v=WgHnTcYJFac",
+                        "https://www.youtube.com/watch?v=AB1jf3hZ_Fg",
+                    ];
+
+                    break;
+
+                case 'prep':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=YUtcACpnWYQ",
                     ];
 
                     break;
@@ -267,31 +295,17 @@
 
                     break;
 
-                case 'narr':
+                case 'questag':
                     pdfLinks = [
-                        "https://www.youtube.com/watch?v=RMZt3m-C3T4",
+                        "https://www.youtube.com/watch?v=5Twsbv1C_iY",
                     ];
 
                     break;
 
-                case 'voice':
+                case 'sentImp':
                     pdfLinks = [
-                        "https://www.youtube.com/watch?v=dq7d8xPBwlU",
-                    ];
-
-                    break;
-
-                case 'article':
-                    pdfLinks = [
-                        "https://www.youtube.com/watch?v=sd-_IuuEQQU",
-                        "https://www.youtube.com/watch?v=2cd297z8jPM",
-                    ];
-
-                    break;
-
-                case 'prep':
-                    pdfLinks = [
-                        "https://www.youtube.com/watch?v=YUtcACpnWYQ",
+                        "https://drive.google.com/file/d/1NJolIcNlcbBPaLTWlIT2LiNqDZ0nFUqT/view?usp=drive_link",
+                        "https://www.youtube.com/watch?v=uPyx_dtkoN",
                     ];
 
                     break;
@@ -305,27 +319,6 @@
 
                     break;
 
-                case 'sentImp':
-                    pdfLinks = [
-                        "https://www.youtube.com/watch?v=uPyx_dtkoN",
-                    ];
-
-                    break;
-
-                case 'fillups':
-                    pdfLinks = [
-                        "https://www.youtube.com/watch?v=ahCn6eYrzXk&list=PLM9OY0jASMM1O5hzHiTBQIVkumVktDKi5&index=8",
-                    ];
-
-                    break;
-
-                case 'paraJumb':
-                    pdfLinks = [
-                        "https://www.youtube.com/watch?v=AB1jf3hZ_Fg",
-                    ];
-
-                    break;
-
                 case 'sva':
                     pdfLinks = [
                         "https://www.youtube.com/watch?v=7FWOB_QJES8",
@@ -333,9 +326,18 @@
 
                     break;
 
-                case 'questag':
+                case 'vocab':
                     pdfLinks = [
-                        "https://www.youtube.com/watch?v=5Twsbv1C_iY",
+                        "https://drive.google.com/file/d/1D1_vkzq_YWL3JDWaTw4PWHCPy5Lzs-us/view?usp=drive_link",
+                        "https://www.youtube.com/watch?v=88cW3hOWcpI&list=PLM9OY0jASMM3TkcJVbOoWNMctJdryouLe&index=3",
+                    ];
+
+                    break;
+
+
+                case 'voice':
+                    pdfLinks = [
+                        "https://www.youtube.com/watch?v=dq7d8xPBwlU",
                     ];
 
                     break;
