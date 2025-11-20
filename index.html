@@ -237,6 +237,7 @@
                 <button class="section-btn reas" data-section="cof">Counting of Figures</button>
                 <button class="section-btn reas" data-section="dsuff">Data Sufficiency</button>
                 <button class="section-btn reas" data-section="decm">Decision Making</button>
+                <button class="section-btn reas" data-section="dice">Dice</button>
                 <button class="section-btn reas" data-section="direc">Direction</button>
                 <button class="section-btn reas" data-section="jumb">Jumbling</button>
                 <button class="section-btn reas" data-section="mcI">Machine Input</button>
@@ -249,14 +250,14 @@
                 <button class="section-btn reas" data-section="stconc">Statement Conclusion</button>
                 <button class="section-btn reas" data-section="syllg">Syllogism</button>
                 <button class="section-btn reas" data-section="vend">Venn Diagram</button>
-                <button class="section-btn reas cmp" data-section="xyz3">0/21</button>
+                <button class="section-btn reas cmp" data-section="xyz3">0/22</button>
 
                 <hr class="reas" /><hr class="reas" />
 
                 <button class="section-btn gs" data-section="awards">Awards</button>
                 <button class="section-btn gs" data-section="census">Census</button>
                 <button class="section-btn gs" data-section="bio">Biology</button>
-                <button class="section-btn gs" data-section="banda">Books and Authors</button>
+                <button class="section-btn gs" data-section="bandaut">Books and Authors</button>
                 <button class="section-btn gs" data-section="chem">Chemistry</button>
                 <button class="section-btn gs" data-section="dance">Dances</button>
                 <button class="section-btn gs" data-section="eco">Economics</button>
@@ -373,7 +374,7 @@
                     break;
 
                 case 'ows':
-                    driveLink = "https://drive.google.com/file/d/145T13r_Sf39H_r3JgudJXgaOzrGaXPBB/view?usp=drive_link";
+                    driveLink = "https://drive.google.com/file/d/1NbK53PS3QFuQbqyt5-yXqqkSoOifzGNo/view?usp=drive_link";
 
                     pdfLinks = [
                         driveLink,
@@ -836,19 +837,836 @@
             ],
             ows: [
                 { q: "Because the politician's speech was high-flown and pretentious, it gained popularity.", opts: ["Bombastic", "Schematising", "Austere", "Mnemonic"], correct: 0, difficulty: "easy" },
-                { q: "The minister went to visit the monuments set up for people who were buried in other countries.", opts: ["Graves", "Cenotaphs", "Cemetery", "Coffins"], correct: 1, difficulty: "medium" },
+                { q: "The minister went to visit the monuments set up for people who were buried in other countries.", opts: ["Graves", "Cenotaphs", "Cemetery", "Coffins"], correct: 1, difficulty: "easy" },
                 { q: "Exactly the same words as were used originally.", opts: ["Factual", "Precise", "Ornate", "Verbatim"], correct: 3, difficulty: "easy" },
-                { q: "A room in a hospital used especially for sunbathing or therapeutic exposure to light.", opts: ["Sanatorium", "Planetarium", "Solarium", "Podium"], correct: 2, difficulty: "medium" },
+                { q: "A room in a hospital used especially for sunbathing or therapeutic exposure to light.", opts: ["Sanatorium", "Planetarium", "Solarium", "Podium"], correct: 2, difficulty: "easy" },
                 { q: "The place where soldiers live.", opts: ["Unit", "Brigade", "Regiment", "Barracks"], correct: 3, difficulty: "easy" },
-                { q: "The analysis of a person's handwriting to determine his/her personality.", opts: ["Numismatics", "Graphology", "Philology", "Calligraphy"], correct: 1, difficulty: "medium" },
-                { q: "The branch of geography that studies mountains and their formation.", opts: ["Palaeography", "Orography", "Orthography", "Mythography"], correct: 1, difficulty: "medium" },
+                { q: "The analysis of a person's handwriting to determine his/her personality.", opts: ["Numismatics", "Graphology", "Philology", "Calligraphy"], correct: 1, difficulty: "easy" },
+                { q: "The branch of geography that studies mountains and their formation.", opts: ["Palaeography", "Orography", "Orthography", "Mythography"], correct: 1, difficulty: "easy" },
                 { q: "A policy that separates people on the basis of race.", opts: ["Apostasy", "Apartheid", "Apostle", "Apiary"], correct: 1, difficulty: "easy" },
-                { q: "The tailor was called to stitch the long gowns worn by priests and choristers.", opts: ["Frocks", "Cassocks", "Raincoats", "Tuxedos"], correct: 1, difficulty: "medium" },
+                { q: "The tailor was called to stitch the long gowns worn by priests and choristers.", opts: ["Frocks", "Cassocks", "Raincoats", "Tuxedos"], correct: 1, difficulty: "easy" },
                 { q: "Can you please stop *continuously complaining* about the student's shortcomings?", opts: ["Grunting", "Whining", "Crying", "Jesting"], correct: 1, difficulty: "easy" },
                 { q: "The old library had a *musty smell* from years of neglect.", opts: ["Casual", "Fusty", "Stale", "Fresh"], correct: 2, difficulty: "easy" },
                 { q: "The *land that is best suitable for growing crops*.", opts: ["Arable", "Chiriful", "Barren", "Rustic"], correct: 0, difficulty: "easy" },
-                { q: "A *serpent having many heads in Greek mythology*.", opts: ["Hydra", "Cobra", "Python", "Eopsin"], correct: 0, difficulty: "medium" },
-                { q: "A *person who loves music*.", opts: ["Achromatophilic", "Astrophile", "Discophile", "Melophile"], correct: 3, difficulty: "medium" },
+                { q: "A *serpent having many heads in Greek mythology*.", opts: ["Hydra", "Cobra", "Python", "Eopsin"], correct: 0, difficulty: "easy" },
+                { q: "A *person who loves music*.", opts: ["Achromatophilic", "Astrophile", "Discophile", "Melophile"], correct: 3, difficulty: "easy" },
+                {
+                    q: "She is proficient in speaking many languages.",
+                    opts: [
+                        "Monolithic",
+                        "Multilingual",
+                        "Heterolinguistic",
+                        "Bilingual"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A person who likes to argue about anything.",
+                    opts: [
+                        "Reticent",
+                        "Coward",
+                        "Veracious",
+                        "Contentious"
+                    ],
+                    correct: 3,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Unit of weight for precious stones",
+                    opts: [
+                        "Pure",
+                        "Reliable",
+                        "Carat",
+                        "Accurate"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "One who does not show response to good or bad.",
+                    opts: [
+                        "Stoic",
+                        "Sceptic",
+                        "Cynic",
+                        "Phobic"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+
+                {
+                    q: "Morbid compulsion to consume alcohol continuously",
+                    opts: [
+                        "Satromania",
+                        "Dipsomania",
+                        "Kleptomania",
+                        "Pyromania"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "The question papers are placed in the lockers of the school in a way that they *can't be reached*.",
+                    opts: [
+                        "are inaccessible",
+                        "are inexpensive",
+                        "are affordable",
+                        "are affable"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "An order of law requiring people to remain indoors",
+                    opts: [
+                        "Restriction",
+                        "Curfew",
+                        "Limit",
+                        "Check in"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A person who sells and arranges cut flowers.",
+                    opts: [
+                        "Horticulturist",
+                        "Florist",
+                        "Gardener",
+                        "Botanist"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Government by the officials",
+                    opts: [
+                        "Autocracy",
+                        "Bureaucracy",
+                        "Monarchy",
+                        "Plutocracy"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "An often-imaginary place or state of utter perfection and happiness.",
+                    opts: [
+                        "Inferno",
+                        "Utopia",
+                        "Euphoria",
+                        "Dystopia"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Fear of closed spaces",
+                    opts: [
+                        "Photophobia",
+                        "Optophobia",
+                        "Agoraphobia",
+                        "Claustrophobia"
+                    ],
+                    correct: 3,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A short section (as of a book) that leads to or explains the main part.",
+                    opts: [
+                        "Foreword",
+                        "Conclusion",
+                        "Postscript",
+                        "Paraphrase"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Choice between two unsatisfactory alternatives.",
+                    opts: [
+                        "Dilemma",
+                        "Problem",
+                        "Confusion",
+                        "Doubt"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Despite recent superficial moves toward political reconciliation, Libya remains in the grip of a close-knit and corrupt military exclusive circle of people with a common purpose.",
+                    opts: [
+                        "oblique",
+                        "clique",
+                        "pique",
+                        "antique"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "An instrument for viewing distant objects in space.",
+                    opts: [
+                        "Microscope",
+                        "Spectrograph",
+                        "Telescope",
+                        "Binoculars"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Awkward in movement or manner",
+                    opts: [
+                        "Alert",
+                        "Imbalanced",
+                        "Clumsy",
+                        "Clownish"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A person who is trained to travel in a spacecraft.",
+                    opts: [
+                        "Astronaut",
+                        "Anthropologist",
+                        "Alchemist",
+                        "Curator"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Failing to give proper care and attention.",
+                    opts: [
+                        "Lax",
+                        "Careless",
+                        "Cautious",
+                        "Provident"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A false idea or belief",
+                    opts: [
+                        "Fact",
+                        "Fallacy",
+                        "Entrophy",
+                        "Fantasy"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "That which cannot be conquered or defeated is",
+                    opts: [
+                        "Invisible",
+                        "Indelible",
+                        "Ineffable",
+                        "Invincible"
+                    ],
+                    correct: 3,
+                    difficulty: "easy"
+                },
+                {
+                    q: "In Indian mythology, most of the Asuras wish to be *never able to die*.",
+                    opts: [
+                        "invincible",
+                        "impervious",
+                        "Immortal",
+                        "invincible"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Select the most appropriate meaning of the underlined word in the given sentence. He is an *atheist*, although he respects everyone's belief.",
+                    opts: [
+                        "One who believes in God",
+                        "One who believes in Nature",
+                        "One who is extremist",
+                        "One who does not believe in God"
+                    ],
+                    correct: 3,
+                    difficulty: "medium"
+                },
+                {
+                    q: "The list of subjects to be discussed at a meeting.",
+                    opts: [
+                        "Agenda",
+                        "Objectives",
+                        "Minutes",
+                        "Menu"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "That cannot be corrected",
+                    opts: [
+                        "Illegible",
+                        "Incorrigible",
+                        "Incredible",
+                        "Ineligible"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A written statement made under oath",
+                    opts: [
+                        "Testimony",
+                        "Affirmation",
+                        "Affidavit",
+                        "Statement"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "A period of ten years",
+                    opts: [
+                        "Century",
+                        "Decade",
+                        "Biennium",
+                        "Lustrum"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "One who eats a lot",
+                    opts: [
+                        "Chauffeur",
+                        "Steward",
+                        "Glutton",
+                        "Chef"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+
+                {
+                    q: "The one who represents his/her country in a foreign country.",
+                    opts: [
+                        "Representative",
+                        "Ambassador",
+                        "Steward",
+                        "Chef"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A person who is sure about the existence of God.",
+                    opts: [
+                        "Ignorant",
+                        "Atheist",
+                        "Agnostic",
+                        "Theist"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "One who speaks less in a forum...",
+                    opts: [
+                        "Eloquent",
+                        "Loquacious",
+                        "Garrulous",
+                        "Reticent"
+                    ],
+                    correct: 3,
+                    difficulty: "medium"
+                },
+                {
+                    q: "The study of maps.",
+                    opts: [
+                        "Informatics",
+                        "Cartography",
+                        "Geography",
+                        "Demography"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A person who is inclined to see the good side of things.",
+                    opts: [
+                        "Pessimist",
+                        "Optimist",
+                        "Anthropologist",
+                        "Theologian"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "The one who interviews people",
+                    opts: [
+                        "Interviewee",
+                        "Interviewer",
+                        "Applicant",
+                        "Recruiter"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A thing fit to eat.",
+                    opts: [
+                        "Edible",
+                        "Unpalatable",
+                        "Potable",
+                        "Readable"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A person who receives, others by pretending to be someone else.",
+                    opts: [
+                        "Impostor",
+                        "Fraud",
+                        "Interrogator",
+                        "Inaccessible"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "The workers receive a sum for the services they rendered.",
+                    opts: [
+                        "Recruitment",
+                        "Remuneration",
+                        "Gratuity",
+                        "Rejuvenation"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Foul smell will come if the food is *not fresh*.",
+                    opts: [
+                        "Foul",
+                        "Fresh",
+                        "Rotten",
+                        "Stale"
+                    ],
+                    correct: 3,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Capable of being done",
+                    opts: [
+                        "Suitable",
+                        "Feasible",
+                        "Flexible",
+                        "Sensible"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "One who eats the flesh of his own species",
+                    opts: [
+                        "Omnivorous",
+                        "Vegetarian",
+                        "Carnivorous",
+                        "Cannibal"
+                    ],
+                    correct: 3,
+                    difficulty: "easy"
+                },
+                {
+                    q: "My father always tells jokes and stories before I go to sleep.",
+                    opts: [
+                        "Anecdotes",
+                        "Allegories",
+                        "Epics",
+                        "Satires"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Humour - that *describes* - the shortcomings of an individual in a crime among peer groups.",
+                    opts: [
+                        "A joke",
+                        "A gibe",
+                        "A satire",
+                        "A curse"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Select the most appropriate option to replace the underlined part of the sentence: Farmers in India face challenges during the summer season, but the Ganga is full of water and *never dries up*.",
+                    opts: [
+                        "perennial",
+                        "perishable",
+                        "annual",
+                        "ephemeral"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Much more than usual or expected",
+                    opts: [
+                        "Mordacity",
+                        "Ordinance",
+                        "Inordinate",
+                        "Exceeding"
+                    ],
+                    correct: 3,
+                    difficulty: "medium"
+                },
+                {
+                    q: "A short stay that you make while on your journey.",
+                    opts: [
+                        "Refugee",
+                        "Hiker",
+                        "Stopover",
+                        "Traveller"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Having unlimited power",
+                    opts: [
+                        "Omniscient",
+                        "Omnipotent",
+                        "Omnipresent",
+                        "Omnivorous"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A person who performs magic to entertain people.",
+                    opts: [
+                        "Magician",
+                        "Palmist",
+                        "Alchemist",
+                        "Wizard"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A person who is kept captive for fulfillment of a demand or payment of money or conditions.",
+                    opts: [
+                        "Detention",
+                        "Imprisonment",
+                        "Hostage",
+                        "Arrest"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "The statistical study of human populations.",
+                    opts: [
+                        "Geography",
+                        "Demography",
+                        "Seismography",
+                        "Ethnography"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "At industries, one may observe that people show *similarities* in terms of wearing the same uniforms.",
+                    opts: [
+                        "racism",
+                        "uniformity",
+                        "prejudice",
+                        "bias"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "One who tends to look on the dark side of things.",
+                    opts: [
+                        "Dynamist",
+                        "Optimist",
+                        "Polemism",
+                        "Pessimist"
+                    ],
+                    correct: 3,
+                    difficulty: "easy"
+                },
+                {
+                    q: "An utter state of confusion",
+                    opts: [
+                        "Pathos",
+                        "Sorrow",
+                        "Darkness",
+                        "Chaos"
+                    ],
+                    correct: 3,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Lack of interest, enthusiasm or concern",
+                    opts: [
+                        "Infidelity",
+                        "Sympathy",
+                        "Indifference",
+                        "Apathy"
+                    ],
+                    correct: 3,
+                    difficulty: "easy"
+                },
+                {
+                    q: "The study of ancient things such as art, graves, ruins etc.",
+                    opts: [
+                        "Astronomy",
+                        "Archeology",
+                        "Astrology",
+                        "Meteorology"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "The continuing development of something, created when one problem causes which causes that then makes the first problem worse",
+                    opts: [
+                        "Continuous",
+                        "Endless cycle",
+                        "Repetitive cycle",
+                        "Enclosed cycle"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "A person who has supreme power or authority.",
+                    opts: [
+                        "Authoritarian",
+                        "Sovereign",
+                        "Dictator",
+                        "Foreign"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Speaking disrespectfully about sacred or religious things",
+                    opts: [
+                        "Atheism",
+                        "Heresy",
+                        "Blasphemy",
+                        "Mystic"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "A thing that can be easily carried by hands.",
+                    opts: [
+                        "Import",
+                        "Export",
+                        "Portable",
+                        "Transportable"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A place to pack garments or merchandise",
+                    opts: [
+                        "Manager",
+                        "Depot",
+                        "Chamber",
+                        "Bunker"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "The evening time when it is almost dark",
+                    opts: [
+                        "Noon",
+                        "Dusk",
+                        "Twilight",
+                        "Dawn"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Dealing with things in a sensible and practical way.",
+                    opts: [
+                        "Realistic",
+                        "Sensible",
+                        "Pragmatic",
+                        "Sceptical"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Anything pertaining to cats",
+                    opts: [
+                        "Feline",
+                        "Canine",
+                        "Vulpine",
+                        "Porcine"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "That which is no longer in existence",
+                    opts: [
+                        "Extend",
+                        "Extinct",
+                        "Deleted",
+                        "Destroyed"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "We, as human beings, have a *need for water*.",
+                    opts: [
+                        "Incompatible",
+                        "Inalienable",
+                        "Inpalpable",
+                        "Spiritual"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Fear of snakes",
+                    opts: [
+                        "Ailurophobia",
+                        "Ophidiophobia",
+                        "Cynophobia",
+                        "Acrophobia"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "A performer's first public appearance",
+                    opts: [
+                        "Foundation",
+                        "Premise",
+                        "Debut",
+                        "Rendezvous"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "To go through an area making a lot of noise or shaking the part.",
+                    opts: [
+                        "Vigilance",
+                        "Ambulance",
+                        "Rampage",
+                        "Romp"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "The ship launched out on a journey to *discover new lands*.",
+                    opts: [
+                        "Expedition",
+                        "Voyage",
+                        "Vespers",
+                        "Discovery"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Repetition of usually initial consonant sounds in two or more neighbouring souns or syllables",
+                    opts: [
+                        "Alliteration",
+                        "Assonance",
+                        "Iteration",
+                        "Epithet"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "The short sharp attack with the short sword.",
+                    opts: [
+                        "Flicker",
+                        "Flinch",
+                        "Feint",
+                        "Foil"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "His parents didn't allow him to have a career in science or literature.",
+                    opts: [
+                        "arts",
+                        "letters",
+                        "subjects",
+                        "lessons"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "The one who acts in an *impersonal* way.",
+                    opts: [
+                        "Impersonal",
+                        "Anonymous",
+                        "Altruist",
+                        "Dictator"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Select the most appropriate meaning of the given word: *Pious*.",
+                    opts: [
+                        "One who is well-educated",
+                        "One who is learned and devoted",
+                        "One who believes in God",
+                        "Highly rated thing"
+                    ],
+                    correct: 2,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Loud enough to be heard",
+                    opts: [
+                        "Audible",
+                        "Loudly",
+                        "Auditory",
+                        "Audition"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Study of flying airplanes",
+                    opts: [
+                        "Astronomy",
+                        "Chemistry",
+                        "Aviation",
+                        "Alchemy"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                
                 { q: "A person who talks in sleep", opts: ["Somnambulist", "Somniloquist", "Egoist", "Pedant"], correct: 1, difficulty: "easy" },
                 { q: "A person who knows everything", opts: ["Omniscient", "Omnipresent", "Omnipotent", "Egoist"], correct: 0, difficulty: "easy" },
                 { q: "A person who loves books", opts: ["Bibliophile", "Philatelist", "Numismatist", "Audiophile"], correct: 0, difficulty: "easy" },
@@ -1189,7 +2007,7 @@
                 { q: "Something that is no longer in use", opts: ["Oudated", "Obsolete", "Old-fashioned", "Antique"], correct: 1, difficulty: "easy", currentSec: "english" },
                 { q: "Relating to the countries belonging to the west", opts: ["Occidental", "Oriental", "Western", "Eastern"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "A long wandering or voyage usually marked by many changes of fortune", opts: ["Voyage", "Journey", "Odyssey", "Expedition"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "Government run by a small group of people", opts: ["Democracy", "Monarchy", "Oligarchy", "Plutocracy"], correct: 2, difficulty: "easy", currentSec: "english" },
+                { q: "Government run by a powerful small group of people", opts: ["Democracy", "Monarchy", "Oligarchy", "Plutocracy"], correct: 2, difficulty: "easy", currentSec: "english" },
                 { q: "One who is all powerful", opts: ["Omnipotent", "Almighty", "Sovereign", "God"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "Giving the worrying impression that something bad is going to happen", opts: ["Sinister", "Threatening", "Foreboding", "Ominous"], correct: 3, difficulty: "easy", currentSec: "english" },
                 { q: "Found everywhere (ubiquitous)", opts: ["Universal", "Omnipresent", "Widespread", "Common"], correct: 1, difficulty: "easy", currentSec: "english" },
@@ -1339,6 +2157,8 @@
                 { q: "The practice of having more than one husband at a time", opts: ["Bigamy", "Polygamy", "Monogamy", "Polyandry"], correct: 3, difficulty: "easy", currentSec: "english" },
             ],
             idioms: [
+
+
                 { q: "A backseat driver", opts: ["One who gives unwanted advice to others", "A person who drives the vehicle very fast", "A driver who moves a vehicle without license", "A passenger sitting behind the main driver"], correct: 0, difficulty: "easy", currentSec: "english" },
                 { q: "A baker's dozen", opts: ["A total count usually fixed at twelve", "A group of thirteen counted together", "Fifteen items taken in one single lot", "Ten pieces collected in one complete set"], correct: 1, difficulty: "easy", currentSec: "english" },
                 { q: "A bad egg", opts: ["A lazy person avoiding every duty", "A dishonest person not to be trusted", "A good person respected by everyone", "An intelligent person admired by people"], correct: 1, difficulty: "easy", currentSec: "english" },
@@ -1452,6 +2272,51 @@
             paraJumb: [],
             sva: [],
             questag: [],
+            bandaut: [
+                { q: "Which of *Salman Rushdie's* novels, known for its use of magical realism, tells the story of Saleem Sinai, born at the moment of India's independence?", opts: ["Grimus", "The Satanic Verses", "Midnight's children", "The Moor's last sigh"], correct: 2, difficulty: "easy" },
+                { q: "Which *Salman Rushdie* novel, referencing disputed religious traditions, caused significant international controversy upon its release?", opts: ["The Moor's last sigh", "The Satanic Verses", "Grimus", "Midnight's children"], correct: 1, difficulty: "easy" },
+                { q: "*Grimus* is the title of which of *Salman Rushdie's* works?", opts: ["His debut novel", "His most recent collection of essays", "A sequel to The Satanic Verses", "A children's book"], correct: 0, difficulty: "hard" },
+                { q: "The work *Knife: meditation after the attempted* refers to which traumatic event experienced by *Salman Rushdie* in 2022?", opts: ["His first divorce", "The attempted assassination", "A major book banning", "A severe illness"], correct: 1, difficulty: "easy" },
+                { q: "The word *Murders* is the concluding word of which specific work listed for *Salman Rushdie*?", opts: ["The Satanic Verses", "The Moor's last sigh", "Midnight's children", "Knife: meditation after the attempted Murders"], correct: 3, difficulty: "easy" },
+                { q: "Which *Salman Rushdie* novel is a Bombay-set family saga narrated by Moraes Zogoiby, known as 'The Moor'?", opts: ["Midnight's children", "Grimus", "Shame", "The Moor's last sigh",], correct: 3, difficulty: "easy" },
+                { q: "*The Blue Umbrella* by *Ruskin Bond* is the story of a young girl named Binya who acquires the prized item by trading what personal belonging?", opts: ["Her only cow", "A bear claw necklace", "A gold bracelet", "Her father's watch"], correct: 1, difficulty: "easy" },
+                { q: "Which novel by *Ruskin Bond* tells the story of an orphaned Anglo-Indian boy named Rusty who begins to find freedom and friendship after renovating an unused portion of his guardian's house?", opts: ["The Hidden Pool", "The angry river", "The room on the roof", "The girl on the train"], correct: 2, difficulty: "easy" },
+                { q: "The book *The girl on the train* by *Ruskin Bond* is a short story based on what kind of chance encounter?", opts: ["A lost puppy", "A childhood friend", "A romantic partner", "A brief conversation with a stranger"], correct: 3, difficulty: "easy" },
+                { q: "*The angry river* is a *Ruskin Bond* story about a girl named Sita whose home is located on an island and is put in danger by which natural disaster?", opts: ["A raging flood", "A massive landslide", "A severe earthquake", "A devastating cyclone"], correct: 0, difficulty: "easy" },
+                { q: "Vikram Seth is associated with which book?", opts: ["The room on the roof", "A Suitable Boy", "Knife: meditation after the attempted", "The Oath of Vayuputras"], correct: 1, difficulty: "easy" },
+                { q: "Which book is an autobiography by Karan Johar?", opts: ["My Story", "Playing it my way", "Truth, Love & a Little Malice", "Unsuitable Boy"], correct: 3, difficulty: "easy" },
+                { q: "Khushwant Singh authored which of the following?", opts: ["Train to Pakistan", "Gilli Gaddi", "The Palace of Illusions", "Anup Rag Vilas"], correct: 0, difficulty: "easy" },
+                { q: "Khushwant Singh authored book?", opts: ["A Suitable Boy", "Gilli Gaddi", "The Palace of Illusions", "Truth, Love & a Little Malice"], correct: 3, difficulty: "easy" },
+
+                { q: "Which of the following books is NOT a part of Amish Tripathi's Shiva Trilogy?", opts: ["The Oath of Vayuputras", "The Secret of the Nagas", "Sita: Warrior of Mithila", "Immortals of Meluha"], correct: 2, difficulty: "easy" },
+                
+
+
+                { q: "Ashwin Sanghi wrote which of the following?", opts: ["Chanakya's Chants", "The Guide", "Six Machine", "Straight from the heart"], correct: 0, difficulty: "easy" },
+                { q: "Anup Rag Vilas is a book by which author whose original name was Shankarpur Siddhartha?", opts: ["Krishnanand", "Pandit Kumar Gandharva", "Ashwin Sanghi", "Vikram Seth"], correct: 1, difficulty: "hard" },
+                
+                { q: "Who was the recipient of the 57th Jnanpith award in 2021 for his work 'Ninamoni Phookan'?", opts: ["Damodar Mauzo (Konkani)", "G. Sankara Kurup", "Vikram Seth", "Ashwin Sanghi"], correct: 0, difficulty: "easy" },
+                { q: "G. Sankara Kurup was the 1st Jnanpith award recipient in 1965 for which of his works?", opts: ["Ninamoni phookan", "Immortals of Meluha", "Oda Kuzhal", "Amar Jiban"], correct: 2, difficulty: "hard" },
+
+                { q: "Which book is the autobiography of Rasundari Devi and is considered the first autobiography written by a female in Bengali?", opts: ["The feast of roses", "The race of my life", "Amar Jiban", "Playing to win"], correct: 2, difficulty: "hard" },
+                { q: "Which of these is a famous work by R. K. Narayan?", opts: ["A fine balance", "A Suitable Boy", "Malgudi days", "The Test of My Life"], correct: 2, difficulty: "easy" },
+                { q: "Rohinton Mistry is the author of:", opts: ["A Fine Balance", "The Red Tent", "The Angry River", "Six Machine"], correct: 0, difficulty: "easy" },
+                { q: "Which book was written by Indu Sundaresan?", opts: ["The feast of roses", "The Palace of Illusions", "Playing it my way", "A century is not enough"], correct: 0, difficulty: "easy" },
+                { q: "The Palace of Illusions is an award-winning novel by:", opts: ["Indu Sundaresan", "Dayapawar", "Chitra Mudgal", "Chitra Banerjee Divakarne"], correct: 3, difficulty: "easy" },
+                { q: "Which autobiography was written by Daya Pawar?", opts: ["Gilli Gaddi", "Baluta - Autobiography", "Truth, Love & a Little Malice", "Playing to Win"], correct: 1, difficulty: "hard" },
+                { q: "Chitra Mudgal wrote which of the following books?", opts: ["Meri Priya Kahaniyan", "The Blue Umbrella", "Dayapawar", "Train to Pakistan"], correct: 0, difficulty: "easy" },
+                { q: "Chitra Mudgal wrote which book?", opts: ["The Blue Umbrella", "The Blue Umbrella", "Gilli Gaddu", "Train to Pakistan"], correct: 2, difficulty: "easy" },
+                { q: "Playing It My Way is the autobiography of which famous cricketer?", opts: ["Sachin Tendulkar", "Yuvraj Singh", "Kapil Dev", "Sania Mirza"], correct: 0, difficulty: "easy" },
+                { q: "Saina Nehwal's autobiography is titled:", opts: ["Ace against odds", "Playing to win", "The race of my life", "Straight from the heart"], correct: 1, difficulty: "easy" },
+                { q: "The Race of My Life is the autobiography of which athlete?", opts: ["Sachin Tendulkar", "Yuvraj Singh", "Sania Mirza", "Milkha Singh"], correct: 3, difficulty: "easy" },
+                { q: "Which cricketer wrote the book The Test of My Life?", opts: ["Chris Gayle", "Sourav Ganguly", "Yuvraj Singh", "R.K. Narayan"], correct: 2, difficulty: "easy" },
+                { q: "Straight from the heart is the autobiography of which sports personality?", opts: ["Sunil Gavaskar", "Kapil Dev", "Sania Mirza", "Bana Bhatta"], correct: 1, difficulty: "easy" },
+                { q: "Ace against odds is the autobiography of:", opts: ["Sania Mirza", "Saina Nehwal", "Yuvraj Singh", "Sachin Tendulkar"], correct: 0, difficulty: "easy" },
+                { q: "A century is not enough is the memoir of which former Indian cricket captain?", opts: ["Kapil Dev", "Sourav Ganguly", "Mithila Singh", "Chris Gayle"], correct: 1, difficulty: "easy" },
+                { q: "Six Machine is the autobiography of:", opts: ["Chris Gayle", "Yuvraj Singh", "Sourav Ganguly", "Sachin Tendulkar"], correct: 0, difficulty: "easy" },
+                { q: "Which book, a biography of Harshavardhan, was written by Banabhatta?", opts: ["Six Machine", "Meri Priya Kahaniyan", "Malgudi days", "Harshcharita (606-647AD)",], correct: 3, difficulty: "hard" },
+
+            ],
 
         };
 
