@@ -128,6 +128,10 @@
             background: #1e293b;
             color: white;
         }
+        .cmp{
+            color: red;
+            background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -146,21 +150,33 @@
                 <button class="section-btn1 gs1" data-section="gs">GS</button>
                 <hr /><hr />
 
+                <button class="section-btn eng" data-section="adj">Adjective</button>
+                <button class="section-btn eng" data-section="adv">Adverb</button>
                 <button class="section-btn eng" data-section="article">Articles</button>
+                <button class="section-btn eng" data-section="cndsent">Conditional Sentence</button>
                 <button class="section-btn eng" data-section="deter">Determiners</button>
                 <button class="section-btn eng" data-section="fillups">Fill Ups</button>
                 <button class="section-btn eng" data-section="idioms">Idioms</button>
+                <button class="section-btn eng" data-section="mood">Mood</button>
                 <button class="section-btn eng" data-section="narr">Narration</button>
+                <button class="section-btn eng" data-section="noun">Noun</button>
                 <button class="section-btn active eng" data-section="ows">OWS</button>
                 <button class="section-btn eng" data-section="paraJumb">Para Jumbled</button>
-                <button class="section-btn eng" data-section="prep">Preposition</button>
                 <button class="section-btn eng" data-section="pv">Phrasal Verb</button>
+                <button class="section-btn eng" data-section="pandc">Phrases and Clause</button>
+                <button class="section-btn eng" data-section="prep">Preposition</button>
+                <button class="section-btn eng" data-section="pronoun">Pronoun</button>
                 <button class="section-btn eng" data-section="questag">Question Tag</button>
                 <button class="section-btn eng" data-section="sentImp">Sentence Improvement</button>
                 <button class="section-btn eng" data-section="spotErr">Spotting Error</button>
-                <button class="section-btn eng" data-section="sva">Subject Verb Agreement</button>
+                <button class="section-btn eng" data-section="supexp">Superflous Expression</button>
+                <button class="section-btn eng" data-section="tense">Tense</button>
+                <button class="section-btn eng" data-section="sva" title="Subject Verb Agreement">SVA</button>
+                <button class="section-btn eng" data-section="verb">Verb</button>
                 <button class="section-btn eng" data-section="vocab">Vocab</button>
                 <button class="section-btn eng" data-section="voice">Voice</button>
+                <button class="section-btn eng cmp" data-section="xyz1">0/25</button>
+
                 <hr class="eng" /><hr class="eng" />
 
                 <button class="section-btn maths" data-section="triplets">Triplets</button>
@@ -182,7 +198,7 @@
                 <button class="section-btn maths" data-section="election">Elections</button>
                 <button class="section-btn maths" data-section="handd">Height and Distance</button>
                 <button class="section-btn maths" data-section="handl">Hcf Lcm</button>
-                <button class="section-btn maths" data-section="incExp">Income Expenditure (✔)</button>
+                <button class="section-btn maths cmp" data-section="incExp">Income Expenditure (✔)</button>
                 <button class="section-btn maths" data-section="install">Installment</button>
                 <button class="section-btn maths" data-section="kpc">Karl Pearson Coeffn</button>
                 <button class="section-btn maths" data-section="mens2d">Mens2D</button>
@@ -200,14 +216,15 @@
                 <button class="section-btn maths" data-section="pyramid">Pyramid</button>
                 <button class="section-btn maths" data-section="quad">Quadilaterals</button>
                 <button class="section-btn maths" data-section="race">Races</button>
-                <button class="section-btn maths" data-section="soc">Sector of Circle (✔)</button>
-                <button class="section-btn maths" data-section="simpInt">Simple Interest</button>
-                <button class="section-btn maths" data-section="stat">Statistics</button>
+                <button class="section-btn maths cmp" data-section="soc">Sector of Circle (✔)</button>
+                <button class="section-btn maths cmp" data-section="simpInt">Simple Interest (✔)</button>
+                <button class="section-btn maths cmp" data-section="stat">Statistics (✔)</button>
                 <button class="section-btn maths" data-section="tandw">Time and Work</button>
                 <button class="section-btn maths" data-section="tsd">Time Speed Distance</button>
                 <button class="section-btn maths" data-section="triangle">Triangle</button>
                 <button class="section-btn maths" data-section="trido">Trigonometry</button>
                 <button class="section-btn maths" data-section="wma">WA Mix Alli</button>
+                <button class="section-btn maths cmp" data-section="xyz2">4/37</button>
 
                 <hr class="maths" /><hr class="maths" />
 
@@ -232,12 +249,32 @@
                 <button class="section-btn reas" data-section="stconc">Statement Conclusion</button>
                 <button class="section-btn reas" data-section="syllg">Syllogism</button>
                 <button class="section-btn reas" data-section="vend">Venn Diagram</button>
-
+                <button class="section-btn reas cmp" data-section="xyz3">0/21</button>
 
                 <hr class="reas" /><hr class="reas" />
 
+                <button class="section-btn gs" data-section="awards">Awards</button>
+                <button class="section-btn gs" data-section="census">Census</button>
+                <button class="section-btn gs" data-section="bio">Biology</button>
+                <button class="section-btn gs" data-section="banda">Books and Authors</button>
+                <button class="section-btn gs" data-section="chem">Chemistry</button>
+                <button class="section-btn gs" data-section="dance">Dances</button>
                 <button class="section-btn gs" data-section="eco">Economics</button>
+                <button class="section-btn gs" data-section="fest">Festivals</button>
+                <button class="section-btn gs" data-section="geog">Geography</button>
+                <button class="section-btn gs" data-section="gharana">Gharana</button>
+                <button class="section-btn gs" data-section="govtsch">Govt Schemes</button>
+                <button class="section-btn gs" data-section="his">History</button>
+                <button class="section-btn gs" data-section="imptd">Impt Days</button>
+                <button class="section-btn gs" data-section="intorg">Interanational Organizations</button>
+                <button class="section-btn gs" data-section="natorg">National Organizations</button>
+                <button class="section-btn gs" data-section="phy">Physics</button>
                 <button class="section-btn gs" data-section="polity">Polity</button>
+                <button class="section-btn gs" data-section="fiveyr">5Y Plan</button>
+                <button class="section-btn gs" data-section="sports">Sports</button>
+                <button class="section-btn gs" data-section="usites">Unesco Sites</button>
+                <button class="section-btn gs cmp" data-section="xyz4">0/20</button>
+
                 <hr class="gs" /><hr class="gs" />
             </div>
         </div>
