@@ -129,7 +129,7 @@
             color: white;
         }
         .cmp{
-            color: red;
+            color: black;
             background-color: white;
         }
     </style>
@@ -201,7 +201,7 @@
                 <button class="section-btn maths" data-section="bandst">Boats and Streams</button>
                 <button class="section-btn maths" data-section="circle">Circle</button>
                 <button class="section-btn maths" data-section="compInt">Compound Interest</button>
-                <button class="section-btn maths" data-section="cogeo">Co-ordinate Geo</button>
+                <button class="section-btn maths cmp" data-section="cogeo">Co-ordinate Geo (✔)</button>
                 <button class="section-btn maths" data-section="election">Elections</button>
                 <button class="section-btn maths" data-section="handd">Height and Distance</button>
                 <button class="section-btn maths" data-section="handl">Hcf Lcm</button>
@@ -225,7 +225,7 @@
                 <button class="section-btn maths" data-section="race">Races</button>
                 <button class="section-btn maths cmp" data-section="soc">Sector of Circle (✔)</button>
                 <button class="section-btn maths cmp" data-section="simpInt">Simple Interest (✔)</button>
-                <button class="section-btn maths cmp" data-section="stat">Statistics (✔)</button>
+                <button class="section-btn maths cmp" data-section="stat">Statistics (✔✔)</button>
                 <button class="section-btn maths" data-section="tandw">Time and Work</button>
                 <button class="section-btn maths" data-section="tsd">Time Speed Distance</button>
                 <button class="section-btn maths" data-section="triangle">Triangle</button>
@@ -355,6 +355,9 @@
         }
 
         function engData(actvSec) {
+
+            var driveLink = '';
+            var driveLink2 = '';
 
             switch (actvSec) {
 
@@ -609,6 +612,9 @@
 
         function mathsData(actvSec) {
 
+            var driveLink = '';
+            var driveLink2 = '';
+
             switch (actvSec) {
 
                 case 'triplets':
@@ -649,10 +655,20 @@
                         "https://www.youtube.com/watch?v=WNM2QHq7B2A",
                     ];
 
-                case 'stat':
+                case 'cogeo':
                     driveLink = "";
 
                     return pdfLinks = [
+                        "https://www.youtube.com/watch?v=cH5U1_uGFqs&t=2678s",
+                    ];
+
+                case 'stat':
+                    driveLink = "https://drive.google.com/file/d/15QJL-m1_2UsS9LAZVuBpVxxCb4775GgG/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/18lD8f5dl1qGDuaGgMg3yy3iFK5Q3sEmE/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink,
+                        driveLink2,
                         "https://www.youtube.com/watch?v=dAAUe1BntHc",
                     ];
 
@@ -693,6 +709,9 @@
         }
 
         function reasData(actvSec) {
+
+            var driveLink = '';
+            var driveLink2 = '';
 
             switch (actvSec) {
 
@@ -822,6 +841,9 @@
 
         function gsData(actvSec) {
 
+            var driveLink = '';
+            var driveLink2 = '';
+
             switch (actvSec) {
 
                 case 'phy':
@@ -850,6 +872,9 @@
         }
 
         function sgkData(actvSec) {
+
+            var driveLink = '';
+            var driveLink2 = '';
 
             switch (actvSec) {
 
@@ -888,9 +913,6 @@
             const activeBtn = document.querySelector('.section-btn.active');
             var pdfLinks = '';
             var activeSection = '';
-            var driveLink = '';
-            var driveLink2 = '';
-
 
             if (activeBtn) {
                 activeSection = activeBtn.dataset.section;
