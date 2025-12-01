@@ -200,11 +200,10 @@
                 <button class="section-btn maths cmp" data-section="tandw">Time and Work - 3</button>
                 <button class="section-btn maths cmp" data-section="proLoss">Profit and Loss - 4</button>
                 <button class="section-btn maths cmp" data-section="compInt">Compound Interest - 5</button>
-                <button class="section-btn maths cmp" data-section="ratio">Ratio and Proportion - 6</button>
-                <button class="section-btn maths cmp" data-section="handl">Hcf Lcm - 7</button>
-                <button class="section-btn maths cmp" data-section="percent">Percentage - 8</button>
-                <button class="section-btn maths cmp" data-section="cogeo">Co-ordinate Geo - 9</button>
-                <button class="section-btn maths" data-section="triangle">Triangle - 10</button>
+                <button class="section-btn maths cmp" data-section="handl">Hcf Lcm - 6</button>
+                <button class="section-btn maths cmp" data-section="percent">Percentage - 7</button>
+                <button class="section-btn maths cmp" data-section="cogeo">Co-ordinate Geo - 8</button>
+                <button class="section-btn maths" data-section="triangle">Triangle - 9</button>
 
 
                 <button class="section-btn maths" data-section="algbr">Algebra</button>
@@ -235,6 +234,7 @@
                 <button class="section-btn maths cmp" data-section="incExp">Income Expenditure (✔✔)</button>
                 <button class="section-btn maths cmp" data-section="soc">Sector of Circle (✔✔)</button>
                 <button class="section-btn maths cmp" data-section="stat">Statistics (✔✔)</button>
+                <button class="section-btn maths cmp" data-section="ratio">Ratio and Proportion (✔✔)</button>
 
 
                 <button class="section-btn maths" data-section="dspremaths">Daily Set (Pre)</button>
@@ -280,7 +280,7 @@
                 <button class="section-btn gs" data-section="eco">Economics</button>
                 <button class="section-btn gs" data-section="geog">Geography</button>
                 <button class="section-btn gs" data-section="hist">History</button>
-                <button class="section-btn gs" data-section="polity">Polity</button>
+                <button class="section-btn gs cmp" data-section="polity">Polity</button>
                 <button class="section-btn gs cmp" data-section="xyz4">Total: 7</button>
 
 
@@ -665,7 +665,6 @@
                         "https://www.youtube.com/watch?v=JZIH9WMouCs", // CI
                         "https://www.youtube.com/watch?v=7IP1Qmaz3zg", // P&L
                         "https://www.youtube.com/watch?v=uEou5LVZPHw", // %%
-                        "https://www.youtube.com/watch?v=V8tcZZIFJew", // Ratio
                         "https://www.youtube.com/watch?v=UhFof5oxyoc", // T&W
                         "https://www.youtube.com/watch?v=2qXvCCqA9QA", // Geometry
                         "https://www.youtube.com/watch?v=bSavWhLj5Y8", // Number System
@@ -765,6 +764,14 @@
 
                     return pdfLinks = [
                         driveLink,
+                    ];
+
+                case 'ratio':
+                    driveLink = "https://drive.google.com/file/d/1Ga53as1d0iilsGXEjL_p6fujg9s97S3b/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink,
+                        "https://www.youtube.com/watch?v=V8tcZZIFJew",
                     ];
 
                 default:
@@ -934,6 +941,18 @@
                         "https://www.youtube.com/watch?v=WouperFRRR8",
                         "https://www.youtube.com/watch?v=vMGNGpE-LSs",
                         "https://www.youtube.com/watch?v=YM2WSzpwxyE",
+                    ];
+
+                case 'polity':
+                    driveLink = "https://drive.google.com/file/d/1ODeduf0RINgH5EPa9iGJwBJZ2AvVgYjj/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1jMZCfcDPhJN6JXK2m0M-L3TOtLFvYRq4/view?usp=drive_link";
+                    driveLink3 = "https://drive.google.com/file/d/1m7WD3z0WVeR8JrgV8IyUctYQYpk7ROiT/view?usp=drive_link";
+                    driveLink4 = "https://drive.google.com/file/d/1d1LMRUQlKI8K_Wo33vlLLofukJe3Gw5W/view?usp=drive_link";
+                    driveLink5 = "";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2, driveLink3, driveLink4,
+                        "https://www.youtube.com/watch?v=SBisjcRCMRY",
                     ];
 
 
