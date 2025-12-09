@@ -286,24 +286,18 @@
 
                 <hr class="gs" /><hr class="gs" />
 
-                <button class="section-btn sgk cmp" data-section="imptd">Important Days and Events (✔)</button>
-                <button class="section-btn sgk cmp" data-section="bandauth">Books and Authors (✔)</button>
-                <button class="section-btn sgk cmp" data-section="riind">Research Institutes of India (✔)</button>
-
-                <button class="section-btn sgk" data-section="cdan">Classical Dance</button>
-                <button class="section-btn sgk" data-section="fdan">Folk Dance</button>
-                <button class="section-btn sgk" data-section="mdan">Martial Dance</button>
+                <button class="section-btn sgk cmp" data-section="bandauth">Books and Authors</button>
+                <button class="section-btn sgk cmp" data-section="cdan">Classical Dance</button>
                 <button class="section-btn sgk" data-section="census">Census</button>
-                <button class="section-btn sgk" data-section="minst">Musical Instruments</button>
-                <button class="section-btn sgk" data-section="gharana">Gharana</button>
-                <button class="section-btn sgk" data-section="sports">Sports</button>
-                <button class="section-btn sgk" data-section="intorg">Interanational Org</button>
-                <button class="section-btn sgk" data-section="natorg">National Org</button>
                 <button class="section-btn sgk" data-section="fest">Festivals</button>
-                <button class="section-btn sgk" data-section="govtsch">Govt Schemes</button>
-                <button class="section-btn sgk cmp" data-section="unsites">Unesco Sites (✔)</button>
-                <button class="section-btn sgk" data-section="natpark">National Parks</button>
-                <button class="section-btn sgk cmp" data-section="xyz5">Total: 16</button>
+                <button class="section-btn sgk" data-section="fdan">Folk & Martial Dance</button>
+                <button class="section-btn sgk" data-section="gharana">Gharana</button>
+                <button class="section-btn sgk" data-section="imptd">Important Days and Events</button>
+                <button class="section-btn sgk" data-section="intorg">Int and National Org</button>
+                <button class="section-btn sgk" data-section="minst">Musical Instruments</button>
+                <button class="section-btn sgk" data-section="riind">Research Institutes of India</button>
+                <button class="section-btn sgk" data-section="sports">Sports</button>
+                <button class="section-btn sgk" data-section="xyz5">Total: 11</button>
 
                 <hr class="sgk" /><hr class="sgk" />
 
@@ -768,9 +762,10 @@
 
                 case 'ratio':
                     driveLink = "https://drive.google.com/file/d/1Ga53as1d0iilsGXEjL_p6fujg9s97S3b/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/11BA1jwaiK7a57QmZWrQgbO4M-bBXTa9W/view?usp=drive_link";
 
                     return pdfLinks = [
-                        driveLink,
+                        driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=V8tcZZIFJew",
                     ];
 
@@ -981,14 +976,99 @@
                     driveLink = "";
 
                     return pdfLinks = [
-                        "https://www.youtube.com/watch?v=coxlG4yPKJ0&t=2812s",
+                        "https://www.youtube.com/watch?v=coxlG4yPKJ0",
+                    ];
+
+                case 'bandauth':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=OJHkUuuXiQs",
+                        "https://www.youtube.com/watch?v=QicHHgUGShs&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=9",
+                    ];
+
+                case 'cdan':
+                    driveLink = "https://drive.google.com/file/d/1EdWYMGpo48yl2MH9iZlpXZzXqFbnjgX6/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/15JZAnXNBfY5HahJFCUCbjjk1yWZ4cC_L/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=6Ah7KPcZE3o",
+                    ];
+
+                case 'census':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=eiAQUTWWtJs",
+                    ];
+
+                    // folk and martial dance
+                case 'fdan':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=iDxf2kOW0_E",
+                    ];
+
+                case 'fest':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=heGiDkIQtX8&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=3",
+                    ];
+
+                case 'gharana':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=LQY4wps4HSI",
+                    ];
+
+                case 'imptd':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=lRiDLPrqJ0I",
+                        "https://www.youtube.com/watch?v=P5VB7Bm50_8",
+                    ];
+
+                    // Int and Nat org
+                case 'intorg':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=rjlOzWOoh64",
+                    ];
+
+                case 'minst':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=6OW7YA9V7mk",
+                    ];
+
+                case 'natpark':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=26kxGKkorGo",
                     ];
 
                 case 'riind':
                     driveLink = "";
 
                     return pdfLinks = [
-                        "",
+                        "https://www.youtube.com/watch?v=fXyf4JM2JUM",
+                    ];
+
+                case 'sports':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=qNwSg52irxA",
+                        "https://www.youtube.com/watch?v=J0lL8EWs_Ws",
+                        "https://www.youtube.com/watch?v=_NsMspCL-KE&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=12",
                     ];
 
 
@@ -998,14 +1078,6 @@
                     return pdfLinks = [
                         "https://www.youtube.com/watch?v=wPC9t6w_Ea4",
                         "https://www.youtube.com/watch?v=nhdkaL9Qdqs",
-                    ];
-
-
-                case 'natpark':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "",
                     ];
 
 
@@ -1087,6 +1159,37 @@
                     return link;
                 }
             });
+
+            // // 🔥 Your PUBLIC Google Drive folder ID
+            // const folderId = "1AUB5xMpZQiPlIZuzt3uH4oBtumDPofKo";
+
+            // // Public Google Drive folder feed (no API key needed)
+            // const url = `https://drive.google.com/drive/u/0/folders/${folderId}`;
+
+            // // Fetch all PDFs from a public folder
+            // async function loadPdfLinks() {
+
+            //     const res = await fetch(url);
+            //     const data = await res.json();
+
+            //     // Filter only PDFs and convert to /preview links
+            //     const pdfLinks = data.files
+            //         .filter(f => f.mimeType === "application/pdf")
+            //         .map(f => `https://drive.google.com/file/d/${f.id}/preview`);
+
+            //     console.log("Fetched PDFs:", pdfLinks);
+
+            //     // Your existing embed logic
+            //     const embedLinks = pdfLinks.map(link => {
+            //         if (link.includes("drive.google.com")) {
+            //             return link; // already preview format
+            //         } else if (link.includes("youtube.com/watch")) {
+            //             return link.replace("watch?v=", "embed/").split("&")[0];
+            //         } else {
+            //             return link;
+            //         }
+            //     });
+            // }
 
             let currentIndex = 0;
 
@@ -1366,44 +1469,366 @@
 
             ],
             bandauth: [
-                { q: "Which of *Salman Rushdie's* novels, known for its use of magical realism, tells the story of Saleem Sinai, born at the moment of India's independence?", opts: ["Grimus", "The Satanic Verses", "Midnight's children", "The Moor's last sigh"], correct: 2, difficulty: "easy" },
-                { q: "Which *Salman Rushdie* novel, referencing disputed religious traditions, caused significant international controversy upon its release?", opts: ["The Moor's last sigh", "The Satanic Verses", "Grimus", "Midnight's children"], correct: 1, difficulty: "easy" },
-                { q: "*Grimus* is the title of which of *Salman Rushdie's* works?", opts: ["His debut novel", "His most recent collection of essays", "A sequel to The Satanic Verses", "A children's book"], correct: 0, difficulty: "hard" },
-                { q: "The work *Knife: meditation after the attempted* refers to which traumatic event experienced by *Salman Rushdie* in 2022?", opts: ["His first divorce", "The attempted assassination", "A major book banning", "A severe illness"], correct: 1, difficulty: "easy" },
-                { q: "The word *Murders* is the concluding word of which specific work listed for *Salman Rushdie*?", opts: ["The Satanic Verses", "The Moor's last sigh", "Midnight's children", "Knife: meditation after the attempted Murders"], correct: 3, difficulty: "easy" },
-                { q: "Which *Salman Rushdie* novel is a Bombay-set family saga narrated by Moraes Zogoiby, known as 'The Moor'?", opts: ["Midnight's children", "Grimus", "Shame", "The Moor's last sigh",], correct: 3, difficulty: "easy" },
-                { q: "*The Blue Umbrella* by *Ruskin Bond* is the story of a young girl named Binya who acquires the prized item by trading what personal belonging?", opts: ["Her only cow", "A bear claw necklace", "A gold bracelet", "Her father's watch"], correct: 1, difficulty: "easy" },
-                { q: "Which novel by *Ruskin Bond* tells the story of an orphaned Anglo-Indian boy named Rusty who begins to find freedom and friendship after renovating an unused portion of his guardian's house?", opts: ["The Hidden Pool", "The angry river", "The room on the roof", "The girl on the train"], correct: 2, difficulty: "easy" },
-                { q: "The book *The girl on the train* by *Ruskin Bond* is a short story based on what kind of chance encounter?", opts: ["A lost puppy", "A childhood friend", "A romantic partner", "A brief conversation with a stranger"], correct: 3, difficulty: "easy" },
-                { q: "*The angry river* is a *Ruskin Bond* story about a girl named Sita whose home is located on an island and is put in danger by which natural disaster?", opts: ["A raging flood", "A massive landslide", "A severe earthquake", "A devastating cyclone"], correct: 0, difficulty: "easy" },
-                { q: "Vikram Seth is associated with which book?", opts: ["The room on the roof", "A Suitable Boy", "Knife: meditation after the attempted", "The Oath of Vayuputras"], correct: 1, difficulty: "easy" },
-                { q: "Which book is an autobiography by Karan Johar?", opts: ["My Story", "Playing it my way", "Truth, Love & a Little Malice", "Unsuitable Boy"], correct: 3, difficulty: "easy" },
-                { q: "Khushwant Singh authored which of the following?", opts: ["Train to Pakistan", "Gilli Gaddi", "The Palace of Illusions", "Anup Rag Vilas"], correct: 0, difficulty: "easy" },
+                {
+                    q: "The book 'Imperfect' is written by which Indian cricketer?",
+                    opts: [
+                        "Sachin Tendulkar",
+                        "Saurav Ganguly",
+                        "Yuvraj Singh",
+                        "Sanjay Manjrekar"
+                    ],
+                    correct: 3,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the autobiography 'Playing It My Way'?",
+                    opts: [
+                        "Sachin Tendulkar",
+                        "Saurav Ganguly",
+                        "Yuvraj Singh",
+                        "Sunil Gavaskar"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who is the author of the book 'River of Smoke'?",
+                    opts: [
+                        "Vikram Seth",
+                        "Arundhati Roy",
+                        "Khushwant Singh",
+                        "Amitav Ghosh"
+                    ],
+                    correct: 3,
+                    difficulty: "medium"
+                },
+                {
+                    q: "The book 'The Test of My Life' is written by which cricketer?",
+                    opts: [
+                        "Sachin Tendulkar",
+                        "Saurav Ganguly",
+                        "Yuvraj Singh",
+                        "Sunil Gavaskar"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who authored the cricket book 'Straight Drive'?",
+                    opts: [
+                        "Sachin Tendulkar",
+                        "Saurav Ganguly",
+                        "Yuvraj Singh",
+                        "Sunil Gavaskar"
+                    ],
+                    correct: 3,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the autobiography titled 'No Spin'?",
+                    opts: [
+                        "Shane Warne",
+                        "Sachin Tendulkar",
+                        "Yuvraj Singh",
+                        "Saurav Ganguly"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the book 'Sea of Poppies'?",
+                    opts: [
+                        "Jhumpa Lahiri",
+                        "Amitav Ghosh",
+                        "Vikram Seth",
+                        "Kiran Desai"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Whose autobiography is titled 'A Century Is Not Enough'?",
+                    opts: [
+                        "Sachin Tendulkar",
+                        "Saurav Ganguly",
+                        "Yuvraj Singh",
+                        "Sunil Gavaskar"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the book 'An Ordinary Person's Guide to Empire'?",
+                    opts: [
+                        "Arundhati Roy",
+                        "Vikram Seth",
+                        "Salman Rushdie",
+                        "Jhumpa Lahiri"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who is the author of the book 'The Living Mountain'?",
+                    opts: [
+                        "RK Narayan",
+                        "Salman Rushdie",
+                        "Arundhati Roy",
+                        "Amitav Ghosh"
+                    ],
+                    correct: 3,
+                    difficulty: "hard"
+                },
+                {
+                    q: "Who wrote the autobiography 'The Race of My Life'?",
+                    opts: [
+                        "Shane Warne",
+                        "Sachin Tendulkar",
+                        "Milkha Singh",
+                        "Sunil Gavaskar"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the autobiography titled 'An Unsuitable Boy'?",
+                    opts: [
+                        "Milkha Singh",
+                        "Karan Johar",
+                        "Sanjay Leela Bhansali",
+                        "Chetan Bhagat"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the book 'The Paradoxical Prime Minister'?",
+                    opts: [
+                        "Shashi Tharoor",
+                        "Ramachandra Guha",
+                        "Pavan Varma",
+                        "Amartya Sen"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who is the author of the book 'Ram: Scion of Ikshvaku'?",
+                    opts: [
+                        "Devdutt Pattanaik",
+                        "Chetan Bhagat",
+                        "Amish Tripathi",
+                        "Vikram Sampath"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the book 'The Ministry of Utmost Happiness'?",
+                    opts: [
+                        "Arundhati Roy",
+                        "Kiran Desai",
+                        "Vikram Seth",
+                        "Jhumpa Lahiri"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the famous book 'Malgudi Days'?",
+                    opts: [
+                        "Ruskin Bond",
+                        "R.K. Narayan",
+                        "Rabindranath Tagore",
+                        "Khushwant Singh"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Who is the author of the book 'The Hungry Tide'?",
+                    opts: [
+                        "Amitav Ghosh",
+                        "Arundhati Roy",
+                        "Vikram Seth",
+                        "Jhumpa Lahiri"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who is the author of the book 'Mother Mary Comes to Me'?",
+                    opts: [
+                        "Jhumpa Lahiri",
+                        "Kiran Desai",
+                        "Anita Desai",
+                        "Arundhati Roy",
+                    ],
+                    correct: 3,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who is the author of the book 'The Secrets of the Goddess'?",
+                    opts: [
+                        "Amish Tripathi",
+                        "Devdutt Pattanaik",
+                        "Ashwin Sanghi",
+                        "Anand Neelakantan"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the book 'The Immortals of Meluha'?",
+                    opts: [
+                        "Amish Tripathi",
+                        "Devdutt Pattanaik",
+                        "Chetan Bhagat",
+                        "Ashwin Sanghi"
+                    ],
+                    correct: 0,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Who wrote the book 'My Confession'?",
+                    opts: [
+                        "Fyodor Dostoevsky",
+                        "Victor Hugo",
+                        "Leo Tolstoy",
+                        "George Orwell"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the book 'The Guide'?",
+                    opts: [
+                        "Ruskin Bond",
+                        "R.K. Narayan",
+                        "Khushwant Singh",
+                        "Vikram Seth"
+                    ],
+                    correct: 1,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Who wrote the book 'An Era of Darkness'?",
+                    opts: [
+                        "Ramachandra Guha",
+                        "Amartya Sen",
+                        "Yuval Noah Harari",
+                        "Shashi Tharoor"
+                    ],
+                    correct: 3,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the book 'Ambedkar: A Life'?",
+                    opts: [
+                        "Ramachandra Guha",
+                        "Pavan K. Varma",
+                        "Shashi Tharoor",
+                        "Anand Teltumbde"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                { q: "Six Machine is the autobiography of", opts: ["Chris Gayle", "Yuvraj Singh", "Sourav Ganguly", "Sachin Tendulkar"], correct: 0, difficulty: "easy" },
+                { q: "The Palace of Illusions is an award-winning novel by", opts: ["Indu Sundaresan", "Dayapawar", "Chitra Mudgal", "Chitra Banerjee Divakarne"], correct: 3, difficulty: "easy" },
+                { q: "Straight from the heart is the autobiography of", opts: ["Sunil Gavaskar", "Kapil Dev", "Sania Mirza", "Bana Bhatta"], correct: 1, difficulty: "easy" },
+                { q: "Saina Nehwal's autobiography is titled", opts: ["Ace against odds", "Playing to win", "The race of my life", "Straight from the heart"], correct: 1, difficulty: "easy" },
+                {
+                    q: "Who is the author of the book 'Legend of Suheldev'?",
+                    opts: [
+                        "Chetan Bhagat",
+                        "Amish Tripathi",
+                        "Ashwin Sanghi",
+                        "Anand Neelakantan"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                { q: "Ace against odds is the autobiography of", opts: ["Sania Mirza", "Saina Nehwal", "Yuvraj Singh", "Sachin Tendulkar"], correct: 0, difficulty: "easy" },
                 { q: "Khushwant Singh authored book?", opts: ["A Suitable Boy", "Gilli Gaddi", "The Palace of Illusions", "Truth, Love & a Little Malice"], correct: 3, difficulty: "easy" },
-                { q: "Which of the following books is NOT a part of Amish Tripathi's Shiva Trilogy?", opts: ["The Oath of Vayuputras", "The Secret of the Nagas", "Sita: Warrior of Mithila", "Immortals of Meluha"], correct: 2, difficulty: "easy" },
-                { q: "Ashwin Sanghi wrote which of the following?", opts: ["Chanakya's Chants", "The Guide", "Six Machine", "Straight from the heart"], correct: 0, difficulty: "easy" },
-                { q: "Anup Rag Vilas is a book by which author whose original name was Shankarpur Siddhartha?", opts: ["Krishnanand", "Pandit Kumar Gandharva", "Ashwin Sanghi", "Vikram Seth"], correct: 1, difficulty: "hard" },
-                { q: "Who was the recipient of the 57th Jnanpith award in 2021 for his work 'Ninamoni Phookan'?", opts: ["Damodar Mauzo (Konkani)", "G. Sankara Kurup", "Vikram Seth", "Ashwin Sanghi"], correct: 0, difficulty: "easy" },
-                { q: "G. Sankara Kurup was the 1st Jnanpith award recipient in 1965 for which of his works?", opts: ["Ninamoni phookan", "Immortals of Meluha", "Oda Kuzhal", "Amar Jiban"], correct: 2, difficulty: "hard" },
-                { q: "Which book is the autobiography of Rasundari Devi and is considered the first autobiography written by a female in Bengali?", opts: ["The feast of roses", "The race of my life", "Amar Jiban", "Playing to win"], correct: 2, difficulty: "hard" },
-                { q: "Which of these is a famous work by R. K. Narayan?", opts: ["A fine balance", "A Suitable Boy", "Malgudi days", "The Test of My Life"], correct: 2, difficulty: "easy" },
-                { q: "Which of these is a work by R. K. Narayan?", opts: ["The Guide", "A Suitable Boy", "Ninamoni phookan", "The Test of My Life"], correct: 0, difficulty: "easy" },
-                { q: "Which of these is a book of R. K. Narayan?", opts: ["A fine balance", "The Secret of the Nagas", "The Test of My Life", "Swami and Friends"], correct: 3, difficulty: "easy" },
-                { q: "Rohinton Mistry is the author of:", opts: ["A Fine Balance", "The Red Tent", "The Angry River", "Six Machine"], correct: 0, difficulty: "easy" },
-                { q: "Which book was written by Indu Sundaresan?", opts: ["The feast of roses", "The Palace of Illusions", "Playing it my way", "A century is not enough"], correct: 0, difficulty: "easy" },
-                { q: "The Palace of Illusions is an award-winning novel by:", opts: ["Indu Sundaresan", "Dayapawar", "Chitra Mudgal", "Chitra Banerjee Divakarne"], correct: 3, difficulty: "easy" },
-                { q: "Which autobiography was written by Daya Pawar?", opts: ["Gilli Gaddi", "Baluta - Autobiography", "Truth, Love & a Little Malice", "Playing to Win"], correct: 1, difficulty: "hard" },
-                { q: "Chitra Mudgal wrote which of the following books?", opts: ["Meri Priya Kahaniyan", "The Blue Umbrella", "Dayapawar", "Train to Pakistan"], correct: 0, difficulty: "easy" },
                 { q: "Chitra Mudgal wrote which book?", opts: ["The Blue Umbrella", "The Blue Umbrella", "Gilli Gaddu", "Train to Pakistan"], correct: 2, difficulty: "easy" },
-                { q: "Playing It My Way is the autobiography of which famous cricketer?", opts: ["Sachin Tendulkar", "Yuvraj Singh", "Kapil Dev", "Sania Mirza"], correct: 0, difficulty: "easy" },
-                { q: "Saina Nehwal's autobiography is titled:", opts: ["Ace against odds", "Playing to win", "The race of my life", "Straight from the heart"], correct: 1, difficulty: "easy" },
-                { q: "The Race of My Life is the autobiography of which athlete?", opts: ["Sachin Tendulkar", "Yuvraj Singh", "Sania Mirza", "Milkha Singh"], correct: 3, difficulty: "easy" },
-                { q: "Which cricketer wrote the book The Test of My Life?", opts: ["Chris Gayle", "Sourav Ganguly", "Yuvraj Singh", "R.K. Narayan"], correct: 2, difficulty: "easy" },
-                { q: "Straight from the heart is the autobiography of which sports personality?", opts: ["Sunil Gavaskar", "Kapil Dev", "Sania Mirza", "Bana Bhatta"], correct: 1, difficulty: "easy" },
-                { q: "Ace against odds is the autobiography of:", opts: ["Sania Mirza", "Saina Nehwal", "Yuvraj Singh", "Sachin Tendulkar"], correct: 0, difficulty: "easy" },
-                { q: "A century is not enough is the memoir of which former Indian cricket captain?", opts: ["Kapil Dev", "Sourav Ganguly", "Mithila Singh", "Chris Gayle"], correct: 1, difficulty: "easy" },
-                { q: "Six Machine is the autobiography of:", opts: ["Chris Gayle", "Yuvraj Singh", "Sourav Ganguly", "Sachin Tendulkar"], correct: 0, difficulty: "easy" },
+                { q: "Rohinton Mistry is the author of", opts: ["A Fine Balance", "The Red Tent", "The Angry River", "Six Machine"], correct: 0, difficulty: "easy" },
+                { q: "Which autobiography was written by Daya Pawar?", opts: ["Gilli Gaddi", "Baluta - Autobiography", "Truth, Love & a Little Malice", "Playing to Win"], correct: 1, difficulty: "hard" },
+                { q: "Which book was written by Indu Sundaresan?", opts: ["The feast of roses", "The Palace of Illusions", "Playing it my way", "A century is not enough"], correct: 0, difficulty: "easy" },
+                { q: "Ashwin Sanghi wrote which of the following?", opts: ["The Guide", "Six Machine", "Chanakya's Chants", "Straight from the heart"], correct: 2, difficulty: "easy" },
+                { q: "Anup Rag Vilas is a book by which author whose original name was Shankarpur Siddhartha?", opts: ["Krishnanand", "Pandit Kumar Gandharva", "Ashwin Sanghi", "Vikram Seth"], correct: 1, difficulty: "hard" },
+                { q: "Train to Pakistan written by", opts: ["Amish Tripathi", "Devdutt Pattanaik", "Khushwant Singh", "Ashwin Sanghi"], correct: 2, difficulty: "easy" },
+                { q: "Vikram Seth is associated with which book?", opts: ["The room on the roof", "A Suitable Boy", "Knife: meditation after the attempted", "The Oath of Vayuputras"], correct: 1, difficulty: "easy" },
+                {
+                    q: "Who wrote the book 'Raavan: Enemy of Aryavarta'?",
+                    opts: [
+                        "Amish Tripathi",
+                        "Devdutt Pattanaik",
+                        "Ashwin Sanghi",
+                        "Chetan Bhagat"
+                    ],
+                    correct: 0,
+                    difficulty: "medium"
+                },
+                { q: "Which book is the autobiography of Rasundari Devi and is considered the first autobiography written by a female in Bengali?", opts: ["The feast of roses", "The race of my life", "Amar Jiban", "Playing to win"], correct: 2, difficulty: "hard" },
+                { q: "Chitra Mudgal wrote which of the following books?", opts: ["Meri Priya Kahaniyan", "The Blue Umbrella", "Dayapawar", "Train to Pakistan"], correct: 0, difficulty: "easy" },
                 { q: "Which book, a biography of Harshavardhan, was written by Banabhatta?", opts: ["Six Machine", "Meri Priya Kahaniyan", "Malgudi days", "Harshcharita (606-647AD)",], correct: 3, difficulty: "hard" },
+                {
+                    q: "Who wrote the book 'The Oath of the Vayuputras'?",
+                    opts: [
+                        "Devdutt Pattanaik",
+                        "Amish Tripathi",
+                        "Ashwin Sanghi",
+                        "Anand Neelakantan"
+                    ],
+                    correct: 1,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who wrote the book 'Swami and Friends'?",
+                    opts: [
+                        "Ruskin Bond",
+                        "Khushwant Singh",
+                        "Chetan Bhagat",
+                        "R.K. Narayan"
+                    ],
+                    correct: 3,
+                    difficulty: "easy"
+                },
+                {
+                    q: "Damodar Mauzo(1st Jnanpith in 1965 - G Sankara kurup) is a well-known contemporary writer of which language?",
+                    opts: [
+                        "Marathi",
+                        "Kannada",
+                        "Konkani",
+                        "Malayalam"
+                    ],
+                    correct: 2,
+                    difficulty: "medium"
+                },
+                {
+                    q: "Who is the author of the book 'SITA: Warrior of Mithila'?",
+                    opts: [
+                        "Ashwin Sanghi",
+                        "Anand Neelakantan",
+                        "Devdutt Pattanaik",
+                        "Amish Tripathi"
+                    ],
+                    correct: 3,
+                    difficulty: "medium"
+                },
+
+                // { q: "Which of *Salman Rushdie's* novels, known for its use of magical realism, tells the story of Saleem Sinai, born at the moment of India's independence?", opts: ["Grimus", "The Satanic Verses", "Midnight's children", "The Moor's last sigh"], correct: 2, difficulty: "easy" },
+                // { q: "Which *Salman Rushdie* novel, referencing disputed religious traditions, caused significant international controversy upon its release?", opts: ["The Moor's last sigh", "The Satanic Verses", "Grimus", "Midnight's children"], correct: 1, difficulty: "easy" },
+                // { q: "*Grimus* is the title of which of *Salman Rushdie's* works?", opts: ["His debut novel", "His most recent collection of essays", "A sequel to The Satanic Verses", "A children's book"], correct: 0, difficulty: "hard" },
+                // { q: "The work *Knife: meditation after the attempted* refers to which traumatic event experienced by *Salman Rushdie* in 2022?", opts: ["His first divorce", "The attempted assassination", "A major book banning", "A severe illness"], correct: 1, difficulty: "easy" },
+                // { q: "The word *Murders* is the concluding word of which specific work listed for *Salman Rushdie*?", opts: ["The Satanic Verses", "The Moor's last sigh", "Midnight's children", "Knife: meditation after the attempted Murders"], correct: 3, difficulty: "easy" },
+                // { q: "Which *Salman Rushdie* novel is a Bombay-set family saga narrated by Moraes Zogoiby, known as 'The Moor'?", opts: ["Midnight's children", "Grimus", "Shame", "The Moor's last sigh",], correct: 3, difficulty: "easy" },
+                // { q: "*The Blue Umbrella* by *Ruskin Bond* is the story of a young girl named Binya who acquires the prized item by trading what personal belonging?", opts: ["Her only cow", "A bear claw necklace", "A gold bracelet", "Her father's watch"], correct: 1, difficulty: "easy" },
+                // { q: "Which novel by *Ruskin Bond* tells the story of an orphaned Anglo-Indian boy named Rusty who begins to find freedom and friendship after renovating an unused portion of his guardian's house?", opts: ["The Hidden Pool", "The angry river", "The room on the roof", "The girl on the train"], correct: 2, difficulty: "easy" },
+                // { q: "The book *The girl on the train* by *Ruskin Bond* is a short story based on what kind of chance encounter?", opts: ["A lost puppy", "A childhood friend", "A romantic partner", "A brief conversation with a stranger"], correct: 3, difficulty: "easy" },
+                // { q: "*The angry river* is a *Ruskin Bond* story about a girl named Sita whose home is located on an island and is put in danger by which natural disaster?", opts: ["A raging flood", "A massive landslide", "A severe earthquake", "A devastating cyclone"], correct: 0, difficulty: "easy" },
+                // { q: "Which of the following books is NOT a part of Amish Tripathi's Shiva Trilogy?", opts: ["The Oath of Vayuputras", "The Secret of the Nagas", "Sita: Warrior of Mithila", "Immortals of Meluha"], correct: 2, difficulty: "easy" },
+                // { q: "Who was the recipient of the 57th Jnanpith award in 2021 for his work 'Ninamoni Phookan'?", opts: ["Damodar Mauzo (Konkani)", "G. Sankara Kurup", "Vikram Seth", "Ashwin Sanghi"], correct: 0, difficulty: "easy" },
 
             ],
             riind: [
@@ -1773,11 +2198,6 @@
             ],
             vocab: [
                 { q: "Abrogate", opts: ["repeal", "destroy", "delay", "uphold"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Adulation", opts: ["duration", "argument", "flattery", "institution"], correct: 2, difficulty: "easy", currentSec: "english" },
-                { q: "Amicable", opts: ["poisonous", "friendly", "satisfying", "heartening"], correct: 1, difficulty: "easy", currentSec: "english" },
-                { q: "Ablution", opts: ["censure", "forgiveness", "flattery", "washing"], correct: 3, difficulty: "easy", currentSec: "english" },
-                { q: "Assertive", opts: ["emphasis", "timorous", "domineering", "unobtrusive"], correct: 2, difficulty: "moderate", currentSec: "english" },
-                { q: "Alert", opts: ["hostile", "watchful", "brave", "quick"], correct: 1, difficulty: "easy", currentSec: "english" },
             ],
             ows: [
                 { q: "Because the politician's speech was high-flown and pretentious, it gained popularity.", opts: ["Bombastic", "Schematising", "Austere", "Mnemonic"], correct: 0, difficulty: "easy" },
@@ -2112,7 +2532,7 @@
                         "Agnostic",
                         "Theist"
                     ],
-                    correct: 2,
+                    correct: 3,
                     difficulty: "easy"
                 },
                 {
@@ -3370,9 +3790,23 @@
 
                 // GS
                 case 'phy': document.getElementById("openPdf").textContent = "Physics Pdf"; break;
+                case 'chem': document.getElementById("openPdf").textContent = "Chemistry Pdf"; break;
+                case 'bio': document.getElementById("openPdf").textContent = "Biology Pdf"; break;
+                case 'polity': document.getElementById("openPdf").textContent = "Polity Pdf"; break;
 
                 // Static GK
-                case 'arts': document.getElementById("openPdf").textContent = "Arts Personaity Pdf"; break;
+                case 'bandauth': document.getElementById("openPdf").textContent = "Books and Authors Pdf"; break;
+                case 'cdan': document.getElementById("openPdf").textContent = "Classical Dance Pdf"; break;
+                case 'census': document.getElementById("openPdf").textContent = "Census Pdf"; break;
+                case 'fest': document.getElementById("openPdf").textContent = "Festival Pdf"; break;
+                case 'fdan': document.getElementById("openPdf").textContent = "Folk and Martial Dance Pdf"; break;
+                case 'gharana': document.getElementById("openPdf").textContent = "Gharana Pdf"; break;
+                case 'imptd': document.getElementById("openPdf").textContent = "Impt Days Pdf"; break;
+                case 'intorg': document.getElementById("openPdf").textContent = "Int and National Org Pdf"; break;
+                case 'minst': document.getElementById("openPdf").textContent = "Musical Instruments Pdf"; break;
+                case 'riind': document.getElementById("openPdf").textContent = "Research Institutes Pdf"; break;
+                case 'sports': document.getElementById("openPdf").textContent = "Sports Pdf"; break;
+
 
                 default:
                     document.getElementById("openPdf").textContent = "Open Pdf"; break;
