@@ -207,11 +207,12 @@
                 <button class="section-btn maths" data-section="pnc">PnC(H)</button>
                 <button class="section-btn maths" data-section="prob">Probability(H)</button>
                 <button class="section-btn maths" data-section="trigo">Trigonometry(H)</button>
-                <button class="section-btn maths" data-section="install">Installment(H)</button>
                 <button class="section-btn maths" data-section="mixalli">Mixture and Alligation(H)</button>
                 <button class="section-btn maths cmp" data-section="stat">Statistics (✔✔)(H)</button>
                 <button class="section-btn maths cmp" data-section="ratio">Ratio and Proportion (✔✔)(H)</button>
                 <button class="section-btn maths cmp" data-section="compInt">Compound Interest (✔✔)(H)</button>
+                <button class="section-btn maths cmp" data-section="simpInt">Simple Interest (✔✔)(H)</button>
+                <button class="section-btn maths" data-section="install">Installment(H)</button>
 
 
                 <button class="section-btn maths" data-section="cogeo">Co-ordinate Geo(M)</button>
@@ -219,14 +220,13 @@
                 <button class="section-btn maths" data-section="handl">Hcf Lcm(M)</button>
                 <button class="section-btn maths" data-section="part">Partnership(M)</button>
                 <button class="section-btn maths" data-section="apgphp">AP GP HP(M)</button>
-                <button class="section-btn maths cmp" data-section="simpInt">Simple Interest (✔✔)(M)</button>
 
 
                 <button class="section-btn maths" data-section="kpc" title="Karl Pearson">KP Coefficient(E)</button>
                 <button class="section-btn maths" data-section="poly">Polynomial(E)</button>
                 <button class="section-btn maths" data-section="election">Elections(E)</button>
                 <button class="section-btn maths" data-section="handd">Height and Distance(E)</button>
-                <button class="section-btn maths" data-section="bandst">Boats and Streams(E)</button>
+                <button class="section-btn maths cmp" data-section="bandst">Boats and Streams (✔✔)(E)</button>
                 <button class="section-btn maths" data-section="age">Age(E)</button>
                 <button class="section-btn maths" data-section="prism">Prism(E)</button>
                 <button class="section-btn maths" data-section="pyramid">Pyramid(E)</button>
@@ -717,7 +717,7 @@
                         "https://www.youtube.com/watch?v=V8tcZZIFJew",
                     ];
 
-                case 'ci':
+                case 'compInt':
 
                     driveLink = "https://drive.google.com/file/d/1glLouZfVfUx3JPzWzDLyo0_z0IW6w8cI/view?usp=drive_link";
 
@@ -725,7 +725,7 @@
                         "https://www.youtube.com/watch?v=JZIH9WMouCs",
                     ];
 
-                case 'si':
+                case 'simpInt':
 
                     driveLink = "https://drive.google.com/file/d/1OFvo1nhfcPpTWStF8xUhPRcmbmjysKb8/view?usp=drive_link";
 
@@ -906,9 +906,11 @@
                     ];
 
                 case 'bandst':
-                    driveLink = "";
+                    driveLink = "https://drive.google.com/file/d/1mawtBoNUpUcV757S_jXPOAS7iLRMYVaP/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1wuywKiaUBlXtZcrpQJAYjjnG6Jk6hYHf/view?usp=drive_link";
 
                     return pdfLinks = [
+                        driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=LHoEXcHi31Y",
                     ];
 
@@ -1007,16 +1009,6 @@
                     return pdfLinks = [
                         "https://www.youtube.com/watch?v=1xXFHnRWpbM&list=PLzwlRTvzQv5zvhiWHdDV_r1Dj08K43NeY&index=1", // cmp
                     ];
-
-
-
-
-
-
-
-
-
-
 
 
                 case 'analr':
@@ -4089,11 +4081,31 @@
                 case 'ftp': document.getElementById("openPdf").textContent = "Fracto% Img"; break;
 
                 // Maths
-                case 'age': document.getElementById("openPdf").textContent = "Age Pdf"; break;
-                case 'algbr': document.getElementById("openPdf").textContent = "Algebra Pdf"; break;
-                case 'apgphp': document.getElementById("openPdf").textContent = "AP GP HP Pdf"; break;
-                case 'average': document.getElementById("openPdf").textContent = "Average Pdf"; break;
                 case 'tsd': document.getElementById("openPdf").textContent = "TSD Pdf"; break;
+                case 'average': document.getElementById("openPdf").textContent = "Average Pdf"; break;
+                case 'algbr': document.getElementById("openPdf").textContent = "Algebra Pdf"; break;
+                case 'tandw': document.getElementById("openPdf").textContent = "Time Work Pdf"; break;
+                case 'proLoss': document.getElementById("openPdf").textContent = "Profit Loss Pdf"; break;
+                case 'triangle': document.getElementById("openPdf").textContent = "Triangle Pdf"; break;
+                case 'circle': document.getElementById("openPdf").textContent = "Circle Pdf"; break;
+                case 'numsys': document.getElementById("openPdf").textContent = "No System Pdf"; break;
+                case 'percent': document.getElementById("openPdf").textContent = "Percentage Pdf"; break;
+                case 'mens': document.getElementById("openPdf").textContent = "Mensuration Pdf"; break;
+                case 'pnc': document.getElementById("openPdf").textContent = "PNC Pdf"; break;
+                case 'prob': document.getElementById("openPdf").textContent = "Probability Pdf"; break;
+                case 'trigo': document.getElementById("openPdf").textContent = "Trigonometry Pdf"; break;
+                case 'install': document.getElementById("openPdf").textContent = "Installment Pdf"; break;
+                case 'mixalli': document.getElementById("openPdf").textContent = "Mix Alli Pdf"; break;
+                case 'stat': document.getElementById("openPdf").textContent = "Statistics Pdf"; break;
+                case 'ratio': document.getElementById("openPdf").textContent = "Ratio Pdf"; break;
+                case 'compInt': document.getElementById("openPdf").textContent = "CI Pdf"; break;
+                case 'simpInt': document.getElementById("openPdf").textContent = "SI Pdf"; break;
+                case 'bandst': document.getElementById("openPdf").textContent = "Boats & Streams Pdf"; break;
+
+
+
+
+
 
                 // Reas
                 case 'analg': document.getElementById("openPdf").textContent = "Analogy Pdf"; break;
