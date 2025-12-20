@@ -286,21 +286,19 @@
 
                 <hr class="gs" /><hr class="gs" />
 
-                <button class="section-btn sgk cmp" data-section="bandauth">Books and Authors</button>
-                <button class="section-btn sgk cmp" data-section="cdan">Classical Dance</button>
+                <button class="section-btn sgk cmp" data-section="booksandauth">Books and Authors</button>
+                <button class="section-btn sgk cmp" data-section="cdfdfest">Classical, Folk Dance & Festivals</button>
                 <button class="section-btn sgk" data-section="census">Census</button>
-                <button class="section-btn sgk" data-section="fest">Festivals</button>
-                <button class="section-btn sgk" data-section="fdan">Folk & Martial Dance</button>
                 <button class="section-btn sgk" data-section="gharana">Gharana</button>
                 <button class="section-btn sgk" data-section="imptd">Important Days and Events</button>
                 <button class="section-btn sgk" data-section="intorg">Int and National Org</button>
                 <button class="section-btn sgk" data-section="minst">Musical Instruments</button>
                 <button class="section-btn sgk" data-section="riind">Research Institutes of India</button>
                 <button class="section-btn sgk" data-section="sports">Sports</button>
-                <button class="section-btn sgk" data-section="xyz5">Total: 11</button>
+                <button class="section-btn sgk" data-section="xyz5">Total: 9</button>
 
                 <button class="section-btn sgk" data-section="abbre">Abbreviations - NTPC</button>
-                <button class="section-btn sgk" data-section="comp">Computer - NTPC</button>
+                <button class="section-btn sgk" data-section="ntpcset">Sets - NTPC</button>
 
                 <hr class="sgk" /><hr class="sgk" />
 
@@ -353,9 +351,10 @@
             switch (actvSec) {
 
                 case 'adj':
-                    driveLink = "";
+                    driveLink = "https://drive.google.com/file/d/1lvEPCE30LntGAiRc08nTglZlwwjKIbIy/view?usp=drive_link";
 
                     return pdfLinks = [
+                        driveLink,
                         "https://www.youtube.com/watch?v=6CIModa7Mw4",
                     ];
 
@@ -1164,18 +1163,28 @@
 
         function checkSgk(str) {
 
-            var sgkArray = ['cdan', 'fdan', 'mdan', 'census', 'minst', 'gharana', 'imptd', 'bandauth',
-                'sports', 'intorg', 'natorg', 'fest', 'riind', 'govtsch', 'unsites', 'natpark', 'abbre'];
+            var sgkArray = ['cdan', 'fdan', 'mdan', 'census', 'minst', 'gharana', 'imptd', 'booksandauth',
+                'sports', 'intorg', 'natorg', 'fest', 'riind', 'govtsch', 'unsites', 'natpark', 'abbre', 'cdfdfest', 'ntpcset'];
 
             return sgkArray.includes(str);
         }
 
         function sgkData(actvSec) {
 
-            var driveLink = '';
-            var driveLink2 = '';
+            console.log('hello static');
 
             switch (actvSec) {
+
+                case 'cdfdfest':
+                    driveLink = "https://drive.google.com/file/d/1fvbPZ_XOq34x1w1Fqc7zWyThaLpOri4F/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/15JZAnXNBfY5HahJFCUCbjjk1yWZ4cC_L/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink,driveLink2,
+                        "https://www.youtube.com/watch?v=6Ah7KPcZE3o",
+                        "https://www.youtube.com/watch?v=iDxf2kOW0_E",
+                        "https://www.youtube.com/watch?v=heGiDkIQtX8&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=3",
+                    ];
 
                 case 'arts':
                     driveLink = "";
@@ -1184,12 +1193,22 @@
                         "https://www.youtube.com/watch?v=coxlG4yPKJ0",
                     ];
 
-                case 'bandauth':
+                case 'booksandauth':
+                    driveLink = "https://drive.google.com/file/d/1ls_txMGBq3yY638NiMRv35KGESHGGAaH/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink,
+                        "https://www.youtube.com/watch?v=OJHkUuuXiQs",
+                        "https://www.youtube.com/watch?v=QicHHgUGShs&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=9",
+                    ];
+
+                case 'sports':
                     driveLink = "";
 
                     return pdfLinks = [
-                        "https://www.youtube.com/watch?v=OJHkUuuXiQs",
-                        "https://www.youtube.com/watch?v=QicHHgUGShs&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=9",
+                        "https://www.youtube.com/watch?v=qNwSg52irxA",
+                        "https://www.youtube.com/watch?v=J0lL8EWs_Ws",
+                        "https://www.youtube.com/watch?v=_NsMspCL-KE&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=12",
                     ];
 
                 case 'cdan':
@@ -1267,14 +1286,7 @@
                         "https://www.youtube.com/watch?v=fXyf4JM2JUM",
                     ];
 
-                case 'sports':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=qNwSg52irxA",
-                        "https://www.youtube.com/watch?v=J0lL8EWs_Ws",
-                        "https://www.youtube.com/watch?v=_NsMspCL-KE&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=12",
-                    ];
+                
 
 
                 case 'unsites':
@@ -1294,11 +1306,15 @@
                         "https://www.youtube.com/watch?v=ZvT169qEf9w",
                     ];
 
-                case 'comp':
-                    driveLink = "";
+                case 'ntpcset':
+                    driveLink = "https://drive.google.com/file/d/1WuQUxQIrG06I5JznmHYItpxbhhbSFf0S/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1P3vzywNUqZ5cpci7RYP2-M4orH2ILDuC/view?usp=drive_link";
+                    driveLink3 = "https://drive.google.com/file/d/1LSosAYpMDvWl4Zwl_drOHM75-xc1TayS/view?usp=drive_link";
+                    driveLink4 = "https://drive.google.com/file/d/1kuDwq9P-fubz_jqamGs8fEpkWE8pIgVe/view?usp=drive_link";
 
                     return pdfLinks = [
-                        "https://www.youtube.com/watch?v=E3TpoIP4vkk",
+                        driveLink, driveLink2, driveLink3, driveLink4,
+                        "https://www.youtube.com/watch?v=W4hShpHgDzw&list=PLA-It0Cs2sXNqSopdMXPkV4gjJC1UobQX&index=1",
                     ];
 
 
@@ -1769,7 +1785,7 @@
                 },
 
             ],
-            bandauth: [
+            booksandauth: [
                 {
                     q: "The book 'Imperfect' is written by which Indian cricketer?",
                     opts: [
@@ -4118,7 +4134,7 @@
 
                 // Static GK
                 case 'bandauth': document.getElementById("openPdf").textContent = "Books and Authors Pdf"; break;
-                case 'cdan': document.getElementById("openPdf").textContent = "Classical Dance Pdf"; break;
+                case 'cdan': document.getElementById("openPdf").textContent = "Classical, Folk Dance & Festivals Pdf"; break;
                 case 'census': document.getElementById("openPdf").textContent = "Census Pdf"; break;
                 case 'fest': document.getElementById("openPdf").textContent = "Festival Pdf"; break;
                 case 'fdan': document.getElementById("openPdf").textContent = "Folk and Martial Dance Pdf"; break;
@@ -4128,6 +4144,7 @@
                 case 'minst': document.getElementById("openPdf").textContent = "Musical Instruments Pdf"; break;
                 case 'riind': document.getElementById("openPdf").textContent = "Research Institutes Pdf"; break;
                 case 'sports': document.getElementById("openPdf").textContent = "Sports Pdf"; break;
+                case 'ntpcset': document.getElementById("openPdf").textContent = "NTPC Pdf"; break;
 
 
                 default:
