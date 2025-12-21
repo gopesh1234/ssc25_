@@ -194,12 +194,16 @@
 
                 <hr class="maths" /><hr class="maths" />
 
+                <button class="section-btn maths" data-section="triangle">Triangle(H)</button>
+                <button class="section-btn maths" data-section="quad">Quadilaterals(M)</button>
+                <button class="section-btn maths" data-section="cogeo">Co-ordinate Geo(M)</button>
+
+
                 <button class="section-btn maths" data-section="tsd">Time Speed Distance(H)</button>
                 <button class="section-btn maths" data-section="average">Average(H)</button>
                 <button class="section-btn maths" data-section="algbr">Algebra(H)</button>
                 <button class="section-btn maths" data-section="tandw">Time and Work(H)</button>
                 <button class="section-btn maths" data-section="proLoss">Profit and Loss(H)</button>
-                <button class="section-btn maths" data-section="triangle">Triangle(H)</button>
                 <button class="section-btn maths" data-section="circle">Circle(H)</button>
                 <button class="section-btn maths" data-section="numsys">Number System(H)</button>
                 <button class="section-btn maths" data-section="percent">Percentage(H)</button>
@@ -215,8 +219,6 @@
                 <button class="section-btn maths" data-section="install">Installment(H)</button>
 
 
-                <button class="section-btn maths" data-section="cogeo">Co-ordinate Geo(M)</button>
-                <button class="section-btn maths" data-section="quad">Quadilaterals(M)</button>
                 <button class="section-btn maths" data-section="handl">Hcf Lcm(M)</button>
                 <button class="section-btn maths" data-section="part">Partnership(M)</button>
                 <button class="section-btn maths" data-section="apgphp">AP GP HP(M)</button>
@@ -732,6 +734,33 @@
                         "https://www.youtube.com/watch?v=MglHly8UDdc",
                     ];
 
+                case 'triangle':
+                    driveLink = "https://drive.google.com/file/d/117NeXpm-SmMY1DZFpz8cFVQs_swJZtsW/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1Doud8sxhUmmmVeQ0M1J9tO8WKi7IWc5P/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=w69YxqOZwB4", // Triangle
+                    ];
+
+                case 'quad':
+                    driveLink = "https://drive.google.com/file/d/1nURxnRS7ZxoqfDGq5k6GWo2fR6NnD3ZB/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1LKe8dfegdKfZtPaPIfUf2H0Wme31fV_D/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=2Qdc4Li7TAo&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=24", // Quad
+                    ];
+
+                case 'cogeo':
+                    driveLink = "";
+                    driveLink2 = "https://drive.google.com/file/d/1PDCCVy_l-2TpI2EBqEJr_ZlWdwq9_0ix/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=cH5U1_uGFqs",
+                    ];
+
                  
                 case 'tsd':
                     driveLink = "https://drive.google.com/file/d/1i7aADPOHzqsGRZcexTPhwg3et9-5YXXx/view?usp=drive_link";
@@ -780,12 +809,7 @@
                         "https://www.youtube.com/watch?v=uEou5LVZPHw",
                     ];
 
-                case 'cogeo':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=cH5U1_uGFqs",
-                    ];
+                
 
                 
                 case 'part':
@@ -817,19 +841,9 @@
                         "https://www.youtube.com/watch?v=bSavWhLj5Y8",
                     ];
 
-                case 'triangle':
-                    driveLink = "";
+                
 
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=PLN9pMyRafA&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS", // Triangle
-                    ];
-
-                case 'quad':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=2Qdc4Li7TAo&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=24", // Quad
-                    ];
+                
 
                 case 'mens':
                     driveLink = "";
