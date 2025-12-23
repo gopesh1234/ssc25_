@@ -1158,14 +1158,10 @@
                     ];
 
                 case 'polity':
-                    driveLink = "https://drive.google.com/file/d/1ODeduf0RINgH5EPa9iGJwBJZ2AvVgYjj/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1jMZCfcDPhJN6JXK2m0M-L3TOtLFvYRq4/view?usp=drive_link";
-                    driveLink3 = "https://drive.google.com/file/d/1m7WD3z0WVeR8JrgV8IyUctYQYpk7ROiT/view?usp=drive_link";
-                    driveLink4 = "https://drive.google.com/file/d/1d1LMRUQlKI8K_Wo33vlLLofukJe3Gw5W/view?usp=drive_link";
-                    driveLink5 = "";
+                    driveLink = "https://drive.google.com/file/d/1cMgcGYd10_z5Zljg7QY225xYmvEjACI6/view?usp=drive_link";
 
                     return pdfLinks = [
-                        driveLink, driveLink2, driveLink3, driveLink4,
+                        driveLink,
                         "https://www.youtube.com/watch?v=SBisjcRCMRY",
                     ];
 
@@ -1799,7 +1795,7 @@
 
             ],
             polity: [
-                { q: "<<<<<TEARS OF OLD PM>>>>> (T(territory)E(emoluments)A(affirmations)R(RS)S(SC areas) O(Other tribal areas)F(Federal Provisions (Division of powers/Lists)) O(Official Languages)L(Land reforms)D(Defection) P(Panchayats)M(Municipalities ))", opts: [""], correct: 0, difficulty: "easy", currentSec: "polity" },
+                //{ q: "<<<<<TEARS OF OLD PM>>>>> (T(territory)E(emoluments)A(affirmations)R(RS)S(SC areas) O(Other tribal areas)F(Federal Provisions (Division of powers/Lists)) O(Official Languages)L(Land reforms)D(Defection) P(Panchayats)M(Municipalities ))", opts: [""], correct: 0, difficulty: "easy", currentSec: "polity" },
                 { q: "Schedule 1 of the Indian Constitution deals with", opts: ["Official languages", "Allocation of seats in Rajya Sabha", "States and Union Territories", "Union finances"], correct: 2, difficulty: "easy", currentSec: "polity" },
                 { q: "Schedule 2 of the Indian Constitution is related to", opts: ["Salary allowance and emoluments of constitutional authorities", "Forms of oaths", "State boundaries", "Tribal areas"], correct: 0, difficulty: "easy", currentSec: "polity" },
                 { q: "Schedule 3 of the Indian Constitution contains provisions regarding", opts: ["Languages", "Land reforms", "Anti-defection", "Oaths affirmations"], correct: 3, difficulty: "easy", currentSec: "polity" },
@@ -4190,6 +4186,9 @@
                 case 'phy': document.getElementById("openPdf").textContent = "Physics Pdf"; break;
                 case 'chem': document.getElementById("openPdf").textContent = "Chemistry Pdf"; break;
                 case 'bio': document.getElementById("openPdf").textContent = "Biology Pdf"; break;
+                case 'eco': document.getElementById("openPdf").textContent = "Economics Pdf"; break;
+                case 'hist': document.getElementById("openPdf").textContent = "History Pdf"; break;
+                case 'geog': document.getElementById("openPdf").textContent = "Geography Pdf"; break;
                 case 'polity': document.getElementById("openPdf").textContent = "Polity Pdf"; break;
 
                 // Static GK
