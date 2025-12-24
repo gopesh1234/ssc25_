@@ -195,6 +195,7 @@
                 <hr class="maths" /><hr class="maths" />
 
                 <button class="section-btn maths cmp" data-section="cogeo">Co-ordinate Geo (✔✔)(M)</button>
+                <button class="section-btn maths cmp" data-section="lineangle">Line Angle (✔✔)(E)</button>
                 <button class="section-btn maths cmp" data-section="cosine">Cosine (✔✔)(E)</button>
                 <button class="section-btn maths cmp" data-section="aroftrian">Area of Triangle (✔✔)(E)</button>
                 <button class="section-btn maths cmp" data-section="stat">Statistics (✔✔)(H)</button>
@@ -240,7 +241,7 @@
 
 
                 <button class="section-btn maths" data-section="dailypractmaths">Daily Practice</button>
-                <button class="section-btn maths cmp" data-section="xyz2">Total: 12/40</button>
+                <button class="section-btn maths cmp" data-section="xyz2">Total: 13/41</button>
 
                 <hr class="maths" /><hr class="maths" />
 
@@ -622,7 +623,7 @@
                 'election', 'handd', 'handl', 'incExp', 'ratio', 'install', 'kpc', 'mens2d', 'mens3d',
                 'mhall', 'numconv', 'part', 'percent', 'pnc', 'poly', 'prism', 'price', 'prob',
                 'proLoss', 'pyramid', 'quad', 'race', 'soc', 'simpInt', 'stat', 'tandw', 'tsd', 
-                'triangle', 'trigo', 'mixalli', 'dailypractmaths', 'quartile', 'cosine', 'aroftrian'];
+                'triangle', 'trigo', 'mixalli', 'dailypractmaths', 'quartile', 'lineangle', 'cosine', 'aroftrian'];
 
             return mathsArray.includes(str);
         }
@@ -663,6 +664,17 @@
                     return pdfLinks = [
                         driveLink, driveLink2, driveLink3,
                         "https://www.youtube.com/watch?v=cH5U1_uGFqs",
+                    ];
+
+                case 'lineangle':
+                    driveLink = "https://drive.google.com/file/d/117NeXpm-SmMY1DZFpz8cFVQs_swJZtsW/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1Doud8sxhUmmmVeQ0M1J9tO8WKi7IWc5P/view?usp=drive_link";
+                    driveLink3 = "https://drive.google.com/file/d/1f_bPPYyAbYkochW-q0y-UbUYIsAbb9lL/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2, driveLink3,
+                        "https://www.youtube.com/watch?v=-k0_jivmXWc&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=6", // Triangle
+                        //"https://www.youtube.com/watch?v=w69YxqOZwB4", // Triangle
                     ];
 
                 case 'cosine':
@@ -772,15 +784,7 @@
                 
 
 
-                case 'triangle':
-                    driveLink = "https://drive.google.com/file/d/117NeXpm-SmMY1DZFpz8cFVQs_swJZtsW/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1Doud8sxhUmmmVeQ0M1J9tO8WKi7IWc5P/view?usp=drive_link";
-                    driveLink3 = "https://drive.google.com/file/d/1f_bPPYyAbYkochW-q0y-UbUYIsAbb9lL/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2, driveLink3,
-                        "https://www.youtube.com/watch?v=w69YxqOZwB4", // Triangle
-                    ];
+                
 
                 case 'quad':
                     driveLink = "https://drive.google.com/file/d/1nURxnRS7ZxoqfDGq5k6GWo2fR6NnD3ZB/view?usp=drive_link";
