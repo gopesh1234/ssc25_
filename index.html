@@ -200,6 +200,7 @@
                 <button class="section-btn maths" data-section="sine">Sine Rule (E)</button>
                 <button class="section-btn maths cmp" data-section="cosine">Cosine (✔✔)(E)</button>
                 <button class="section-btn maths cmp" data-section="aroftrian">Area of Triangle (✔✔)(E)</button>
+                <button class="section-btn maths cmp" data-section="perimeter">Perimeter (✔✔)(E)</button>
                 <button class="section-btn maths" data-section="formoftrian">Formation of Triangle (E)</button>
                 <button class="section-btn maths" data-section="perioftrian">Perimeter of Triangle (E)</button>
                 <button class="section-btn maths" data-section="medoftrian">Median of Triangle (E)</button>
@@ -255,7 +256,7 @@
 
 
                 <button class="section-btn maths" data-section="dailypractmaths">Daily Practice</button>
-                <button class="section-btn maths cmp" data-section="xyz2">Total: 13/54</button>
+                <button class="section-btn maths cmp" data-section="xyz2">Total: 14/55</button>
 
                 <hr class="maths" /><hr class="maths" />
 
@@ -296,7 +297,15 @@
                 <button class="section-btn gs" data-section="eco">Economics</button>
                 <button class="section-btn gs" data-section="geog">Geography</button>
                 <button class="section-btn gs" data-section="hist">History</button>
-                <button class="section-btn gs cmp" data-section="polity">Polity</button>
+
+                <button class="section-btn gs cmp" data-section="solarsys">Solar System (✔✔)(Geo)</button>
+                <button class="section-btn gs cmp" data-section="atmos">Atmosphere (✔✔)(Geo)</button>
+                <button class="section-btn gs cmp" data-section="clouds">Clouds (✔✔)(Geo)</button>
+
+                <button class="section-btn gs cmp" data-section="schedule">Schedules (✔✔)(Polity)</button>
+                <button class="section-btn gs cmp" data-section="parts">Parts (✔✔)(Polity)</button>
+                <button class="section-btn gs cmp" data-section="prezvp">President and VP (✔✔)(Polity)</button>
+
                 <button class="section-btn gs cmp" data-section="xyz4">Total: 7</button>
 
 
@@ -348,6 +357,120 @@
             }
         });
 
+        function changePdfBtn() {
+            const actvBtn = document.querySelector('.section-btn.active');
+            var activeSec = '';
+
+            if (actvBtn) {
+                activeSec = actvBtn.dataset.section;
+                console.log("Active Section:", activeSec);
+
+            }
+
+            //Impt
+            switch (activeSec) {
+                // English
+                case 'adj': document.getElementById("openPdf").textContent = "Adjective Pdf"; break;
+                case 'adv': document.getElementById("openPdf").textContent = "Adverb Pdf"; break;
+                case 'article': document.getElementById("openPdf").textContent = "Article Pdf"; break;
+                case 'cndsent': document.getElementById("openPdf").textContent = "Conditional Sentence Pdf"; break;
+                case 'conjunc': document.getElementById("openPdf").textContent = "Conjunction Pdf"; break;
+                case 'deter': document.getElementById("openPdf").textContent = "Determiners Pdf"; break;
+                case 'fillups': document.getElementById("openPdf").textContent = "Fill Ups Pdf"; break;
+                case 'idioms': document.getElementById("openPdf").textContent = "Idioms Pdf"; break;
+                case 'mood': document.getElementById("openPdf").textContent = "Mood Pdf"; break;
+                case 'narr': document.getElementById("openPdf").textContent = "Narration Pdf"; break;
+                case 'noun': document.getElementById("openPdf").textContent = "Noun Pdf"; break;
+                case 'ows': document.getElementById("openPdf").textContent = "OWS Pdf"; break;
+                case 'paraJumb': document.getElementById("openPdf").textContent = "Para Jumble Pdf"; break;
+                case 'pv': document.getElementById("openPdf").textContent = "Phrasal Verb Pdf"; break;
+                case 'pandc': document.getElementById("openPdf").textContent = "Phrases and Clause Pdf"; break;
+                case 'prep': document.getElementById("openPdf").textContent = "Preposition Pdf"; break;
+                case 'pronoun': document.getElementById("openPdf").textContent = "Pronoun Pdf"; break;
+                case 'questag': document.getElementById("openPdf").textContent = "Question Tag Pdf"; break;
+                case 'sentImp': document.getElementById("openPdf").textContent = "Sentence Imprv Pdf"; break;
+                case 'spotErr': document.getElementById("openPdf").textContent = "Spotting Error Pdf"; break;
+                case 'supexp': document.getElementById("openPdf").textContent = "Superflous Expression Pdf"; break;
+                case 'tense': document.getElementById("openPdf").textContent = "Tense Pdf"; break;
+                case 'sva': document.getElementById("openPdf").textContent = "Subject Verb Agreement Pdf"; break;
+                case 'verb': document.getElementById("openPdf").textContent = "Verb Pdf"; break;
+                case 'vocab': document.getElementById("openPdf").textContent = "Vocab Pdf"; break;
+                case 'voice': document.getElementById("openPdf").textContent = "Voice Pdf"; break;
+                case 'sixtyrules': document.getElementById("openPdf").textContent = "60 Rules Pdf"; break;
+
+
+                // Maths Daily Practice
+                case 'triplets': document.getElementById("openPdf").textContent = "Triplets Img"; break;
+                case 'squares': document.getElementById("openPdf").textContent = "Squares Img"; break;
+                case 'cubes': document.getElementById("openPdf").textContent = "Cubes Img"; break;
+                case 'prime': document.getElementById("openPdf").textContent = "Prime Pdf"; break;
+                case 'ptf': document.getElementById("openPdf").textContent = "%toFrac Img"; break;
+                case 'ftp': document.getElementById("openPdf").textContent = "Fracto% Img"; break;
+
+                // Maths
+                case 'cogeo': document.getElementById("openPdf").textContent = "Co Ordinate Geo Pdf"; break;
+                case 'lineangle': document.getElementById("openPdf").textContent = "Line Angle Pdf"; break;
+                case 'anglebisector': document.getElementById("openPdf").textContent = "Angle Bisector Pdf"; break;
+                case 'sine': document.getElementById("openPdf").textContent = "Sine Pdf"; break;
+                case 'cosine': document.getElementById("openPdf").textContent = "Cosine Pdf"; break;
+                case 'aroftrian': document.getElementById("openPdf").textContent = "Area of Triangle Pdf"; break;
+                case 'perimeter': document.getElementById("openPdf").textContent = "Perimeter Pdf"; break;
+
+                case 'tsd': document.getElementById("openPdf").textContent = "TSD Pdf"; break;
+                case 'average': document.getElementById("openPdf").textContent = "Average Pdf"; break;
+                case 'algbr': document.getElementById("openPdf").textContent = "Algebra Pdf"; break;
+                case 'tandw': document.getElementById("openPdf").textContent = "Time Work Pdf"; break;
+                case 'proLoss': document.getElementById("openPdf").textContent = "Profit Loss Pdf"; break;
+                case 'triangle': document.getElementById("openPdf").textContent = "Triangle Pdf"; break;
+                case 'circle': document.getElementById("openPdf").textContent = "Circle Pdf"; break;
+                case 'numsys': document.getElementById("openPdf").textContent = "No System Pdf"; break;
+                case 'percent': document.getElementById("openPdf").textContent = "Percentage Pdf"; break;
+                case 'mens': document.getElementById("openPdf").textContent = "Mensuration Pdf"; break;
+                case 'pnc': document.getElementById("openPdf").textContent = "PNC Pdf"; break;
+                case 'prob': document.getElementById("openPdf").textContent = "Probability Pdf"; break;
+                case 'trigo': document.getElementById("openPdf").textContent = "Trigonometry Pdf"; break;
+                case 'install': document.getElementById("openPdf").textContent = "Installment Pdf"; break;
+                case 'mixalli': document.getElementById("openPdf").textContent = "Mix Alli Pdf"; break;
+                case 'stat': document.getElementById("openPdf").textContent = "Statistics Pdf"; break;
+                case 'ratio': document.getElementById("openPdf").textContent = "Ratio Pdf"; break;
+                case 'compInt': document.getElementById("openPdf").textContent = "CI Pdf"; break;
+                case 'simpInt': document.getElementById("openPdf").textContent = "SI Pdf"; break;
+                case 'boatsandstrm': document.getElementById("openPdf").textContent = "Boats & Streams Pdf"; break;
+
+
+
+                // Reas
+                case 'analg': document.getElementById("openPdf").textContent = "Analogy Pdf"; break;
+
+                // GS
+                case 'phy': document.getElementById("openPdf").textContent = "Physics Pdf"; break;
+                case 'chem': document.getElementById("openPdf").textContent = "Chemistry Pdf"; break;
+                case 'bio': document.getElementById("openPdf").textContent = "Biology Pdf"; break;
+                case 'eco': document.getElementById("openPdf").textContent = "Economics Pdf"; break;
+                case 'hist': document.getElementById("openPdf").textContent = "History Pdf"; break;
+                case 'geog': document.getElementById("openPdf").textContent = "Geography Pdf"; break;
+                case 'polity': document.getElementById("openPdf").textContent = "Polity Pdf"; break;
+
+                // Static GK
+                case 'bandauth': document.getElementById("openPdf").textContent = "Books and Authors Pdf"; break;
+                case 'cdan': document.getElementById("openPdf").textContent = "Classical, Folk Dance & Festivals Pdf"; break;
+                case 'census': document.getElementById("openPdf").textContent = "Census Pdf"; break;
+                case 'fest': document.getElementById("openPdf").textContent = "Festival Pdf"; break;
+                case 'fdan': document.getElementById("openPdf").textContent = "Folk and Martial Dance Pdf"; break;
+                case 'gharana': document.getElementById("openPdf").textContent = "Gharana Pdf"; break;
+                case 'imptd': document.getElementById("openPdf").textContent = "Impt Days Pdf"; break;
+                case 'intorg': document.getElementById("openPdf").textContent = "Int and National Org Pdf"; break;
+                case 'minst': document.getElementById("openPdf").textContent = "Musical Instruments Pdf"; break;
+                case 'riind': document.getElementById("openPdf").textContent = "Research Institutes Pdf"; break;
+                case 'sports': document.getElementById("openPdf").textContent = "Sports Pdf"; break;
+                case 'ntpcset': document.getElementById("openPdf").textContent = "NTPC Pdf"; break;
+
+
+                default:
+                    document.getElementById("openPdf").textContent = "Open Pdf"; break;
+            }
+        }
+
         // Add
         function checkEng(str) {
 
@@ -358,7 +481,6 @@
 
             return engArray.includes(str);
         }
-
         function engData(actvSec) {
 
             var driveLink = '';
@@ -637,11 +759,10 @@
                 'election', 'handd', 'handl', 'incExp', 'ratio', 'install', 'kpc', 'mens2d', 'mens3d',
                 'mhall', 'numconv', 'part', 'percent', 'pnc', 'poly', 'prism', 'price', 'prob',
                 'proLoss', 'pyramid', 'quad', 'race', 'soc', 'simpInt', 'stat', 'tandw', 'tsd', 
-                'triangle', 'trigo', 'mixalli', 'dailypractmaths', 'quartile', 'lineangle', 'cosine', 'aroftrian'];
+                'triangle', 'trigo', 'mixalli', 'dailypractmaths', 'quartile', 'lineangle', 'cosine', 'aroftrian', 'perimeter'];
 
             return mathsArray.includes(str);
         }
-
         function mathsData(actvSec) {
 
             var driveLink = '';
@@ -704,11 +825,18 @@
                 case 'aroftrian':
                     driveLink = "https://drive.google.com/file/d/1DRkoe-5QWWMLg4v3ywrHVTMALvDqA47M/view?usp=drive_link";
                     driveLink2 = "https://drive.google.com/file/d/1RWyvP9n5XKtplFJe8T5LnpDwnd1kkiHy/view?usp=drive_link";
-                    driveLink3 = "";
 
                     return pdfLinks = [
                         driveLink, driveLink2, driveLink3,
                         "https://www.youtube.com/watch?v=WBAy0WZbAr0&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=10", // Triangle
+                    ];
+
+                case 'perimeter':
+                    driveLink = "https://drive.google.com/file/d/1Rtrz-1yydCWtdXXYaw6w502lGBBCp5wX/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink,
+                        "https://www.youtube.com/watch?v=ZUOX6Asp5lw&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=12", // Triangle
                     ];
 
                 case 'stat':
@@ -795,19 +923,17 @@
                         "https://www.youtube.com/watch?v=96F3TnapUnE",
                     ];
 
-                
-
-
-                
 
                 case 'quad':
                     driveLink = "https://drive.google.com/file/d/1nURxnRS7ZxoqfDGq5k6GWo2fR6NnD3ZB/view?usp=drive_link";
                     driveLink2 = "https://drive.google.com/file/d/1LKe8dfegdKfZtPaPIfUf2H0Wme31fV_D/view?usp=drive_link";
                     driveLink3 = "https://drive.google.com/file/d/1V14qF0qWMptyeGXi29gqiCur5k3QX4OI/view?usp=drive_link";
                     driveLink4 = "https://drive.google.com/file/d/1-eWg2idN5fwFFhsqtYTjPHOrDty_SMOj/view?usp=drive_link";
+                    driveLink5 = "https://drive.google.com/file/d/1v-S4LaCNWZ1NIoBhaLTMQVsCmbi2pXPX/view?usp=drive_link";
+                    driveLink6 = "https://drive.google.com/file/d/1E0JV_zicRXcz6XWqnsex3TSv6ImpKlx-/view?usp=drive_link";
 
                     return pdfLinks = [
-                        driveLink, driveLink2, driveLink3, driveLink4,
+                        driveLink, driveLink2, driveLink3, driveLink4, driveLink5, driveLink6,
                         "https://www.youtube.com/watch?v=2Qdc4Li7TAo&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=24", // Quad
                     ];
 
@@ -1038,7 +1164,6 @@
 
             return reasArray.includes(str);
         }
-
         function reasData(actvSec) {
 
             var driveLink = '';
@@ -1187,11 +1312,10 @@
 
         function checkGS(str) {
 
-            var gsArray = ['phy', 'chem', 'bio', 'eco', 'geog', 'his', 'polity'];
+            var gsArray = ['solarsys', 'clouds', 'atmos', 'schedule', 'parts', 'prezvp'];
 
             return gsArray.includes(str);
         }
-
         function gsData(actvSec) {
 
             var driveLink = '';
@@ -1199,30 +1323,86 @@
 
             switch (actvSec) {
 
-                case 'phy':
+                // Geography
+                case 'solarsys':
+                    driveLink = "https://drive.google.com/file/d/1oJuzJTu_VMlYXKyRMxPLX2puz-Q48BMZ/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/15wL-H8hMH7plxhKL6Iv5ObISALrlMIJs/view?usp=drive_link";
+                    driveLink3 = "https://drive.google.com/file/d/1y9g5lo818M7ZcmyPvXJOK2saQeFn_aDz/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2, driveLink3,
+                        "https://www.youtube.com/watch?v=vZvckhklhZU",
+                    ];
+
+                case 'atmos':
                     driveLink = "";
 
                     return pdfLinks = [
-                        "https://www.youtube.com/watch?v=WouperFRRR8",
-                        "https://www.youtube.com/watch?v=vMGNGpE-LSs",
-                        "https://www.youtube.com/watch?v=YM2WSzpwxyE",
+                        driveLink,
+                        "https://www.youtube.com/watch?v=vZvckhklhZU&t=5907s", // Atmosphere
                     ];
 
-                case 'polity':
+                case 'clouds':
+                    driveLink = "https://drive.google.com/file/d/1NdcwLnCbnDKauZeHj8alATVBjlzjVRAz/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink,
+                        "https://www.youtube.com/watch?v=vZvckhklhZU&t=19886s", // clouds
+                        "https://www.youtube.com/watch?v=MEMmBPrPi98", // clouds
+                    ];
+
+                
+
+                // Polity
+                case 'schedule':
                     driveLink = "https://drive.google.com/file/d/1cMgcGYd10_z5Zljg7QY225xYmvEjACI6/view?usp=drive_link";
 
                     return pdfLinks = [
                         driveLink,
-                        "https://www.youtube.com/watch?v=SBisjcRCMRY",
+                        "",
                     ];
 
-                case 'history':
-                    driveLink = "https://drive.google.com/file/d/10X-OOEE0IpE5ZsKLI-j9V-XSAzeyB_0c/view?usp=drive_link"; // Stone Age
+                case 'parts':
+                    driveLink = "https://drive.google.com/file/d/1cMgcGYd10_z5Zljg7QY225xYmvEjACI6/view?usp=drive_link";
 
                     return pdfLinks = [
                         driveLink,
-                        "https://www.youtube.com/watch?v=SBisjcRCMRY",
+                        "https://www.youtube.com/watch?v=AQ5Y_FsmLQE",
                     ];
+
+                case 'prezvp':
+                    driveLink = "https://drive.google.com/file/d/1XtKmG0eiDsw6h4p75PhRW4jz2mUQlk7Y/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1JwYGnisOk6mALk_PUIOAlGyeWF6xNUej/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=SBisjcRCMRY", // tilll 31:36
+                    ];
+
+                // case 'phy':
+                //     driveLink = "";
+
+                //     return pdfLinks = [
+                //         "https://www.youtube.com/watch?v=WouperFRRR8",
+                //         "https://www.youtube.com/watch?v=vMGNGpE-LSs",
+                //         "https://www.youtube.com/watch?v=YM2WSzpwxyE",
+                //     ];
+
+                // case 'polity':
+                //     driveLink = "https://drive.google.com/file/d/1cMgcGYd10_z5Zljg7QY225xYmvEjACI6/view?usp=drive_link";
+
+                //     return pdfLinks = [
+                //         driveLink,
+                //         "https://www.youtube.com/watch?v=SBisjcRCMRY",
+                //     ];
+
+                // case 'history':
+                //     driveLink = "https://drive.google.com/file/d/10X-OOEE0IpE5ZsKLI-j9V-XSAzeyB_0c/view?usp=drive_link"; // Stone Age
+
+                //     return pdfLinks = [
+                //         driveLink,
+                //         "https://www.youtube.com/watch?v=SBisjcRCMRY",
+                //     ];
 
 
                 default:
@@ -1238,7 +1418,6 @@
 
             return sgkArray.includes(str);
         }
-
         function sgkData(actvSec) {
 
             console.log('hello static');
@@ -1612,7 +1791,8 @@
         //
         // ------------------- DATA -------------------
         const questionSets = {
-            //Impt
+
+            //Static
             fdan: [
                 // Assam
                 {
@@ -1843,51 +2023,6 @@
                     opts: ["Army Day", "International Zebra Day", "Youth Day", "Pravasi Bharatiya Diwas"],
                     correct: 1, difficulty: "easy", currentSec: "english"
                 },
-
-            ],
-            polity: [
-                //{ q: "<<<<<TEARS OF OLD PM>>>>> (T(territory)E(emoluments)A(affirmations)R(RS)S(SC areas) O(Other tribal areas)F(Federal Provisions (Division of powers/Lists)) O(Official Languages)L(Land reforms)D(Defection) P(Panchayats)M(Municipalities ))", opts: [""], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 5 of the Indian Constitution is concerned with", opts: ["Scheduled areas and Scheduled Tribes", "Administration of tribal areas in Assam", "Official languages", "Panchayati Raj"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 12 of the Indian Constitution deals with", opts: ["Municipalities", "Panchayats", "Tribal areas", "Languages"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 9 of the Indian Constitution was added to", opts: ["Protect land reform laws", "Introduce GST", "Add new languages", "Control defections"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 7 of the Indian Constitution contains", opts: ["Languages", "Union, State and Concurrent Lists", "Oaths", "Tribal administration"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 3 of the Indian Constitution contains provisions regarding", opts: ["Languages", "Land reforms", "Anti-defection", "Oaths affirmations"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 11 of the Indian Constitution contains provisions related to", opts: ["Municipal subjects", "Panchayati Raj subjects", "State list", "Union list"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 6 of the Indian Constitution deals with", opts: ["Land reforms", "Anti-defection law", "Tribal areas in North-Eastern states", "Allocation of seats"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 1 of the Indian Constitution deals with", opts: ["Official languages", "Allocation of seats in Rajya Sabha", "States and Union Territories", "Union finances"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 4 of the Indian Constitution deals with", opts: ["Union list", "Allocation of seats in RS", "State list", "Concurrent list"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 10 of the Indian Constitution is related to", opts: ["Tribal administration", "Official languages", "Anti-defection law", "Land reforms"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 8 of the Indian Constitution relates to", opts: ["Union finances", "Rajya Sabha seats", "Anti-defection", "Official languages of India",], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Schedule 2 of the Indian Constitution is related to", opts: ["Salary allowance and emoluments of constitutional authorities", "Forms of oaths", "State boundaries", "Tribal areas"], correct: 0, difficulty: "easy", currentSec: "polity" },
-
-
-                { q: "Part 8 of the Indian Constitution deals with", opts: ["Union Territories", "States", "Emergency provisions", "Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 14A of the Indian Constitution relates to", opts: ["Tribunals", "Elections", "Emergency provisions", "Finance Commission"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 5 of the Indian Constitution deals with", opts: ["State Government", "Local Government", "Union Government", "Emergency provisions"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 15 of the Indian Constitution deals with", opts: ["Emergency provisions", "Judiciary", "Elections", "Amendment"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 4A of the Indian Constitution is related to", opts: ["Emergency provisions", "Amendment process", "Judiciary", "Fundamental Duties"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 11 of the Indian Constitution relates to", opts: ["Emergency provisions", "Judiciary", "Elections", "Relations between Union and States"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 18 of the Indian Constitution contains provisions related to", opts: ["Amendment of Constitution", "Elections", "Finance", "Emergency"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 9B of the Indian Constitution relates to", opts: ["Co-operative societies", "Municipalities", "Elections", "Finance Commission"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 3 of the Indian Constitution contains", opts: ["Fundamental Rights", "Fundamental Duties", "Emergency provisions", "Union Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 20 of the Indian Constitution relates to", opts: ["Elections", "Finance Commission", "Emergency", "Amendment of the Constitution"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 7 of the Indian Constitution dealt with", opts: ["Union Territories", "Part B states (Repealed)", "Emergency provisions", "Panchayats"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 19 of the Indian Constitution deals with", opts: ["Miscellaneous provisions", "Amendment of Constitution", "Judiciary", "Emergency"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 14 of the Indian Constitution deals with", opts: ["Elections", "Judiciary", "Finance", "Services under Union and States"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 12 of the Indian Constitution deals with", opts: ["Finance, property and contracts", "Emergency provisions", "Judiciary", "Citizenship"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 17 of the Indian Constitution deals with", opts: ["Emergency provisions", "Official Language", "Elections", "Judiciary"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 21 of the Indian Constitution deals with", opts: ["Emergency provisions", "Temporary, Transitional and Special provisions", "Judiciary", "Elections"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 2 of the Indian Constitution is related to", opts: ["Fundamental Duties", "Directive Principles", "Official Language", "Citizenship"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 9 of the Indian Constitution is related to", opts: ["Municipalities", "Elections", "Panchayats", "Finance Commission"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 6 of the Indian Constitution is related to", opts: ["Union Territories", "Judiciary", "Elections", "States"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 4 of the Indian Constitution deals with", opts: ["Fundamental Rights", "Directive Principles of State Policy", "Citizenship", "Official Language"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 13 of the Indian Constitution relates to", opts: ["Emergency provisions", "Trade, commerce and intercourse", "Amendment of Constitution", "Judiciary"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 1 of the Indian Constitution deals with", opts: ["Citizenship", "Union and its territory", "Fundamental Rights", "Emergency provisions"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 9A of the Indian Constitution deals with", opts: ["Panchayats", "Municipalities", "Tribal areas", "Elections"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 10 of the Indian Constitution deals with", opts: ["Union Judiciary", "Official Language", "Scheduled and Tribal Areas", "Elections"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 16 of the Indian Constitution relates to", opts: ["Special provisions for SCs, STs, OBCs", "Emergency provisions", "Finance", "Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 22 of the Indian Constitution contains provisions regarding", opts: ["Short title, commencement and repeal", "Emergency provisions", "Amendment process", "Elections"], correct: 0, difficulty: "easy", currentSec: "polity" },
-
 
             ],
             booksandauth: [
@@ -2238,21 +2373,85 @@
                     correct: 3,
                     difficulty: "medium"
                 },
+            ],
 
-                // { q: "Which of *Salman Rushdie's* novels, known for its use of magical realism, tells the story of Saleem Sinai, born at the moment of India's independence?", opts: ["Grimus", "The Satanic Verses", "Midnight's children", "The Moor's last sigh"], correct: 2, difficulty: "easy" },
-                // { q: "Which *Salman Rushdie* novel, referencing disputed religious traditions, caused significant international controversy upon its release?", opts: ["The Moor's last sigh", "The Satanic Verses", "Grimus", "Midnight's children"], correct: 1, difficulty: "easy" },
-                // { q: "*Grimus* is the title of which of *Salman Rushdie's* works?", opts: ["His debut novel", "His most recent collection of essays", "A sequel to The Satanic Verses", "A children's book"], correct: 0, difficulty: "hard" },
-                // { q: "The work *Knife: meditation after the attempted* refers to which traumatic event experienced by *Salman Rushdie* in 2022?", opts: ["His first divorce", "The attempted assassination", "A major book banning", "A severe illness"], correct: 1, difficulty: "easy" },
-                // { q: "The word *Murders* is the concluding word of which specific work listed for *Salman Rushdie*?", opts: ["The Satanic Verses", "The Moor's last sigh", "Midnight's children", "Knife: meditation after the attempted Murders"], correct: 3, difficulty: "easy" },
-                // { q: "Which *Salman Rushdie* novel is a Bombay-set family saga narrated by Moraes Zogoiby, known as 'The Moor'?", opts: ["Midnight's children", "Grimus", "Shame", "The Moor's last sigh",], correct: 3, difficulty: "easy" },
-                // { q: "*The Blue Umbrella* by *Ruskin Bond* is the story of a young girl named Binya who acquires the prized item by trading what personal belonging?", opts: ["Her only cow", "A bear claw necklace", "A gold bracelet", "Her father's watch"], correct: 1, difficulty: "easy" },
-                // { q: "Which novel by *Ruskin Bond* tells the story of an orphaned Anglo-Indian boy named Rusty who begins to find freedom and friendship after renovating an unused portion of his guardian's house?", opts: ["The Hidden Pool", "The angry river", "The room on the roof", "The girl on the train"], correct: 2, difficulty: "easy" },
-                // { q: "The book *The girl on the train* by *Ruskin Bond* is a short story based on what kind of chance encounter?", opts: ["A lost puppy", "A childhood friend", "A romantic partner", "A brief conversation with a stranger"], correct: 3, difficulty: "easy" },
-                // { q: "*The angry river* is a *Ruskin Bond* story about a girl named Sita whose home is located on an island and is put in danger by which natural disaster?", opts: ["A raging flood", "A massive landslide", "A severe earthquake", "A devastating cyclone"], correct: 0, difficulty: "easy" },
-                // { q: "Which of the following books is NOT a part of Amish Tripathi's Shiva Trilogy?", opts: ["The Oath of Vayuputras", "The Secret of the Nagas", "Sita: Warrior of Mithila", "Immortals of Meluha"], correct: 2, difficulty: "easy" },
-                // { q: "Who was the recipient of the 57th Jnanpith award in 2021 for his work 'Ninamoni Phookan'?", opts: ["Damodar Mauzo (Konkani)", "G. Sankara Kurup", "Vikram Seth", "Ashwin Sanghi"], correct: 0, difficulty: "easy" },
+            // Polity
+            schedule: [
+                //{ q: "<<<<<TEARS OF OLD PM>>>>> (T(territory)E(emoluments)A(affirmations)R(RS)S(SC areas) O(Other tribal areas)F(Federal Provisions (Division of powers/Lists)) O(Official Languages)L(Land reforms)D(Defection) P(Panchayats)M(Municipalities ))", opts: [""], correct: 0, difficulty: "easy", currentSec: "polity" },
+                // Schedule
+                { q: "Schedule 5 of the Indian Constitution is concerned with", opts: ["Scheduled areas and Scheduled Tribes", "Administration of tribal areas in Assam", "Official languages", "Panchayati Raj"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 12 of the Indian Constitution deals with", opts: ["Municipalities", "Panchayats", "Tribal areas", "Languages"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 9 of the Indian Constitution was added to", opts: ["Protect land reform laws", "Introduce GST", "Add new languages", "Control defections"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 7 of the Indian Constitution contains", opts: ["Languages", "Union, State and Concurrent Lists", "Oaths", "Tribal administration"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 3 of the Indian Constitution contains provisions regarding", opts: ["Languages", "Land reforms", "Anti-defection", "Oaths affirmations"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 11 of the Indian Constitution contains provisions related to", opts: ["Municipal subjects", "Panchayati Raj subjects", "State list", "Union list"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 6 of the Indian Constitution deals with", opts: ["Land reforms", "Anti-defection law", "Tribal areas in North-Eastern states", "Allocation of seats"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 1 of the Indian Constitution deals with", opts: ["Official languages", "Allocation of seats in Rajya Sabha", "States and Union Territories", "Union finances"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 4 of the Indian Constitution deals with", opts: ["Union list", "Allocation of seats in RS", "State list", "Concurrent list"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 10 of the Indian Constitution is related to", opts: ["Tribal administration", "Official languages", "Anti-defection law", "Land reforms"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 8 of the Indian Constitution relates to", opts: ["Union finances", "Rajya Sabha seats", "Anti-defection", "Official languages of India",], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Schedule 2 of the Indian Constitution is related to", opts: ["Salary allowance and emoluments of constitutional authorities", "Forms of oaths", "State boundaries", "Tribal areas"], correct: 0, difficulty: "easy", currentSec: "polity" },
+            ],
+            parts: [
+                // Parts
+                { q: "Part 8 of the Indian Constitution deals with", opts: ["Union Territories", "States", "Emergency provisions", "Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 14A of the Indian Constitution relates to", opts: ["Tribunals", "Elections", "Emergency provisions", "Finance Commission"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 5 of the Indian Constitution deals with", opts: ["State Government", "Local Government", "Union Government", "Emergency provisions"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 15 of the Indian Constitution deals with", opts: ["Emergency provisions", "Judiciary", "Elections", "Amendment"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 4A of the Indian Constitution is related to", opts: ["Emergency provisions", "Amendment process", "Judiciary", "Fundamental Duties"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 11 of the Indian Constitution relates to", opts: ["Emergency provisions", "Judiciary", "Elections", "Relations between Union and States"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 18 of the Indian Constitution contains provisions related to", opts: ["Amendment of Constitution", "Elections", "Finance", "Emergency"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 9B of the Indian Constitution relates to", opts: ["Co-operative societies", "Municipalities", "Elections", "Finance Commission"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 3 of the Indian Constitution contains", opts: ["Fundamental Rights", "Fundamental Duties", "Emergency provisions", "Union Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 20 of the Indian Constitution relates to", opts: ["Elections", "Finance Commission", "Emergency", "Amendment of the Constitution"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 7 of the Indian Constitution dealt with", opts: ["Union Territories", "Part B states (Repealed)", "Emergency provisions", "Panchayats"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 19 of the Indian Constitution deals with", opts: ["Miscellaneous provisions", "Amendment of Constitution", "Judiciary", "Emergency"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 14 of the Indian Constitution deals with", opts: ["Elections", "Judiciary", "Finance", "Services under Union and States"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 12 of the Indian Constitution deals with", opts: ["Finance, property and contracts", "Emergency provisions", "Judiciary", "Citizenship"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 17 of the Indian Constitution deals with", opts: ["Emergency provisions", "Official Language", "Elections", "Judiciary"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 21 of the Indian Constitution deals with", opts: ["Emergency provisions", "Temporary, Transitional and Special provisions", "Judiciary", "Elections"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 2 of the Indian Constitution is related to", opts: ["Fundamental Duties", "Directive Principles", "Official Language", "Citizenship"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 9 of the Indian Constitution is related to", opts: ["Municipalities", "Elections", "Panchayats", "Finance Commission"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 6 of the Indian Constitution is related to", opts: ["Union Territories", "Judiciary", "Elections", "States"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 4 of the Indian Constitution deals with", opts: ["Fundamental Rights", "Directive Principles of State Policy", "Citizenship", "Official Language"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 13 of the Indian Constitution relates to", opts: ["Emergency provisions", "Trade, commerce and intercourse", "Amendment of Constitution", "Judiciary"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 1 of the Indian Constitution deals with", opts: ["Citizenship", "Union and its territory", "Fundamental Rights", "Emergency provisions"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 9A of the Indian Constitution deals with", opts: ["Panchayats", "Municipalities", "Tribal areas", "Elections"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 10 of the Indian Constitution deals with", opts: ["Union Judiciary", "Official Language", "Scheduled and Tribal Areas", "Elections"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 16 of the Indian Constitution relates to", opts: ["Special provisions for SCs, STs, OBCs", "Emergency provisions", "Finance", "Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 22 of the Indian Constitution contains provisions regarding", opts: ["Short title, commencement and repeal", "Emergency provisions", "Amendment process", "Elections"], correct: 0, difficulty: "easy", currentSec: "polity" },
 
             ],
+            prezvp: [
+                //President
+                { q: "Article 56 of the Indian Constitution deals with", opts: ["Powers of President", "Term of office of President", "Election disputes of President", "Impeachment of President"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 61 of the Indian Constitution deals with", opts: ["Election of Vice-President", "Impeachment of the President", "Removal of Vice-President", "Resignation of President"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 54 of the Indian Constitution relates to", opts: ["Election of the President", "Impeachment of President", "Term of President", "Powers of President"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 60 of the Indian Constitution relates to", opts: ["Election of President", "Term of President", "Oath & affirmation", "Impeachment of President"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 52 of the Indian Constitution deals with", opts: ["Prime Minister", "President", "Vice-President", "Chief Justice"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 57 of the Indian Constitution states that", opts: ["President cannot be re-elected", "President holds office for life", "President is elected indirectly", "President can be re-elected"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 59 of the Indian Constitution deals with", opts: ["Conditions of President’s office", "Election disputes", "Impeachment procedure", "Powers of Vice-President"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 62 of the Indian Constitution deals with", opts: ["Vacancy in the office of President", "Election disputes of President", "Powers of President", "Term of Vice-President"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 53 of the Indian Constitution deals with", opts: ["Election of President", "Powers of Parliament", "Impeachment of President", "Executive power of the Union"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 58 of the Indian Constitution lays down", opts: ["Impeachment procedure", "Qualifications of President", "Powers of President", "Term of office"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 55 of the Indian Constitution provides for", opts: ["Qualification of President", "Term of office of President", "Manner of election of the President", "Removal of President"], correct: 2, difficulty: "easy", currentSec: "polity" },
+
+                // Vice-President
+                { q: "Article 66 of the Indian Constitution relates to", opts: ["Term of Vice-President", "Manner of election of the Vice-President", "Oath of Vice-President", "Powers of Vice-President"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 71 of the Indian Constitution deals with", opts: ["Impeachment of President", "Term of office", "Oath of office", "Matters relating to election of President and Vice-President",], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 68 of the Indian Constitution provides for", opts: ["Vacancy in the office of President", "Vacancy in the office of Vice-President", "Impeachment procedure", "Election disputes"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 65 of the Indian Constitution deals with", opts: ["Election of Vice-President", "Vice-President acting as President", "Removal of Vice-President", "Powers of Rajya Sabha"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 70 of the Indian Constitution empowers Parliament to provide for", opts: ["Election disputes", "Discharge of President’s functions in contingencies", "Impeachment procedure", "Vice-President’s powers"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 64 of the Indian Constitution states that the Vice-President is", opts: ["Head of the State", "Ex-officio Chairman of the Rajya Sabha", "Member of Lok Sabha", "Chief Executive of Union"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 67 of the Indian Constitution deals with", opts: ["Removal of Vice-President", "Term of office of Vice-President", "Election disputes", "Oath of office"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 63 of the Indian Constitution provides for the office of", opts: ["President", "Prime Minister", "Vice-President", "Chief Justice"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Article 69 of the Indian Constitution relates to", opts: ["Oath or affirmation by the Vice-President", "Election of Vice-President", "Term of Vice-President", "Removal of Vice-President"], correct: 0, difficulty: "easy", currentSec: "polity" },
+
+            ],
+
+            //Geography
+
+
             riind: [
                 {
                     q: "The *National Dairy Research Institute* is located in which city?",
@@ -4153,116 +4352,6 @@
                 renderQuestions(document.querySelector('.filter-btn.active').dataset.filter, searchInput.value);
             });
         });
-
-        function changePdfBtn() {
-            const actvBtn = document.querySelector('.section-btn.active');
-            var activeSec = '';
-
-            if (actvBtn) {
-                activeSec = actvBtn.dataset.section;
-                console.log("Active Section:", activeSec);
-
-            }
-
-            //Impt
-            switch (activeSec) {
-                // English
-                case 'adj': document.getElementById("openPdf").textContent = "Adjective Pdf"; break;
-                case 'adv': document.getElementById("openPdf").textContent = "Adverb Pdf"; break;
-                case 'article': document.getElementById("openPdf").textContent = "Article Pdf"; break;
-                case 'cndsent': document.getElementById("openPdf").textContent = "Conditional Sentence Pdf"; break;
-                case 'conjunc': document.getElementById("openPdf").textContent = "Conjunction Pdf"; break;
-                case 'deter': document.getElementById("openPdf").textContent = "Determiners Pdf"; break;
-                case 'fillups': document.getElementById("openPdf").textContent = "Fill Ups Pdf"; break;
-                case 'idioms': document.getElementById("openPdf").textContent = "Idioms Pdf"; break;
-                case 'mood': document.getElementById("openPdf").textContent = "Mood Pdf"; break;
-                case 'narr': document.getElementById("openPdf").textContent = "Narration Pdf"; break;
-                case 'noun': document.getElementById("openPdf").textContent = "Noun Pdf"; break;
-                case 'ows': document.getElementById("openPdf").textContent = "OWS Pdf"; break;
-                case 'paraJumb': document.getElementById("openPdf").textContent = "Para Jumble Pdf"; break;
-                case 'pv': document.getElementById("openPdf").textContent = "Phrasal Verb Pdf"; break;
-                case 'pandc': document.getElementById("openPdf").textContent = "Phrases and Clause Pdf"; break;
-                case 'prep': document.getElementById("openPdf").textContent = "Preposition Pdf"; break;
-                case 'pronoun': document.getElementById("openPdf").textContent = "Pronoun Pdf"; break;
-                case 'questag': document.getElementById("openPdf").textContent = "Question Tag Pdf"; break;
-                case 'sentImp': document.getElementById("openPdf").textContent = "Sentence Imprv Pdf"; break;
-                case 'spotErr': document.getElementById("openPdf").textContent = "Spotting Error Pdf"; break;
-                case 'supexp': document.getElementById("openPdf").textContent = "Superflous Expression Pdf"; break;
-                case 'tense': document.getElementById("openPdf").textContent = "Tense Pdf"; break;
-                case 'sva': document.getElementById("openPdf").textContent = "Subject Verb Agreement Pdf"; break;
-                case 'verb': document.getElementById("openPdf").textContent = "Verb Pdf"; break;
-                case 'vocab': document.getElementById("openPdf").textContent = "Vocab Pdf"; break;
-                case 'voice': document.getElementById("openPdf").textContent = "Voice Pdf"; break;
-                case 'sixtyrules': document.getElementById("openPdf").textContent = "60 Rules Pdf"; break;
-
-
-                // Maths Daily Practice
-                case 'triplets': document.getElementById("openPdf").textContent = "Triplets Img"; break;
-                case 'squares': document.getElementById("openPdf").textContent = "Squares Img"; break;
-                case 'cubes': document.getElementById("openPdf").textContent = "Cubes Img"; break;
-                case 'prime': document.getElementById("openPdf").textContent = "Prime Pdf"; break;
-                case 'ptf': document.getElementById("openPdf").textContent = "%toFrac Img"; break;
-                case 'ftp': document.getElementById("openPdf").textContent = "Fracto% Img"; break;
-
-                // Maths
-                case 'tsd': document.getElementById("openPdf").textContent = "TSD Pdf"; break;
-                case 'average': document.getElementById("openPdf").textContent = "Average Pdf"; break;
-                case 'algbr': document.getElementById("openPdf").textContent = "Algebra Pdf"; break;
-                case 'tandw': document.getElementById("openPdf").textContent = "Time Work Pdf"; break;
-                case 'proLoss': document.getElementById("openPdf").textContent = "Profit Loss Pdf"; break;
-                case 'triangle': document.getElementById("openPdf").textContent = "Triangle Pdf"; break;
-                case 'circle': document.getElementById("openPdf").textContent = "Circle Pdf"; break;
-                case 'numsys': document.getElementById("openPdf").textContent = "No System Pdf"; break;
-                case 'percent': document.getElementById("openPdf").textContent = "Percentage Pdf"; break;
-                case 'mens': document.getElementById("openPdf").textContent = "Mensuration Pdf"; break;
-                case 'pnc': document.getElementById("openPdf").textContent = "PNC Pdf"; break;
-                case 'prob': document.getElementById("openPdf").textContent = "Probability Pdf"; break;
-                case 'trigo': document.getElementById("openPdf").textContent = "Trigonometry Pdf"; break;
-                case 'install': document.getElementById("openPdf").textContent = "Installment Pdf"; break;
-                case 'mixalli': document.getElementById("openPdf").textContent = "Mix Alli Pdf"; break;
-                case 'stat': document.getElementById("openPdf").textContent = "Statistics Pdf"; break;
-                case 'ratio': document.getElementById("openPdf").textContent = "Ratio Pdf"; break;
-                case 'compInt': document.getElementById("openPdf").textContent = "CI Pdf"; break;
-                case 'simpInt': document.getElementById("openPdf").textContent = "SI Pdf"; break;
-                case 'boatsandstrm': document.getElementById("openPdf").textContent = "Boats & Streams Pdf"; break;
-
-
-
-
-
-
-                // Reas
-                case 'analg': document.getElementById("openPdf").textContent = "Analogy Pdf"; break;
-
-                // GS
-                case 'phy': document.getElementById("openPdf").textContent = "Physics Pdf"; break;
-                case 'chem': document.getElementById("openPdf").textContent = "Chemistry Pdf"; break;
-                case 'bio': document.getElementById("openPdf").textContent = "Biology Pdf"; break;
-                case 'eco': document.getElementById("openPdf").textContent = "Economics Pdf"; break;
-                case 'hist': document.getElementById("openPdf").textContent = "History Pdf"; break;
-                case 'geog': document.getElementById("openPdf").textContent = "Geography Pdf"; break;
-                case 'polity': document.getElementById("openPdf").textContent = "Polity Pdf"; break;
-
-                // Static GK
-                case 'bandauth': document.getElementById("openPdf").textContent = "Books and Authors Pdf"; break;
-                case 'cdan': document.getElementById("openPdf").textContent = "Classical, Folk Dance & Festivals Pdf"; break;
-                case 'census': document.getElementById("openPdf").textContent = "Census Pdf"; break;
-                case 'fest': document.getElementById("openPdf").textContent = "Festival Pdf"; break;
-                case 'fdan': document.getElementById("openPdf").textContent = "Folk and Martial Dance Pdf"; break;
-                case 'gharana': document.getElementById("openPdf").textContent = "Gharana Pdf"; break;
-                case 'imptd': document.getElementById("openPdf").textContent = "Impt Days Pdf"; break;
-                case 'intorg': document.getElementById("openPdf").textContent = "Int and National Org Pdf"; break;
-                case 'minst': document.getElementById("openPdf").textContent = "Musical Instruments Pdf"; break;
-                case 'riind': document.getElementById("openPdf").textContent = "Research Institutes Pdf"; break;
-                case 'sports': document.getElementById("openPdf").textContent = "Sports Pdf"; break;
-                case 'ntpcset': document.getElementById("openPdf").textContent = "NTPC Pdf"; break;
-
-
-                default:
-                    document.getElementById("openPdf").textContent = "Open Pdf"; break;
-            }
-        }
-
 
         sectionButtons1.forEach(btn => {
             btn.addEventListener('click', () => {
