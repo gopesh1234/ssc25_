@@ -202,10 +202,10 @@
                 <button class="section-btn maths cmp" data-section="aroftrian">Area of Triangle (✔✔)(E)</button>
                 <button class="section-btn maths cmp" data-section="perimeter">Perimeter (✔✔)(E)</button>
                 <button class="section-btn maths" data-section="formoftrian">Formation of Triangle (E)</button>
-                <button class="section-btn maths" data-section="perioftrian">Perimeter of Triangle (E)</button>
-                <button class="section-btn maths" data-section="medoftrian">Median of Triangle (E)</button>
-                <button class="section-btn maths" data-section="inradius">Inradius (E)</button>
-                <button class="section-btn maths" data-section="exradius">Exradius (E)</button>
+                <button class="section-btn maths cmp" data-section="perimeter">Perimeter of Triangle (✔✔)(E)</button>
+                <button class="section-btn maths cmp" data-section="median">Median of Triangle (✔✔)(E)</button>
+                <button class="section-btn maths cmp" data-section="inradius">Inradius (✔✔)(E)</button>
+                <button class="section-btn maths cmp" data-section="exradius">Exradius (✔✔)(E)</button>
                 <button class="section-btn maths" data-section="circumcentre">Circumcentre (E)</button>
                 <button class="section-btn maths" data-section="orthocentre">Orthocentre (E)</button>
                 <button class="section-btn maths" data-section="isostrian">Isosceles Triangle (E)</button>
@@ -306,6 +306,7 @@
                 <button class="section-btn gs cmp" data-section="parts">Parts (✔✔)(Polity)</button>
                 <button class="section-btn gs cmp" data-section="prezvp">President and VP (✔✔)(Polity)</button>
                 <button class="section-btn gs cmp" data-section="countries">Countries (✔✔)(Polity)</button>
+                <button class="section-btn gs cmp" data-section="articles">Articles (✔✔)(Polity)</button>
 
                 <button class="section-btn gs cmp" data-section="xyz4">Total: 7</button>
 
@@ -411,12 +412,16 @@
 
                 // Maths
                 case 'cogeo': document.getElementById("openPdf").textContent = "Co Ordinate Geo Pdf"; break;
+
                 case 'lineangle': document.getElementById("openPdf").textContent = "Line Angle Pdf"; break;
                 case 'anglebisector': document.getElementById("openPdf").textContent = "Angle Bisector Pdf"; break;
                 case 'sine': document.getElementById("openPdf").textContent = "Sine Pdf"; break;
                 case 'cosine': document.getElementById("openPdf").textContent = "Cosine Pdf"; break;
                 case 'aroftrian': document.getElementById("openPdf").textContent = "Area of Triangle Pdf"; break;
                 case 'perimeter': document.getElementById("openPdf").textContent = "Perimeter Pdf"; break;
+                case 'median': document.getElementById("openPdf").textContent = "Median Pdf"; break;
+                case 'inradius': document.getElementById("openPdf").textContent = "In-Radius Pdf"; break;
+                case 'exradius': document.getElementById("openPdf").textContent = "Ex-Radius Pdf"; break;
 
                 case 'tsd': document.getElementById("openPdf").textContent = "TSD Pdf"; break;
                 case 'average': document.getElementById("openPdf").textContent = "Average Pdf"; break;
@@ -757,12 +762,13 @@
 
         function checkMaths(str) {
 
-            var mathsArray = ['triplets', 'squares', 'cubes', 'prime', 'ptf', 'ftp','numsys',
+            var mathsArray = ['triplets', 'squares', 'cubes', 'prime', 'ptf', 'ftp', 'numsys',
                 'age', 'algbr', 'apgphp', 'average', 'boatsandstrm', 'circle', 'compInt', 'cogeo',
                 'election', 'handd', 'handl', 'incExp', 'ratio', 'install', 'kpc', 'mens2d', 'mens3d',
                 'mhall', 'numconv', 'part', 'percent', 'pnc', 'poly', 'prism', 'price', 'prob',
-                'proLoss', 'pyramid', 'quad', 'race', 'soc', 'simpInt', 'stat', 'tandw', 'tsd', 
-                'triangle', 'trigo', 'mixalli', 'dailypractmaths', 'quartile', 'lineangle', 'cosine', 'aroftrian', 'perimeter'];
+                'proLoss', 'pyramid', 'quad', 'race', 'soc', 'simpInt', 'stat', 'tandw', 'tsd',
+                'triangle', 'trigo', 'mixalli', 'dailypractmaths', 'quartile', 'lineangle', 'cosine', 'aroftrian', 'perimeter',
+                'inradius', 'exradius', 'median'];
 
             return mathsArray.includes(str);
         }
@@ -840,6 +846,33 @@
                     return pdfLinks = [
                         driveLink,
                         "https://www.youtube.com/watch?v=ZUOX6Asp5lw&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=12", // Triangle
+                    ];
+
+                case 'median':
+                    driveLink = "https://drive.google.com/file/d/1KJe0bNL6W7n9YDI4EyYmBUHIbryCxULy/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1KpYXBiJWOMg4a4oNiyVdgIB9mqMJkdNq/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=Oo9PguHYzlE&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=13", // Triangle
+                    ];
+
+                case 'inradius':
+                    driveLink = "https://drive.google.com/file/d/19xHHtLGJmiA4lZHL3Luuj68CgS1ZyOl0/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1fa34EsS6XaIMDDsdZEk8SffWKfW6hfu5/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=ErOmb-xepYo&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=14", // Triangle
+                    ];
+
+                case 'exradius':
+                    driveLink = "https://drive.google.com/file/d/1wtFSNH2TrRYqSZ0PPmYg0OY1QJkwHG38/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1VcvUctpy7aCqapBjwQFqH0UJAk0nHJ6O/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=tjJWjdXvZeY&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=15", // Triangle
                     ];
 
                 case 'stat':
@@ -2382,6 +2415,85 @@
                 },
             ],
 
+            articles: [
+                { q: "(Part1 - Name and territory of Union) Article 1 of the Indian Constitution describes India as", opts: ["A federation of states", "A Union of States", "A confederation", "A sovereign monarchy"], correct: 1, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 2(Sikkim is included) of the Indian Constitution empowers Parliament to", opts: ["Change state names", "Alter state boundaries", "Create Union Territories", "Admit or establish new states"], correct: 3, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 3 of the Constitution of India deals with", opts: ["Formation of new states and alteration of areas, boundaries or names of states", "Citizenship provisions", "Emergency provisions", "Fundamental Rights"], correct: 0, difficulty: "easy", currentSec: "articles" },
+                { q: "***Article 4 states that laws made under Articles 2 and 3", opts: ["Need ratification by states", "Require special majority", "Shall not be deemed to be constitutional amendments", "Are temporary laws"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                
+
+                { q: "(Part2 - Citizenship) Article 5 of the Indian Constitution relates to", opts: ["Single citizenship", "Citizenship at the constitution commencement", "Acquisition of citizenship", "Termination of citizenship"], correct: 1, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 6 of the Indian Constitution deals with citizenship rights of persons who migrated to India from", opts: ["Sri Lanka", "Bangladesh", "Afghanistan", "Pakistan"], correct: 3, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 7 of the Constitution is related to citizenship of persons who migrated to Pakistan and later", opts: ["Returned to India", "Settled permanently abroad", "Applied for dual citizenship", "Lost Indian citizenship forever"], correct: 0, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 8 of the Indian Constitution provides citizenship rights to persons of Indian origin residing in", opts: ["India", "Pakistan", "Foreign countries", "Nepal"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 9 states that a person shall lose Indian citizenship if he voluntarily acquires citizenship of", opts: ["Any SAARC country", "A foreign state", "A Commonwealth nation", "A neighbouring country"], correct: 1, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 10 of the Indian Constitution deals with the continuance of rights of citizenship subject to", opts: ["Law made by Parliament", "State legislature approval", "Presidential discretion", "Judicial review"], correct: 0, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 11 of the Indian Constitution empowers Parliament to", opts: ["Grant dual citizenship", "Decide citizenship disputes", "Amend Fundamental Rights", "Make laws regarding acquisition and termination of citizenship"], correct: 3, difficulty: "easy", currentSec: "articles" },
+
+
+                { q: "(Part3 - Fundamental Rights) Article 12 of the Indian Constitution defines the term 'State' for the purpose of", opts: ["Citizenship provisions", "Emergency powers", "Fundamental Rights", "Directive Principles"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 13 declares that laws inconsistent with Fundamental Rights shall be", opts: ["Enforced with conditions", "Valid after amendment", "Applicable only to states", "Void"], correct: 3, difficulty: "easy", currentSec: "articles" },
+                { q: "(Right to Equality (14-18) Article 14 of the Indian Constitution guarantees", opts: ["Equality before law and equal protection of laws", "Right to freedom of religion", "Right to constitutional remedies", "Right against exploitation"], correct: 0, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 15 prohibits discrimination on grounds of", opts: ["Income and property", "Religion, race, caste, sex or place of birth", "Language and region only", "Education and occupation"], correct: 1, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 16 of the Indian Constitution provides for", opts: ["Equality before law", "Abolition of titles", "Equality of opportunity in public employment", "Right to life"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 17 of the Indian Constitution abolishes", opts: ["Child labour", "Untouchability", "Bonded labour", "Slavery"], correct: 1, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 18 of the Indian Constitution deals with", opts: ["Freedom of speech", "Equality before law", "Right to religion", "Abolition of titles"], correct: 3, difficulty: "easy", currentSec: "articles" },
+                
+                { q: "(Right to Freedom (19-22) Article 19 guarantees citizens the", opts: ["Right to religion", "Right against exploitation", "Freedom of speech", "Right to education"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 20 of the Indian Constitution provides protection against", opts: ["Conviction for offences", "Preventive detention", "Arbitrary arrest", "Double jeopardy and self-incrimination"], correct: 0, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 21 guarantees", opts: ["Right to equality", "Right to life and personal liberty", "Right to education", "Right to privacy only"], correct: 1, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 21A guarantees", opts: ["Right to equality", "Right to life and personal liberty", "Right to education", "Right to privacy only"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 22 of the Constitution deals with protection against", opts: ["Untouchability", "Ex-post facto laws", "Arrest and detention", "Discrimination"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                
+                { q: "(Right against Exploitation (23-24) Article 23 prohibits", opts: ["Traffic in human beings and forced labour", "Child labour", "Untouchability", "Slavery only"], correct: 0, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 24 of the Indian Constitution prohibits employment of children below 14 years in", opts: ["Agriculture", "Family business", "Offices", "Factories, mines and hazardous employment"], correct: 3, difficulty: "easy", currentSec: "articles" },
+                
+                { q: "Article 25 of the Indian Constitution ensures", opts: ["Freedom of conscience and religion", "Freedom of speech", "Freedom of movement", "Freedom of profession"], correct: 0, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 26 grants religious denominations the right to", opts: ["Establish courts", "Run political parties", "Manage their own affairs in matters of religion", "Collect taxes"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 27 prohibits the use of public funds for", opts: ["Education", "Defense", "Welfare schemes", "Promotion of any particular religion"], correct: 3, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 28 relates to", opts: ["Freedom of religion", "Religious instruction in educational institutions", "Minority rights", "Cultural rights"], correct: 1, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 29 protects the interests of", opts: ["Minorities", "Women", "Children", "SC/STs"], correct: 0, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 30 grants minorities the right to", opts: ["Vote separately", "Form political parties", "Claim reservation", "Establish and administer educational institutions"], correct: 3, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 31 (now repealed) was related to", opts: ["Right to education", "Freedom of religion", "Right to property", "Right to equality"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 32 of the Indian Constitution provides the right to", opts: ["Constitutional remedies", "Appeal to Parliament", "Judicial review", "Legal aid"], correct: 0, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 33 empowers Parliament to restrict Fundamental Rights of", opts: ["Judges", "Teachers", "Citizens abroad", "Armed forces and police forces"], correct: 3, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 34 deals with restriction of Fundamental Rights during", opts: ["Emergency", "War", "Martial law", "President’s rule"], correct: 2, difficulty: "easy", currentSec: "articles" },
+                { q: "Article 35 empowers Parliament to make laws for", opts: ["Giving effect to Fundamental Rights", "Amending the Constitution", "Judicial review", "Emergency provisions"], correct: 0, difficulty: "easy", currentSec: "articles" },
+
+
+            ],
+
+            parts: [
+                // Parts
+                { q: "Part 8 of the Indian Constitution deals with", opts: ["Union Territories", "States", "Emergency provisions", "Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 14A of the Indian Constitution relates to", opts: ["Tribunals", "Elections", "Emergency provisions", "Finance Commission"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 5 of the Indian Constitution deals with", opts: ["State Government", "Local Government", "Union Government", "Emergency provisions"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 15 of the Indian Constitution deals with", opts: ["Emergency provisions", "Judiciary", "Elections", "Amendment"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 4A of the Indian Constitution is related to", opts: ["Emergency provisions", "Amendment process", "Judiciary", "Fundamental Duties"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 11 of the Indian Constitution relates to", opts: ["Emergency provisions", "Judiciary", "Elections", "Relations between Union and States"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 18 of the Indian Constitution contains provisions related to", opts: ["Amendment of Constitution", "Elections", "Finance", "Emergency"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 9B of the Indian Constitution relates to", opts: ["Co-operative societies", "Municipalities", "Elections", "Finance Commission"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 3 (Art 12 to 35) of the Indian Constitution contains", opts: ["Fundamental Rights", "Fundamental Duties", "Emergency provisions", "Union Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 20 of the Indian Constitution relates to", opts: ["Elections", "Finance Commission", "Emergency", "Amendment of the Constitution"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 7 of the Indian Constitution dealt with", opts: ["Union Territories", "Part B states (Repealed)", "Emergency provisions", "Panchayats"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 19 of the Indian Constitution deals with", opts: ["Miscellaneous provisions", "Amendment of Constitution", "Judiciary", "Emergency"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 14 of the Indian Constitution deals with", opts: ["Elections", "Judiciary", "Finance", "Services under Union and States"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 12 of the Indian Constitution deals with", opts: ["Finance, property and contracts", "Emergency provisions", "Judiciary", "Citizenship"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 17 of the Indian Constitution deals with", opts: ["Emergency provisions", "Official Language", "Elections", "Judiciary"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 21 of the Indian Constitution deals with", opts: ["Emergency provisions", "Temporary, Transitional and Special provisions", "Judiciary", "Elections"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 2 (Art 5 to 11) of the Indian Constitution is related to", opts: ["Fundamental Duties", "Directive Principles", "Official Language", "Citizenship"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 9 of the Indian Constitution is related to", opts: ["Municipalities", "Elections", "Panchayats", "Finance Commission"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 6 of the Indian Constitution is related to", opts: ["Union Territories", "Judiciary", "Elections", "States"], correct: 3, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 4 of the Indian Constitution deals with", opts: ["Fundamental Rights", "Directive Principles of State Policy", "Citizenship", "Official Language"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 13 of the Indian Constitution relates to", opts: ["Emergency provisions", "Trade, commerce and intercourse", "Amendment of Constitution", "Judiciary"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 1 (Art 1 to 4) of the Indian Constitution deals with", opts: ["Citizenship", "Union and its territory", "Fundamental Rights", "Emergency provisions"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 9A of the Indian Constitution deals with", opts: ["Panchayats", "Municipalities", "Tribal areas", "Elections"], correct: 1, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 10 of the Indian Constitution deals with", opts: ["Union Judiciary", "Official Language", "Scheduled and Tribal Areas", "Elections"], correct: 2, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 16 of the Indian Constitution relates to", opts: ["Special provisions for SCs, STs, OBCs", "Emergency provisions", "Finance", "Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
+                { q: "Part 22 of the Indian Constitution contains provisions regarding", opts: ["Short title, commencement and repeal", "Emergency provisions", "Amendment process", "Elections"], correct: 0, difficulty: "easy", currentSec: "polity" },
+
+            ],
+
             // Polity
             countries: [
 
@@ -2461,36 +2573,7 @@
                 { q: "Schedule 8 of the Indian Constitution relates to", opts: ["Union finances", "Rajya Sabha seats", "Anti-defection", "Official languages of India",], correct: 3, difficulty: "easy", currentSec: "polity" },
                 { q: "Schedule 2 of the Indian Constitution is related to", opts: ["Salary allowance and emoluments of constitutional authorities", "Forms of oaths", "State boundaries", "Tribal areas"], correct: 0, difficulty: "easy", currentSec: "polity" },
             ],
-            parts: [
-                // Parts
-                { q: "Part 8 of the Indian Constitution deals with", opts: ["Union Territories", "States", "Emergency provisions", "Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 14A of the Indian Constitution relates to", opts: ["Tribunals", "Elections", "Emergency provisions", "Finance Commission"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 5 of the Indian Constitution deals with", opts: ["State Government", "Local Government", "Union Government", "Emergency provisions"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 15 of the Indian Constitution deals with", opts: ["Emergency provisions", "Judiciary", "Elections", "Amendment"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 4A of the Indian Constitution is related to", opts: ["Emergency provisions", "Amendment process", "Judiciary", "Fundamental Duties"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 11 of the Indian Constitution relates to", opts: ["Emergency provisions", "Judiciary", "Elections", "Relations between Union and States"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 18 of the Indian Constitution contains provisions related to", opts: ["Amendment of Constitution", "Elections", "Finance", "Emergency"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 9B of the Indian Constitution relates to", opts: ["Co-operative societies", "Municipalities", "Elections", "Finance Commission"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 3 of the Indian Constitution contains", opts: ["Fundamental Rights", "Fundamental Duties", "Emergency provisions", "Union Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 20 of the Indian Constitution relates to", opts: ["Elections", "Finance Commission", "Emergency", "Amendment of the Constitution"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 7 of the Indian Constitution dealt with", opts: ["Union Territories", "Part B states (Repealed)", "Emergency provisions", "Panchayats"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 19 of the Indian Constitution deals with", opts: ["Miscellaneous provisions", "Amendment of Constitution", "Judiciary", "Emergency"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 14 of the Indian Constitution deals with", opts: ["Elections", "Judiciary", "Finance", "Services under Union and States"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 12 of the Indian Constitution deals with", opts: ["Finance, property and contracts", "Emergency provisions", "Judiciary", "Citizenship"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 17 of the Indian Constitution deals with", opts: ["Emergency provisions", "Official Language", "Elections", "Judiciary"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 21 of the Indian Constitution deals with", opts: ["Emergency provisions", "Temporary, Transitional and Special provisions", "Judiciary", "Elections"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 2 of the Indian Constitution is related to", opts: ["Fundamental Duties", "Directive Principles", "Official Language", "Citizenship"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 9 of the Indian Constitution is related to", opts: ["Municipalities", "Elections", "Panchayats", "Finance Commission"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 6 of the Indian Constitution is related to", opts: ["Union Territories", "Judiciary", "Elections", "States"], correct: 3, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 4 of the Indian Constitution deals with", opts: ["Fundamental Rights", "Directive Principles of State Policy", "Citizenship", "Official Language"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 13 of the Indian Constitution relates to", opts: ["Emergency provisions", "Trade, commerce and intercourse", "Amendment of Constitution", "Judiciary"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 1 of the Indian Constitution deals with", opts: ["Citizenship", "Union and its territory", "Fundamental Rights", "Emergency provisions"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 9A of the Indian Constitution deals with", opts: ["Panchayats", "Municipalities", "Tribal areas", "Elections"], correct: 1, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 10 of the Indian Constitution deals with", opts: ["Union Judiciary", "Official Language", "Scheduled and Tribal Areas", "Elections"], correct: 2, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 16 of the Indian Constitution relates to", opts: ["Special provisions for SCs, STs, OBCs", "Emergency provisions", "Finance", "Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
-                { q: "Part 22 of the Indian Constitution contains provisions regarding", opts: ["Short title, commencement and repeal", "Emergency provisions", "Amendment process", "Elections"], correct: 0, difficulty: "easy", currentSec: "polity" },
-
-            ],
+            
             prezvp: [
                 //President
                 { q: "Article 56 of the Indian Constitution deals with", opts: ["Powers of President", "Term of office of President", "Election disputes of President", "Impeachment of President"], correct: 1, difficulty: "easy", currentSec: "polity" },
@@ -4297,26 +4380,7 @@
 
 
             ],
-            pv: [
-                { q: "Put off", opts: ["Delay or Postpone"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Call off", opts: ["Cancel"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put out (3 meanings)", opts: ["Extinguish >> Sad or Disappointed >> Publish"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put down (2 meanings)", opts: ["Write down >> Crush or Suppress"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Look down upon", opts: ["Insult or Suppress"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put up (3 meanings)", opts: ["Reside or stay >> Display on board >> Build something"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put up with", opts: ["Tolerate or Endure"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Bear with", opts: ["Tolerate"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put aside (2 meanings)", opts: ["Ignore >> Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put by", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Lay aside", opts: ["Save for rainy days (bad days)"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put on (3 meanings)", opts: ["Wear smile or dress >> Gain weight >> Pretend"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put in (2 meanings)", opts: ["Efforts >> Request"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put across", opts: ["Explain an idea clearly"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put forward", opts: ["Only suggest an idea"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Put through", opts: ["Face difficult situation"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Get through", opts: ["Pass an exam very easily or without any efforts"], correct: 0, difficulty: "easy", currentSec: "english" },
-                { q: "Go through", opts: ["Go through the letter"], correct: 0, difficulty: "easy", currentSec: "english" },
-            ],
+            pv: [],
             narr: [],
             voice: [],
             article: [],
