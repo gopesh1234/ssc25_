@@ -320,7 +320,8 @@
                 <button class="section-btn sgk" data-section="minst">Musical Instruments</button>
                 <button class="section-btn sgk" data-section="riind">Research Institutes of India</button>
                 <button class="section-btn sgk" data-section="sports">Sports</button>
-                <button class="section-btn sgk" data-section="xyz5">Total: 9</button>
+                <button class="section-btn sgk cmp" data-section="natpark">National Parks (✔✔)</button>
+                <button class="section-btn sgk" data-section="xyz5">Total: 10</button>
 
                 <button class="section-btn sgk" data-section="abbre">Abbreviations - NTPC</button>
                 <button class="section-btn sgk" data-section="ntpcset">Sets - NTPC</button>
@@ -464,6 +465,7 @@
                 case 'riind': document.getElementById("openPdf").textContent = "Research Institutes Pdf"; break;
                 case 'sports': document.getElementById("openPdf").textContent = "Sports Pdf"; break;
                 case 'ntpcset': document.getElementById("openPdf").textContent = "NTPC Pdf"; break;
+                case 'natpark': document.getElementById("openPdf").textContent = "National Parks Pdf"; break;
 
 
                 default:
@@ -1325,12 +1327,13 @@
 
                 // Geography
                 case 'solarsys':
-                    driveLink = "https://drive.google.com/file/d/1oJuzJTu_VMlYXKyRMxPLX2puz-Q48BMZ/view?usp=drive_link";
+                    driveLink = "https://drive.google.com/file/d/1oJuzJTu_VMlYXKyRMxPLX2puz-Q48BMZ/view?usp=drive_link"; // Intro
                     driveLink2 = "https://drive.google.com/file/d/15wL-H8hMH7plxhKL6Iv5ObISALrlMIJs/view?usp=drive_link";
                     driveLink3 = "https://drive.google.com/file/d/1y9g5lo818M7ZcmyPvXJOK2saQeFn_aDz/view?usp=drive_link";
+                    driveLink4 = "https://drive.google.com/file/d/14i4dlEZuRMqlRBCZjW41KZNGmW7RA4ku/view?usp=drive_link";
 
                     return pdfLinks = [
-                        driveLink, driveLink2, driveLink3,
+                        driveLink, driveLink2, driveLink3, driveLink4,
                         "https://www.youtube.com/watch?v=vZvckhklhZU",
                     ];
 
@@ -1444,6 +1447,14 @@
                         "https://www.youtube.com/watch?v=QicHHgUGShs&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=9",
                     ];
 
+                case 'natpark':
+                    driveLink = "https://drive.google.com/file/d/159uuULxZw3mHZ8VOQ5LKOlEJnQ6fIzMT/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink,
+                        "https://www.youtube.com/watch?v=P5lhwrquIT8&t=418s",
+                    ];
+
                 case 'arts':
                     driveLink = "";
 
@@ -1522,12 +1533,7 @@
                         "https://www.youtube.com/watch?v=6OW7YA9V7mk",
                     ];
 
-                case 'natpark':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=26kxGKkorGo",
-                    ];
+                
 
                 case 'riind':
                     driveLink = "";
