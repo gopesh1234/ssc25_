@@ -152,8 +152,9 @@
                 <button class="section-btn1 sgk1" data-section="sgk">Static GK</button>
                 <hr /><hr />
 
-                <button class="section-btn eng cmp" data-section="vocab">Vocab<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="adj">Adjectives<sup>✔✔</sup></button>
+
+                <button class="section-btn eng cmp" data-section="vocab">Vocab<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="partsspeech">Parts of Speech<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="noun">Noun<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="idioms">Idioms<sup>❗</sup></button>
@@ -168,6 +169,7 @@
                 <button class="section-btn eng cmp" data-section="sixtyrules">120 Rules of Grammar<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="spotErr">Spotting Error<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="sentImp">Sentence Improvement<sup>❗</sup></button>
+                <button class="section-btn eng cmp" data-section="mixvocab">Mix Vocab<sup>❗</sup></button>
 
 
                 <button class="section-btn eng" data-section="atozgrmmr">AtoZ Grammar</button>
@@ -427,6 +429,7 @@
                 case 'vocab': document.getElementById("openPdf").textContent = "Vocab Pdf"; break;
                 case 'voice': document.getElementById("openPdf").textContent = "Voice Pdf"; break;
                 case 'sixtyrules': document.getElementById("openPdf").textContent = "60 Rules Pdf"; break;
+                case 'mixvocab': document.getElementById("openPdf").textContent = "Mix Vocab Pdf"; break;
 
 
                 // Maths Daily Practice
@@ -537,7 +540,7 @@
                 'mood', 'narr', 'noun', 'ows', 'paraJumb', 'pv', 'pandc', 'prep',
                 'pronoun', 'questag', 'sentImp', 'spotErr', 'supexp', 'sva', 'tense', 'verb',
                 'vocab', 'voice', 'sixtyrules', 'dspreeng', 'dailypracteng', 'cloze', 'atozgrmmr', 'sentencestypes',
-                'partsspeech'];
+                'partsspeech', 'mixvocab'];
 
             return engArray.includes(str);
         }
@@ -590,6 +593,14 @@
                     return pdfLinks = [
                         driveLink,
                         "https://www.youtube.com/watch?v=NoNFAPhEuPQ",
+                    ];
+
+                case 'mixvocab':
+                    driveLink = "https://drive.google.com/file/d/1eq8bCl6BGwyTk9DS_cR9hDztSsdtFSyF/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink,
+                        "https://www.youtube.com/watch?v=Fq4OVPswUh4",
                     ];
 
                 // case 'atozgrmmr':
