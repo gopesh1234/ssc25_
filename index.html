@@ -589,17 +589,19 @@
 
                 case 'ows':
                     driveLink = "https://drive.google.com/file/d/1vcjaDCMT42cKmpO_n2OE6N0iptPks6z6/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/13Htijd_eliGFWjdTds-PiBrk8qLv2gKm/view?usp=drive_link";
 
                     return pdfLinks = [
-                        driveLink,
+                        driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=NoNFAPhEuPQ",
                     ];
 
                 case 'mixvocab':
                     driveLink = "https://drive.google.com/file/d/1eq8bCl6BGwyTk9DS_cR9hDztSsdtFSyF/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1U4vMeqfs_-5nxwmhu7DqUIKXzCc7N8sQ/view?usp=drive_link";
 
                     return pdfLinks = [
-                        driveLink,
+                        driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=Fq4OVPswUh4",
                     ];
 
@@ -679,7 +681,7 @@
                         "https://www.youtube.com/watch?v=ahCn6eYrzXk&list=PLM9OY0jASMM1O5hzHiTBQIVkumVktDKi5&index=8",
                     ];
 
-                
+
 
                 case 'pv':
                     driveLink = "https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link";
@@ -1834,18 +1836,18 @@
             // Overlay background
             const overlay = document.createElement("div");
             overlay.style = `
-                    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-                    background: rgba(0,0,0,0.7); display: flex; align-items: center;
-                    justify-content: center; z-index: 9999;
-                  `;
+                                    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+                                    background: rgba(0,0,0,0.7); display: flex; align-items: center;
+                                    justify-content: center; z-index: 9999;
+                                  `;
 
             // Popup box
             const popup = document.createElement("div");
             popup.style = `
-                    position: relative; width: 80%; height: 80%;
-                    background: #fff; border-radius: 10px;
-                    overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
-                  `;
+                                    position: relative; width: 80%; height: 80%;
+                                    background: #fff; border-radius: 10px;
+                                    overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                                  `;
 
             // PDF / YouTube iframe
             const iframe = document.createElement("iframe");
@@ -4570,9 +4572,9 @@
                 const select = document.createElement('select');
                 select.className = 'difficulty-select';
                 select.innerHTML = `
-                                                  <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
-                                                  <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
-                                                `;
+                                                                  <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
+                                                                  <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
+                                                                `;
 
                 select.onchange = () => {
                     savedDifficulty[question.q] = select.value;
