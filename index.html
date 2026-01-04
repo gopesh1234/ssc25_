@@ -201,15 +201,26 @@
 
                 <hr class="maths" /><hr class="maths" />
 
-                <button class="section-btn maths cmp" data-section="cogeo">Co-ordinate Geo(M)<sup>✔✔</sup></button>
+                <button class="section-btn maths" data-section="lineangle">Line Angle (Triangle)(E)</button>
+                <button class="section-btn maths" data-section="anglebisc">Angle Bisector (Triangle)(E)</button>
+                <button class="section-btn maths" data-section="sine">Sine Rule (Triangle)(E)</button>
                 <button class="section-btn maths cmp" data-section="cosine">Cosine (Triangle)(E)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="aroftrian">Area of Triangle(E)<sup>✔✔</sup></button>
+                <button class="section-btn maths" data-section="formoftrian">Formation of Triangle(E)</button>
                 <button class="section-btn maths cmp" data-section="perimeter">Perimeter (Triangle)(E)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="median">Median (Triangle)(E)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="inradius">InRadius (Triangle)(E)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="exradius">ExRadius (Triangle)(E)<sup>✔✔</sup></button>
+                <button class="section-btn maths" data-section="circumcentre">Circumcentre (Triangle)(E)</button>
+                <button class="section-btn maths" data-section="orthocentre">Orthocentre (Triangle)(E)</button>
                 <button class="section-btn maths cmp" data-section="isostrian">Isosceles Triangle(E)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="equitrian">Equilateral Triangle(E)<sup>✔✔</sup></button>
+                <button class="section-btn maths" data-section="rightrian">Right Angle Triangle(E)</button>
+                <button class="section-btn maths" data-section="similarity">Similarity (Triangle)(E)</button>
+                <button class="section-btn maths" data-section="congruency">Congruency (Triangle)(E)</button>
+                <button class="section-btn maths" data-section="quad">Quadilaterals(M)</button>
+                <button class="section-btn maths" data-section="circle">Circle(H)</button>
+                <button class="section-btn maths cmp" data-section="cogeo">Co-ordinate Geo(M)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="stat">Statistics(H)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="ratio">Ratio and Proportion(H)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="compInt">Compound Interest(H)<sup>✔✔</sup></button>
@@ -220,17 +231,8 @@
                 <button class="section-btn maths cmp" data-section="incExp">Income Expenditure(E)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="soc">Sector of Circle(E)<sup>✔✔</sup></button>
 
-                <button class="section-btn maths" data-section="formoftrian">Formation of Triangle(E)</button>
-                <button class="section-btn maths" data-section="rightrian">Right Angle Triangle(E)</button>
-                <button class="section-btn maths" data-section="circle">Circle(H)</button>
-                <button class="section-btn maths" data-section="lineangle">Line Angle (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="anglebisc">Angle Bisector (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="sine">Sine Rule (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="circumcentre">Circumcentre (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="orthocentre">Orthocentre (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="similarity">Similarity (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="congruency">Congruency (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="quad">Quadilaterals(M)</button>
+
+
                 <button class="section-btn maths" data-section="mixalli">Mixture and Alligation(H)</button>
                 <button class="section-btn maths" data-section="numsys">Number System(H)</button>
                 <button class="section-btn maths" data-section="percent">Percentage(H)</button>
@@ -242,15 +244,15 @@
                 <button class="section-btn maths" data-section="election">Elections(E)</button>
                 <button class="section-btn maths" data-section="handd">Height and Distance(E)</button>
                 <button class="section-btn maths" data-section="age">Age(E)</button>
-                <button class="section-btn maths" data-section="prism_pyramid">Pyramid(H)</button>
+                <button class="section-btn maths" data-section="prism_pyramid">Prism & Pyramid(H)</button>
                 <button class="section-btn maths" data-section="price">Price Consumption(E)</button>
+                <button class="section-btn maths" data-section="tandw">Time and Work(H)</button>
+                <button class="section-btn maths" data-section="proLoss">Profit and Loss(H)</button>
 
 
                 <button class="section-btn maths" data-section="tsd">Time Speed Distance(H)</button>
                 <button class="section-btn maths" data-section="average">Average(H)</button>
                 <button class="section-btn maths" data-section="algbr">Algebra(H)</button>
-                <button class="section-btn maths" data-section="tandw">Time and Work(H)</button>
-                <button class="section-btn maths" data-section="proLoss">Profit and Loss(H)</button>
                 <button class="section-btn maths" data-section="mens">Mensuration(H)</button>
                 <button class="section-btn maths" data-section="pnc_prob">PnC & Prob(H)</button>
                 <button class="section-btn maths" data-section="trigo">Trigonometry(H)</button>
@@ -856,13 +858,14 @@
 
         function checkMaths(str) {
 
-            var mathsArray = ['triplets', 'squares', 'cubes', 'prime', 'ptf', 'ftp', 'shortnotes', 'numsys',
-                'age', 'algbr', 'apgphp', 'average', 'boatsandstrm', 'circle', 'compInt', 'cogeo',
-                'election', 'handd', 'handl', 'incExp', 'ratio', 'install', 'kpc', 'mens2d', 'mens3d',
-                'mhall', 'numconv', 'part', 'percent', 'pnc_prob', 'poly', 'price',
-                'proLoss', 'prism_pyramid', 'quad', 'race', 'soc', 'simpInt', 'stat', 'tandw', 'tsd',
-                'triangle', 'trigo', 'mixalli', 'dailypractmaths', 'quartile', 'lineangle', 'cosine', 'aroftrian', 'perimeter',
-                'inradius', 'exradius', 'median', 'isostrian', 'equitrian'];
+            var mathsArray = ['triplets', 'squares', 'cubes', 'prime', 'ptf', 'ftp', 'shortnotes',
+                'lineangle', 'anglebisc', 'sine', 'cosine', 'aroftrian', 'formoftrian', 'perimeter',
+                'median', 'inradius', 'exradius', 'circumcentre', 'orthocentre', 'isostrian', 'equitrian',
+                'rightrian', 'similarity', 'congruency', 'numsys', 'age', 'algbr', 'apgphp', 'average',
+                'boatsandstrm', 'circle', 'compInt', 'cogeo', 'election', 'handd', 'handl', 'incExp', 'ratio',
+                'install', 'kpc', 'mens2d', 'mens3d', 'mhall', 'numconv', 'part', 'percent', 'pnc_prob',
+                'poly', 'price', 'proLoss', 'prism_pyramid', 'quad', 'race', 'soc', 'simpInt', 'stat', 'tandw',
+                'tsd', 'triangle', 'trigo', 'mixalli', 'dailypractmaths', 'quartile',];
 
             return mathsArray.includes(str);
         }
@@ -904,25 +907,18 @@
                         driveLink,
                     ];
 
-                case 'cogeo':
-                    driveLink = "https://drive.google.com/file/d/1q5wSfOKDh7sFDOGcYVpautMzz5QbK_fn/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/179So-sh3Suu_nGDcjdmTZv3VkNud0JYq/view?usp=drive_link";
-                    driveLink3 = "";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2, driveLink3,
-                        "https://www.youtube.com/watch?v=cH5U1_uGFqs",
-                    ];
 
                 case 'lineangle':
                     driveLink = "https://drive.google.com/file/d/117NeXpm-SmMY1DZFpz8cFVQs_swJZtsW/view?usp=drive_link";
                     driveLink2 = "https://drive.google.com/file/d/1Doud8sxhUmmmVeQ0M1J9tO8WKi7IWc5P/view?usp=drive_link";
-                    driveLink3 = "https://drive.google.com/file/d/1f_bPPYyAbYkochW-q0y-UbUYIsAbb9lL/view?usp=drive_link";
 
                     return pdfLinks = [
-                        driveLink, driveLink2, driveLink3,
-                        "https://www.youtube.com/watch?v=-k0_jivmXWc&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=6", // Triangle
-                        //"https://www.youtube.com/watch?v=w69YxqOZwB4", // Triangle
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=kXK29pwdgSQ&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=2",
+                        "https://www.youtube.com/watch?v=N30cy1hFrZw&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=3",
+                        "https://www.youtube.com/watch?v=sKD0sahDKXM&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=4",
+                        "https://www.youtube.com/watch?v=anBM2Ux26zg&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=5",
+                        "https://www.youtube.com/watch?v=-k0_jivmXWc&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=6",
                     ];
 
                 case 'cosine':
@@ -978,6 +974,36 @@
                         driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=tjJWjdXvZeY&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=15", // Triangle
                     ];
+
+                case 'isostrian':
+                    driveLink = "https://drive.google.com/file/d/1mqCs96n6mcguedbn-_CyrUCggLfPhHyz/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1HzSpFj8QUrvTzkvjd6gokTNITNGjlvB-/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=EGGEa4-sXgU&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=18"
+                    ];
+
+                case 'equitrian':
+                    driveLink = "https://drive.google.com/file/d/1T2tKy3mmUMBdAgQCWPYlnDPHZ4bXBOZ3/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1Vt7QGSaUr9e-m7kGb7rYbiokD6OP6sdf/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2,
+                        "https://www.youtube.com/watch?v=ArnugYJGWqk&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=19"
+                    ];
+
+
+                case 'cogeo':
+                    driveLink = "https://drive.google.com/file/d/1q5wSfOKDh7sFDOGcYVpautMzz5QbK_fn/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/179So-sh3Suu_nGDcjdmTZv3VkNud0JYq/view?usp=drive_link";
+                    driveLink3 = "";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2, driveLink3,
+                        "https://www.youtube.com/watch?v=cH5U1_uGFqs",
+                    ];
+
 
                 case 'stat':
                     driveLink = "https://drive.google.com/file/d/15QJL-m1_2UsS9LAZVuBpVxxCb4775GgG/view?usp=drive_link";
@@ -1045,10 +1071,9 @@
 
                 case 'incExp':
                     driveLink = "https://drive.google.com/file/d/1MBLMIyCB75F3JEraH_RZx95iKX2cHWQO/view?usp=drive_link";
-                    driveLink2 = ""; // pending
 
                     return pdfLinks = [
-                        driveLink, driveLink2,
+                        driveLink,
                         "https://www.youtube.com/watch?v=zacSvtiqjJs",
                         "https://www.youtube.com/watch?v=WNM2QHq7B2A",
                     ];
@@ -1079,31 +1104,15 @@
 
                 case 'circle':
                     driveLink = "";
-                    driveLink2 = "";
 
                     return pdfLinks = [
-                        driveLink, driveLink2,
+                        driveLink,
                         "https://www.youtube.com/watch?v=2qXvCCqA9QA", // Circle, Triangle Bhutesh
                         "https://www.youtube.com/watch?v=MD_E20X0lj0", // Circle trick
+                        "https://www.youtube.com/watch?v=jWnIxHyDdvI&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=24", // Circle Ojha
                     ];
 
-                case 'isostrian':
-                    driveLink = "https://drive.google.com/file/d/1mqCs96n6mcguedbn-_CyrUCggLfPhHyz/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1HzSpFj8QUrvTzkvjd6gokTNITNGjlvB-/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=EGGEa4-sXgU&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=18"
-                    ];
-
-                case 'equitrian':
-                    driveLink = "https://drive.google.com/file/d/1T2tKy3mmUMBdAgQCWPYlnDPHZ4bXBOZ3/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1Vt7QGSaUr9e-m7kGb7rYbiokD6OP6sdf/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=ArnugYJGWqk&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=19"
-                    ];
+                
 
                 case 'tsd':
                     driveLink = "https://drive.google.com/file/d/1i7aADPOHzqsGRZcexTPhwg3et9-5YXXx/view?usp=drive_link";
@@ -1901,8 +1910,6 @@
         //
         // ------------------- DATA -------------------
         const questionSets = {
-
-            //Static
             fdan: [
                 // Assam
                 {
@@ -2484,7 +2491,6 @@
                     difficulty: "medium"
                 },
             ],
-
             articles: [
                 { q: "(Part1 - Name and territory of Union) Article 1 of the Indian Constitution describes India as", opts: ["A federation of states", "A Union of States", "A confederation", "A sovereign monarchy"], correct: 1, difficulty: "easy", currentSec: "articles" },
                 { q: "Article 2(Sikkim is included) of the Indian Constitution empowers Parliament to", opts: ["Change state names", "Alter state boundaries", "Create Union Territories", "Admit or establish new states"], correct: 3, difficulty: "easy", currentSec: "articles" },
@@ -2532,7 +2538,6 @@
 
 
             ],
-
             parts: [
                 // Parts
                 { q: "Part 8 of the Indian Constitution deals with", opts: ["Union Territories", "States", "Emergency provisions", "Judiciary"], correct: 0, difficulty: "easy", currentSec: "polity" },
@@ -2563,8 +2568,6 @@
                 { q: "Part 22 of the Indian Constitution contains provisions regarding", opts: ["Short title, commencement and repeal", "Emergency provisions", "Amendment process", "Elections"], correct: 0, difficulty: "easy", currentSec: "polity" },
 
             ],
-
-            // Polity
             countries: [
 
                 { q: "America", opts: ["Fundamental Rights"], correct: 0, difficulty: "easy", currentSec: "countries" },
@@ -2625,8 +2628,6 @@
 
                 { q: "Sweden", opts: ["Ombudsman (Parliamentary Commissioner)"], correct: 0, difficulty: "easy", currentSec: "countries" },
             ],
-
-            // Polity
             schedule: [
                 //{ q: "<<<<<TEARS OF OLD PM>>>>> (T(territory)E(emoluments)A(affirmations)R(RS)S(SC areas) O(Other tribal areas)F(Federal Provisions (Division of powers/Lists)) O(Official Languages)L(Land reforms)D(Defection) P(Panchayats)M(Municipalities ))", opts: [""], correct: 0, difficulty: "easy", currentSec: "polity" },
                 // Schedule
@@ -2643,7 +2644,6 @@
                 { q: "Schedule 8 of the Indian Constitution relates to", opts: ["Union finances", "Rajya Sabha seats", "Anti-defection", "Official languages of India",], correct: 3, difficulty: "easy", currentSec: "polity" },
                 { q: "Schedule 2 of the Indian Constitution is related to", opts: ["Salary allowance and emoluments of constitutional authorities", "Forms of oaths", "State boundaries", "Tribal areas"], correct: 0, difficulty: "easy", currentSec: "polity" },
             ],
-
             prezvp: [
                 //President
                 { q: "Article 56 of the Indian Constitution deals with", opts: ["Powers of President", "Term of office of President", "Election disputes of President", "Impeachment of President"], correct: 1, difficulty: "easy", currentSec: "polity" },
@@ -2670,10 +2670,6 @@
                 { q: "Article 63 of the Indian Constitution provides for the office of", opts: ["President", "Prime Minister", "Vice-President", "Chief Justice"], correct: 2, difficulty: "easy", currentSec: "polity" },
 
             ],
-
-            //Geography
-
-
             resinst: [
                 {
                     q: "The *National Dairy Research Institute* is located in which city?",
@@ -3039,6 +3035,9 @@
                     difficulty: "easy"
                 },
             ],
+
+
+            //English
             vocab: [
                 { q: "Abrogate", opts: ["repeal", "destroy", "delay", "uphold"], correct: 0, difficulty: "easy", currentSec: "english" },
             ],
@@ -4461,8 +4460,6 @@
             paraJumb: [],
             sva: [],
             questag: [],
-
-
         };
 
         let currentSection = "ows";
