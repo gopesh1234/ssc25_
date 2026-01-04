@@ -153,6 +153,8 @@
                 <hr /><hr />
 
                 <button class="section-btn eng cmp" data-section="adj">Adjectives<sup>✔✔</sup></button>
+                <button class="section-btn eng cmp" data-section="prep">Preposition<sup>✔✔</sup></button>
+
 
                 <button class="section-btn eng cmp" data-section="vocab">Vocab<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="partsspeech">Parts of Speech<sup>❗</sup></button>
@@ -160,7 +162,6 @@
                 <button class="section-btn eng cmp" data-section="idioms">Idioms<sup>❗</sup></button>
                 <button class="section-btn active eng" data-section="ows">OWS<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="pv">Phrasal Verb<sup>❗</sup></button>
-                <button class="section-btn eng cmp" data-section="prep">Preposition<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="article">Articles<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="narr">Narration<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="voice">Voice<sup>❗</sup></button>
@@ -230,6 +231,19 @@
                 <button class="section-btn maths" data-section="similarity">Similarity (Triangle)(E)</button>
                 <button class="section-btn maths" data-section="congruency">Congruency (Triangle)(E)</button>
                 <button class="section-btn maths" data-section="quad">Quadilaterals(M)</button>
+                <button class="section-btn maths" data-section="mixalli">Mixture and Alligation(H)</button>
+                <button class="section-btn maths" data-section="numsys">Number System(H)</button>
+                <button class="section-btn maths" data-section="percent">Percentage(H)</button>
+                <button class="section-btn maths" data-section="handl">HCF LCM(M)</button>
+                <button class="section-btn maths" data-section="part">Partnership(M)</button>
+                <button class="section-btn maths" data-section="install">Installment(H)</button>
+                <button class="section-btn maths" data-section="apgphp">AP GP HP(M)</button>
+                <button class="section-btn maths" data-section="poly">Polynomial(E)</button>
+                <button class="section-btn maths" data-section="election">Elections(E)</button>
+                <button class="section-btn maths" data-section="handd">Height and Distance(E)</button>
+                <button class="section-btn maths" data-section="age">Age(E)</button>
+                <button class="section-btn maths" data-section="prism_pyramid">Pyramid(H)</button>
+                <button class="section-btn maths" data-section="price">Price Consumption(E)</button>
 
 
                 <button class="section-btn maths" data-section="tsd">Time Speed Distance(H)</button>
@@ -237,26 +251,13 @@
                 <button class="section-btn maths" data-section="algbr">Algebra(H)</button>
                 <button class="section-btn maths" data-section="tandw">Time and Work(H)</button>
                 <button class="section-btn maths" data-section="proLoss">Profit and Loss(H)</button>
-                <button class="section-btn maths" data-section="numsys">Number System(H)</button>
-                <button class="section-btn maths" data-section="percent">Percentage(H)</button>
                 <button class="section-btn maths" data-section="mens">Mensuration(H)</button>
-                <button class="section-btn maths" data-section="pnc">PnC(H)</button>
-                <button class="section-btn maths" data-section="prob">Probability(H)</button>
+                <button class="section-btn maths" data-section="pnc_prob">PnC & Prob(H)</button>
                 <button class="section-btn maths" data-section="trigo">Trigonometry(H)</button>
-                <button class="section-btn maths" data-section="mixalli">Mixture and Alligation(H)</button>
-                <button class="section-btn maths" data-section="install">Installment(H)</button>
-                <button class="section-btn maths" data-section="handl">HCF LCM(M)</button>
-                <button class="section-btn maths" data-section="part">Partnership(M)</button>
-                <button class="section-btn maths" data-section="apgphp">AP GP HP(M)</button>
-                <button class="section-btn maths" data-section="kpc" title="Karl Pearson">KP Coefficient(E)</button>
-                <button class="section-btn maths" data-section="poly">Polynomial(E)</button>
-                <button class="section-btn maths" data-section="election">Elections(E)</button>
-                <button class="section-btn maths" data-section="handd">Height and Distance(E)</button>
-                <button class="section-btn maths" data-section="age">Age(E)</button>
-                <button class="section-btn maths" data-section="prism">Prism(E)</button>
-                <button class="section-btn maths" data-section="pyramid">Pyramid(E)</button>
-                <button class="section-btn maths" data-section="price">Price Consumption(E)</button>
+
                 <button class="section-btn maths" data-section="quartile">Quartile(E)</button>
+                <button class="section-btn maths" data-section="kpc" title="Karl Pearson">KP Coefficient(E)</button>
+
 
                 <hr class="maths" /><hr class="maths" />
 
@@ -479,8 +480,7 @@
                 case 'numsys': document.getElementById("openPdf").textContent = "Number System Pdf"; break;
                 case 'percent': document.getElementById("openPdf").textContent = "Percentage Pdf"; break;
                 case 'mens': document.getElementById("openPdf").textContent = "Mensuration Pdf"; break;
-                case 'pnc': document.getElementById("openPdf").textContent = "PNC Pdf"; break;
-                case 'prob': document.getElementById("openPdf").textContent = "Probability Pdf"; break;
+                case 'pnc_prob': document.getElementById("openPdf").textContent = "PnC & Probability Pdf"; break;
                 case 'trigo': document.getElementById("openPdf").textContent = "Trigonometry Pdf"; break;
                 case 'mixalli': document.getElementById("openPdf").textContent = "Mix Alli Pdf"; break;
                 case 'install': document.getElementById("openPdf").textContent = "Installment Pdf"; break;
@@ -492,8 +492,7 @@
                 case 'election': document.getElementById("openPdf").textContent = "Elections Pdf"; break;
                 case 'handd': document.getElementById("openPdf").textContent = "Height and Distance Pdf"; break;
                 case 'age': document.getElementById("openPdf").textContent = "Age Pdf"; break;
-                case 'prism': document.getElementById("openPdf").textContent = "Prism Pdf"; break;
-                case 'pyramid': document.getElementById("openPdf").textContent = "Pyramid Pdf"; break;
+                case 'prism_pyramid': document.getElementById("openPdf").textContent = "Prism & Pyramid Pdf"; break;
                 case 'price': document.getElementById("openPdf").textContent = "Price Consumption Pdf"; break;
                 case 'quartile': document.getElementById("openPdf").textContent = "Quartile Pdf"; break;
 
@@ -551,7 +550,6 @@
 
             switch (actvSec) {
 
-
                 case 'adj':
                     driveLink = "https://drive.google.com/file/d/1lvEPCE30LntGAiRc08nTglZlwwjKIbIy/view?usp=drive_link";
                     driveLink2 = "https://drive.google.com/file/d/1xnoNJn6ZIs-Pf6_fhovEr-2GeCkV8MAf/view?usp=drive_link";
@@ -562,6 +560,14 @@
                         driveLink, driveLink2, driveLink3, driveLink4,
                         "https://www.youtube.com/watch?v=6CIModa7Mw4",
                         "https://www.youtube.com/watch?v=gD48vm5_tuk", // error based on Adj
+                    ];
+
+                case 'prep':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=p3apkptG_Ts",
+                        "https://www.youtube.com/watch?v=8pLmoW688W8",
                     ];
 
 
@@ -697,12 +703,7 @@
                         "https://www.youtube.com/watch?v=gw3e7vEnFhE",
                     ];
 
-                case 'prep':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=p3apkptG_Ts",
-                    ];
+                
 
                 case 'mood':
                     driveLink = "";
@@ -846,19 +847,6 @@
                         "https://www.youtube.com/watch?v=T2uSeSKGWeE",
                     ];
 
-                case 'dspreeng':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "",
-                    ];
-
-                case 'dsmainseng':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "",
-                    ];
 
                 default:
                     return pdfLinks = [];
@@ -871,8 +859,8 @@
             var mathsArray = ['triplets', 'squares', 'cubes', 'prime', 'ptf', 'ftp', 'shortnotes', 'numsys',
                 'age', 'algbr', 'apgphp', 'average', 'boatsandstrm', 'circle', 'compInt', 'cogeo',
                 'election', 'handd', 'handl', 'incExp', 'ratio', 'install', 'kpc', 'mens2d', 'mens3d',
-                'mhall', 'numconv', 'part', 'percent', 'pnc', 'poly', 'prism', 'price', 'prob',
-                'proLoss', 'pyramid', 'quad', 'race', 'soc', 'simpInt', 'stat', 'tandw', 'tsd',
+                'mhall', 'numconv', 'part', 'percent', 'pnc_prob', 'poly', 'price',
+                'proLoss', 'prism_pyramid', 'quad', 'race', 'soc', 'simpInt', 'stat', 'tandw', 'tsd',
                 'triangle', 'trigo', 'mixalli', 'dailypractmaths', 'quartile', 'lineangle', 'cosine', 'aroftrian', 'perimeter',
                 'inradius', 'exradius', 'median', 'isostrian', 'equitrian'];
 
@@ -1165,8 +1153,6 @@
                     ];
 
 
-
-
                 case 'part':
                     driveLink = "";
 
@@ -1181,15 +1167,6 @@
                         "https://www.youtube.com/watch?v=6C7nMxl9FI8",
                     ];
 
-                case 'kpc':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=9oTaQi7wAK0"
-                    ];
-
-
-
 
                 case 'numsys':
                     driveLink = "";
@@ -1199,9 +1176,6 @@
                     ];
 
 
-
-
-
                 case 'mens':
                     driveLink = "";
 
@@ -1209,19 +1183,13 @@
                         "https://www.youtube.com/watch?v=eZrpEYIcdnM",
                     ];
 
-                case 'pnc':
+                case 'pnc_prob':
                     driveLink = "";
 
                     return pdfLinks = [
-                        "https://www.youtube.com/watch?v=rlytJkWwwPI",
+                        "https://www.youtube.com/watch?v=OXfECwkl7Dc",
                     ];
 
-                case 'prob':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=gojfyL_MJEk",
-                    ];
 
                 case 'trigo':
                     driveLink = "";
@@ -1250,16 +1218,11 @@
                     driveLink = "";
 
                     return pdfLinks = [
+                        "https://www.youtube.com/watch?v=fN2f7nr9B2o",
                         "https://www.youtube.com/watch?v=c2ULnLjXztQ",
                         "https://www.youtube.com/watch?v=eB6r-HrPeb0",
                     ];
 
-                case 'quartile':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=IdM9cMOANew",
-                    ];
 
                 case 'handd':
                     driveLink = "";
@@ -1276,7 +1239,6 @@
                     ];
 
 
-
                 case 'age':
                     driveLink = "";
 
@@ -1284,18 +1246,13 @@
                         "https://www.youtube.com/watch?v=-2DN6Af1vwI",
                     ];
 
-                case 'prism':
+                case 'prism_pyramid':
                     driveLink = "";
 
                     return pdfLinks = [
                         "https://www.youtube.com/watch?v=a0R1krRpMw8",
-                    ];
-
-                case 'pyramid':
-                    driveLink = "";
-
-                    return pdfLinks = [
                         "https://www.youtube.com/watch?v=MJ6AlpecOwQ",
+                        "https://www.youtube.com/watch?v=rQasNDmhM4Q",
                     ];
 
                 case 'price':
@@ -1306,20 +1263,20 @@
                     ];
 
 
-                case 'dspremaths':
+                case 'kpc':
                     driveLink = "";
 
                     return pdfLinks = [
-                        "https://www.youtube.com/watch?v=I3kBMfCysYY&list=PLesyu_gd_4TGbnagSufIHdRLJABlXq-cO",
+                        "https://www.youtube.com/watch?v=9oTaQi7wAK0"
                     ];
 
-                case 'dsmainsmaths':
+
+                case 'quartile':
                     driveLink = "";
 
                     return pdfLinks = [
-                        "https://www.youtube.com/watch?v=Iq14rf5nW90&list=PLZLzxIYiKOQ163S7FTZvXZtOpciwS_mSj",
+                        "https://www.youtube.com/watch?v=IdM9cMOANew",
                     ];
-
 
 
                 default:
@@ -1836,18 +1793,18 @@
             // Overlay background
             const overlay = document.createElement("div");
             overlay.style = `
-                                    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-                                    background: rgba(0,0,0,0.7); display: flex; align-items: center;
-                                    justify-content: center; z-index: 9999;
-                                  `;
+                                            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+                                            background: rgba(0,0,0,0.7); display: flex; align-items: center;
+                                            justify-content: center; z-index: 9999;
+                                          `;
 
             // Popup box
             const popup = document.createElement("div");
             popup.style = `
-                                    position: relative; width: 80%; height: 80%;
-                                    background: #fff; border-radius: 10px;
-                                    overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
-                                  `;
+                                            position: relative; width: 80%; height: 80%;
+                                            background: #fff; border-radius: 10px;
+                                            overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                                          `;
 
             // PDF / YouTube iframe
             const iframe = document.createElement("iframe");
@@ -4572,9 +4529,9 @@
                 const select = document.createElement('select');
                 select.className = 'difficulty-select';
                 select.innerHTML = `
-                                                                  <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
-                                                                  <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
-                                                                `;
+                                                                          <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
+                                                                          <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
+                                                                        `;
 
                 select.onchange = () => {
                     savedDifficulty[question.q] = select.value;
