@@ -171,6 +171,7 @@
                 <button class="section-btn eng cmp" data-section="spotErr">Spotting Error<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="sentImp">Sentence Improvement<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="mixvocab">Mix Vocab<sup>❗</sup></button>
+                <button class="section-btn eng cmp" data-section="infgerpri">Infinitive/Gerund/Principle<sup>❗</sup></button>
 
 
                 <button class="section-btn eng" data-section="atozgrmmr">AtoZ Grammar</button>
@@ -433,6 +434,7 @@
                 case 'voice': document.getElementById("openPdf").textContent = "Voice Pdf"; break;
                 case 'sixtyrules': document.getElementById("openPdf").textContent = "60 Rules Pdf"; break;
                 case 'mixvocab': document.getElementById("openPdf").textContent = "Mix Vocab Pdf"; break;
+                case 'infgerpri': document.getElementById("openPdf").textContent = "Infinitive/Gerund/Principle Pdf"; break;
 
 
                 // Maths Daily Practice
@@ -541,7 +543,7 @@
                 'mood', 'narr', 'noun', 'ows', 'paraJumb', 'pv', 'pandc', 'prep',
                 'pronoun', 'questag', 'sentImp', 'spotErr', 'supexp', 'sva', 'tense', 'verb',
                 'vocab', 'voice', 'sixtyrules', 'dspreeng', 'dailypracteng', 'cloze', 'atozgrmmr', 'sentencestypes',
-                'partsspeech', 'mixvocab'];
+                'partsspeech', 'mixvocab', 'infgerpri'];
 
             return engArray.includes(str);
         }
@@ -575,16 +577,17 @@
 
 
                 case 'vocab':
-                    driveLink = "https://drive.google.com/file/d/1GKD-dvuXfO0US8Vwe5NjFaK9qgY_Cr3e/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1-TOUWpSupmxwuTYHVGQYw5EfHqLATZP-/view?usp=drive_link";
-                    driveLink3 = "https://drive.google.com/file/d/1iL4qKzMtoCrbNBwd5PIW5nQvdtZbjeCz/view?usp=drive_link";
-                    driveLink4 = "https://drive.google.com/file/d/17qcJaewluw6tMcR2D86TXuIx89_Xriir/view?usp=drive_link";
+                    // driveLink = "https://drive.google.com/file/d/1GKD-dvuXfO0US8Vwe5NjFaK9qgY_Cr3e/view?usp=drive_link";
+                    // driveLink2 = "https://drive.google.com/file/d/1-TOUWpSupmxwuTYHVGQYw5EfHqLATZP-/view?usp=drive_link";
+                    // driveLink3 = "https://drive.google.com/file/d/1iL4qKzMtoCrbNBwd5PIW5nQvdtZbjeCz/view?usp=drive_link";
+                    // driveLink4 = "https://drive.google.com/file/d/17qcJaewluw6tMcR2D86TXuIx89_Xriir/view?usp=drive_link";
+
+                    driveLink = "https://drive.google.com/file/d/1ZDppcrEoWcRnL-oC7SURqgyAZUadHZIR/view?usp=drive_link"; // A
+                    driveLink2 = "https://drive.google.com/file/d/1BypLs4eiCUY14QWeFlK-U8Ds6ietoQL2/view?usp=drive_link"; // A
 
                     return pdfLinks = [
-                        driveLink, driveLink2, driveLink3, driveLink4,
+                        driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=88cW3hOWcpI&list=PLPUwSuGUTxG61J9yV7kyyePiS1gTIJRZ1&index=1",
-                        // "https://www.youtube.com/watch?v=2wJJ5Sqw8F0&list=PLPUwSuGUTxG61J9yV7kyyePiS1gTIJRZ1&index=6", // F1
-                        // "https://www.youtube.com/watch?v=ozhdK1jnMCo&list=PLPUwSuGUTxG61J9yV7kyyePiS1gTIJRZ1&index=8", // F2
                     ];
 
                 case 'idioms':
@@ -612,6 +615,13 @@
                     return pdfLinks = [
                         driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=Fq4OVPswUh4",
+                    ];
+
+                case 'infgerpri':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        "https://www.youtube.com/watch?v=Zl_cEV8sRY4",
                     ];
 
                 // case 'atozgrmmr':
@@ -706,7 +716,7 @@
                         "https://www.youtube.com/watch?v=gw3e7vEnFhE",
                     ];
 
-                
+
 
                 case 'mood':
                     driveLink = "";
@@ -1112,7 +1122,7 @@
                         "https://www.youtube.com/watch?v=jWnIxHyDdvI&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=24", // Circle Ojha
                     ];
 
-                
+
 
                 case 'tsd':
                     driveLink = "https://drive.google.com/file/d/1i7aADPOHzqsGRZcexTPhwg3et9-5YXXx/view?usp=drive_link";
@@ -1802,18 +1812,18 @@
             // Overlay background
             const overlay = document.createElement("div");
             overlay.style = `
-                                            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-                                            background: rgba(0,0,0,0.7); display: flex; align-items: center;
-                                            justify-content: center; z-index: 9999;
-                                          `;
+                                                    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+                                                    background: rgba(0,0,0,0.7); display: flex; align-items: center;
+                                                    justify-content: center; z-index: 9999;
+                                                  `;
 
             // Popup box
             const popup = document.createElement("div");
             popup.style = `
-                                            position: relative; width: 80%; height: 80%;
-                                            background: #fff; border-radius: 10px;
-                                            overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
-                                          `;
+                                                    position: relative; width: 80%; height: 80%;
+                                                    background: #fff; border-radius: 10px;
+                                                    overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                                                  `;
 
             // PDF / YouTube iframe
             const iframe = document.createElement("iframe");
@@ -4526,9 +4536,9 @@
                 const select = document.createElement('select');
                 select.className = 'difficulty-select';
                 select.innerHTML = `
-                                                                          <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
-                                                                          <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
-                                                                        `;
+                                                                                  <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
+                                                                                  <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
+                                                                                `;
 
                 select.onchange = () => {
                     savedDifficulty[question.q] = select.value;
