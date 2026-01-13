@@ -161,7 +161,7 @@
                 <button class="section-btn eng cmp" data-section="noun">Noun<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="idioms">Idioms<sup>❗</sup></button>
                 <button class="section-btn active eng" data-section="ows">OWS<sup>❗</sup></button>
-                <button class="section-btn eng cmp" data-section="pv">Phrasal Verb<sup>❗</sup></button>
+                <button class="section-btn eng cmp" data-section="phrasalverb">Phrasal Verb<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="article">Articles<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="narr">Narration<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="voice">Voice<sup>❗</sup></button>
@@ -202,25 +202,7 @@
 
                 <hr class="maths" /><hr class="maths" />
 
-                <button class="section-btn maths cmp" data-section="lineangle">Line Angle (Triangle)(E)<sup>✔✔</sup></button>
-                <button class="section-btn maths" data-section="anglebisc">Angle Bisector (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="sine">Sine Rule (Triangle)(E)</button>
-                <button class="section-btn maths cmp" data-section="cosine">Cosine (Triangle)(E)<sup>✔✔</sup></button>
-                <button class="section-btn maths cmp" data-section="aroftrian">Area of Triangle(E)<sup>✔✔</sup></button>
-                <button class="section-btn maths" data-section="formoftrian">Formation of Triangle(E)</button>
-                <button class="section-btn maths cmp" data-section="perimeter">Perimeter (Triangle)(E)<sup>✔✔</sup></button>
-                <button class="section-btn maths cmp" data-section="median">Median (Triangle)(E)<sup>✔✔</sup></button>
-                <button class="section-btn maths cmp" data-section="inradius">InRadius (Triangle)(E)<sup>✔✔</sup></button>
-                <button class="section-btn maths cmp" data-section="exradius">ExRadius (Triangle)(E)<sup>✔✔</sup></button>
-                <button class="section-btn maths" data-section="circumcentre">Circumcentre (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="orthocentre">Orthocentre (Triangle)(E)</button>
-                <button class="section-btn maths cmp" data-section="isostrian">Isosceles Triangle(E)<sup>✔✔</sup></button>
-                <button class="section-btn maths cmp" data-section="equitrian">Equilateral Triangle(E)<sup>✔✔</sup></button>
-                <button class="section-btn maths" data-section="rightrian">Right Angle Triangle(E)</button>
-                <button class="section-btn maths" data-section="similarity">Similarity (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="congruency">Congruency (Triangle)(E)</button>
-                <button class="section-btn maths" data-section="quad">Quadilaterals(M)</button>
-                <button class="section-btn maths" data-section="circle">Circle(H)</button>
+                <button class="section-btn maths cmp" data-section="triangle">Triangle(H)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="cogeo">Co-ordinate Geo(M)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="stat">Statistics(H)<sup>✔✔</sup></button>
                 <button class="section-btn maths cmp" data-section="ratio">Ratio and Proportion(H)<sup>✔✔</sup></button>
@@ -233,7 +215,8 @@
                 <button class="section-btn maths cmp" data-section="soc">Sector of Circle(E)<sup>✔✔</sup></button>
 
 
-
+                <button class="section-btn maths" data-section="quad">Quadilaterals(M)</button>
+                <button class="section-btn maths" data-section="circle">Circle(H)</button>
                 <button class="section-btn maths" data-section="mixalli">Mixture and Alligation(H)</button>
                 <button class="section-btn maths" data-section="numsys">Number System(H)</button>
                 <button class="section-btn maths" data-section="percent">Percentage(H)</button>
@@ -419,7 +402,7 @@
                 case 'noun': document.getElementById("openPdf").textContent = "Noun Pdf"; break;
                 case 'ows': document.getElementById("openPdf").textContent = "OWS Pdf"; break;
                 case 'paraJumb': document.getElementById("openPdf").textContent = "Para Jumble Pdf"; break;
-                case 'pv': document.getElementById("openPdf").textContent = "Phrasal Verb Pdf"; break;
+                case 'phrasalverb': document.getElementById("openPdf").textContent = "Phrasal Verb Pdf"; break;
                 case 'pandc': document.getElementById("openPdf").textContent = "Phrases and Clause Pdf"; break;
                 case 'prep': document.getElementById("openPdf").textContent = "Preposition Pdf"; break;
                 case 'pronoun': document.getElementById("openPdf").textContent = "Pronoun Pdf"; break;
@@ -448,14 +431,6 @@
 
                 // Maths
                 case 'cogeo': document.getElementById("openPdf").textContent = "Co Ordinate Geo Pdf"; break;
-                case 'cosine': document.getElementById("openPdf").textContent = "Cosine Pdf"; break;
-                case 'aroftrian': document.getElementById("openPdf").textContent = "Area of Triangle Pdf"; break;
-                case 'perimeter': document.getElementById("openPdf").textContent = "Perimeter Pdf"; break;
-                case 'median': document.getElementById("openPdf").textContent = "Median Pdf"; break;
-                case 'inradius': document.getElementById("openPdf").textContent = "In-Radius Pdf"; break;
-                case 'exradius': document.getElementById("openPdf").textContent = "Ex-Radius Pdf"; break;
-                case 'isostrian': document.getElementById("openPdf").textContent = "Isosceles Triangle Pdf"; break;
-                case 'equitrian': document.getElementById("openPdf").textContent = "Equilateral Triangle Pdf"; break;
                 case 'stat': document.getElementById("openPdf").textContent = "Statistics Pdf"; break;
                 case 'ratio': document.getElementById("openPdf").textContent = "Ratio Pdf"; break;
                 case 'compInt': document.getElementById("openPdf").textContent = "CI Pdf"; break;
@@ -467,14 +442,7 @@
                 case 'soc': document.getElementById("openPdf").textContent = "Sector of Circle Pdf"; break;
                 case 'rightrian': document.getElementById("openPdf").textContent = "Right Angle Triangle Pdf"; break;
                 case 'circle': document.getElementById("openPdf").textContent = "Circle Pdf"; break;
-                case 'lineangle': document.getElementById("openPdf").textContent = "Line Angle Pdf"; break;
-                case 'anglebisc': document.getElementById("openPdf").textContent = "Angle Bisector Pdf"; break;
-                case 'sine': document.getElementById("openPdf").textContent = "Sine Pdf"; break;
-                case 'formoftrian': document.getElementById("openPdf").textContent = "Formation of Triangle Pdf"; break;
-                case 'circumcentre': document.getElementById("openPdf").textContent = "Circumcentre Pdf"; break;
-                case 'orthocentre': document.getElementById("openPdf").textContent = "Orthocentre Pdf"; break;
-                case 'similarity': document.getElementById("openPdf").textContent = "Similarity Pdf"; break;
-                case 'congruency': document.getElementById("openPdf").textContent = "Congruency Pdf"; break;
+                case 'triangle': document.getElementById("openPdf").textContent = "Triangle Pdf"; break;
                 case 'quad': document.getElementById("openPdf").textContent = "Quadilaterals Pdf"; break;
                 case 'tsd': document.getElementById("openPdf").textContent = "TSD Pdf"; break;
                 case 'average': document.getElementById("openPdf").textContent = "Average Pdf"; break;
@@ -484,7 +452,6 @@
                 case 'numsys': document.getElementById("openPdf").textContent = "Number System Pdf"; break;
                 case 'percent': document.getElementById("openPdf").textContent = "Percentage Pdf"; break;
                 case 'mens': document.getElementById("openPdf").textContent = "Mensuration Pdf"; break;
-                case 'pnc_prob': document.getElementById("openPdf").textContent = "PnC & Probability Pdf"; break;
                 case 'trigo': document.getElementById("openPdf").textContent = "Trigonometry Pdf"; break;
                 case 'mixalli': document.getElementById("openPdf").textContent = "Mix Alli Pdf"; break;
                 case 'install': document.getElementById("openPdf").textContent = "Installment Pdf"; break;
@@ -499,6 +466,8 @@
                 case 'prism_pyramid': document.getElementById("openPdf").textContent = "Prism & Pyramid Pdf"; break;
                 case 'price': document.getElementById("openPdf").textContent = "Price Consumption Pdf"; break;
                 case 'quartile': document.getElementById("openPdf").textContent = "Quartile Pdf"; break;
+                case 'pnc_prob': document.getElementById("openPdf").textContent = "PnC & Probability Pdf"; break;
+
 
 
                 // Reas
@@ -540,7 +509,7 @@
         function checkEng(str) {
 
             var engArray = ['adj', 'adv', 'article', 'cndsent', 'conjunc', 'deter', 'fillups', 'idioms',
-                'mood', 'narr', 'noun', 'ows', 'paraJumb', 'pv', 'pandc', 'prep',
+                'mood', 'narr', 'noun', 'ows', 'paraJumb', 'phrasalverb', 'pandc', 'prep',
                 'pronoun', 'questag', 'sentImp', 'spotErr', 'supexp', 'sva', 'tense', 'verb',
                 'vocab', 'voice', 'sixtyrules', 'dspreeng', 'dailypracteng', 'cloze', 'atozgrmmr', 'sentencestypes',
                 'partsspeech', 'mixvocab', 'infgerpri'];
@@ -577,10 +546,6 @@
 
 
                 case 'vocab':
-                    // driveLink = "https://drive.google.com/file/d/1GKD-dvuXfO0US8Vwe5NjFaK9qgY_Cr3e/view?usp=drive_link";
-                    // driveLink2 = "https://drive.google.com/file/d/1-TOUWpSupmxwuTYHVGQYw5EfHqLATZP-/view?usp=drive_link";
-                    // driveLink3 = "https://drive.google.com/file/d/1iL4qKzMtoCrbNBwd5PIW5nQvdtZbjeCz/view?usp=drive_link";
-                    // driveLink4 = "https://drive.google.com/file/d/17qcJaewluw6tMcR2D86TXuIx89_Xriir/view?usp=drive_link";
 
                     driveLink = "https://drive.google.com/file/d/1ZDppcrEoWcRnL-oC7SURqgyAZUadHZIR/view?usp=drive_link"; // A
                     driveLink2 = "https://drive.google.com/file/d/1BypLs4eiCUY14QWeFlK-U8Ds6ietoQL2/view?usp=drive_link"; // A
@@ -606,6 +571,18 @@
                     return pdfLinks = [
                         driveLink, driveLink2,
                         "https://www.youtube.com/watch?v=NoNFAPhEuPQ",
+                    ];
+
+                case 'phrasalverb':
+                    driveLink = "https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1vbPajTU-zUYEaLdLFKUgmYTrcmebQ5H3/view?usp=drive_link";
+                    driveLink3 = "https://drive.google.com/file/d/1v3VZ_4vJiVDdQYq_F4zU_JyEK5-ne8PW/view?usp=drive_link";
+                    driveLink4 = "https://drive.google.com/file/d/1upX72piclzqn3UENgEa9PM4ex2aClxWW/view?usp=drive_link";
+                    driveLink5 = "https://drive.google.com/file/d/1lYYe_RofNIiJ50zjcjBTsqoTv2qiQitM/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink, driveLink2, driveLink3, driveLink4, driveLink5,
+                        "https://www.youtube.com/watch?v=gw3e7vEnFhE",
                     ];
 
                 case 'mixvocab':
@@ -699,23 +676,6 @@
                         driveLink,
                         "https://www.youtube.com/watch?v=ahCn6eYrzXk&list=PLM9OY0jASMM1O5hzHiTBQIVkumVktDKi5&index=8",
                     ];
-
-
-
-                case 'pv':
-                    driveLink = "https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1vbPajTU-zUYEaLdLFKUgmYTrcmebQ5H3/view?usp=drive_link";
-
-                    driveLink3 = "https://drive.google.com/file/d/1v3VZ_4vJiVDdQYq_F4zU_JyEK5-ne8PW/view?usp=drive_link";
-                    driveLink4 = "https://drive.google.com/file/d/1upX72piclzqn3UENgEa9PM4ex2aClxWW/view?usp=drive_link";
-
-                    driveLink5 = "https://drive.google.com/file/d/1lYYe_RofNIiJ50zjcjBTsqoTv2qiQitM/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2, driveLink3, driveLink4, driveLink5,
-                        "https://www.youtube.com/watch?v=gw3e7vEnFhE",
-                    ];
-
 
 
                 case 'mood':
@@ -870,9 +830,7 @@
         function checkMaths(str) {
 
             var mathsArray = ['triplets', 'squares', 'cubes', 'prime', 'ptf', 'ftp', 'shortnotes',
-                'lineangle', 'anglebisc', 'sine', 'cosine', 'aroftrian', 'formoftrian', 'perimeter',
-                'median', 'inradius', 'exradius', 'circumcentre', 'orthocentre', 'isostrian', 'equitrian',
-                'rightrian', 'similarity', 'congruency', 'numsys', 'age', 'algbr', 'apgphp', 'average',
+                'triangle', 'numsys', 'age', 'algbr', 'apgphp', 'average',
                 'boatsandstrm', 'circle', 'compInt', 'cogeo', 'election', 'handd', 'handl', 'incExp', 'ratio',
                 'install', 'kpc', 'mens2d', 'mens3d', 'mhall', 'numconv', 'part', 'percent', 'pnc_prob',
                 'poly', 'price', 'proLoss', 'prism_pyramid', 'quad', 'race', 'soc', 'simpInt', 'stat', 'tandw',
@@ -890,10 +848,12 @@
                 case 'shortnotes':
                     driveLink = "https://drive.google.com/file/d/1-fu3_UkYf4OZ9Hprzui4rwKmnKwinMqD/view?usp=drive_link"; // equilateral
                     driveLink2 = "https://drive.google.com/file/d/1TrFk6w1L_ZCrRVbfEq7vTXMB4fNPcm8z/view?usp=drive_link"; // isosceles
+                    driveLink3 = ""; // Line Angle
 
                     return pdfLinks = [
                         driveLink,
                         driveLink2,
+                        driveLink3,
                     ];
 
 
@@ -919,88 +879,13 @@
                     ];
 
 
-                case 'lineangle':
-                    driveLink = "https://drive.google.com/file/d/1nxHss59ajtabgfy-eXMNaYEhO4IaL4Ls/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink,
-                        "https://www.youtube.com/watch?v=kXK29pwdgSQ&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=2",
-                        "https://www.youtube.com/watch?v=N30cy1hFrZw&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=3",
-                        "https://www.youtube.com/watch?v=sKD0sahDKXM&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=4",
-                        "https://www.youtube.com/watch?v=anBM2Ux26zg&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=5",
-                        "https://www.youtube.com/watch?v=-k0_jivmXWc&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=6",
-                    ];
-
-                case 'cosine':
-                    driveLink = "https://drive.google.com/file/d/1wfw5FjPNj3gZNNmFSVTsvxRCfgsugPPm/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/17pBbtd6wXp62b3AY_--XBMSmWHM78V4S/view?usp=drive_link";
-                    driveLink3 = "";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2, driveLink3,
-                        "https://www.youtube.com/watch?v=qVOWBn1V6bU&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=9", // Triangle
-                    ];
-
-                case 'aroftrian':
-                    driveLink = "https://drive.google.com/file/d/1DRkoe-5QWWMLg4v3ywrHVTMALvDqA47M/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1RWyvP9n5XKtplFJe8T5LnpDwnd1kkiHy/view?usp=drive_link";
+                case 'triangle':
+                    driveLink = "https://drive.google.com/file/d/1xdBhuumI9MeIAkjpi7wxepVHLaJAjfo3/view?usp=drive_link";
+                    driveLink2 = "https://drive.google.com/file/d/1gql9sKKOASq5kjIGpw5Hc1hA3RqS8i6Q/view?usp=drive_link";
 
                     return pdfLinks = [
                         driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=WBAy0WZbAr0&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=10", // Triangle
-                    ];
-
-                case 'perimeter':
-                    driveLink = "https://drive.google.com/file/d/1Rtrz-1yydCWtdXXYaw6w502lGBBCp5wX/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink,
-                        "https://www.youtube.com/watch?v=ZUOX6Asp5lw&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=12", // Triangle
-                    ];
-
-                case 'median':
-                    driveLink = "https://drive.google.com/file/d/1KJe0bNL6W7n9YDI4EyYmBUHIbryCxULy/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1KpYXBiJWOMg4a4oNiyVdgIB9mqMJkdNq/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=Oo9PguHYzlE&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=13", // Triangle
-                    ];
-
-                case 'inradius':
-                    driveLink = "https://drive.google.com/file/d/19xHHtLGJmiA4lZHL3Luuj68CgS1ZyOl0/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1fa34EsS6XaIMDDsdZEk8SffWKfW6hfu5/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=ErOmb-xepYo&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=14", // Triangle
-                    ];
-
-                case 'exradius':
-                    driveLink = "https://drive.google.com/file/d/1wtFSNH2TrRYqSZ0PPmYg0OY1QJkwHG38/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1VcvUctpy7aCqapBjwQFqH0UJAk0nHJ6O/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=tjJWjdXvZeY&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=15", // Triangle
-                    ];
-
-                case 'isostrian':
-                    driveLink = "https://drive.google.com/file/d/1mqCs96n6mcguedbn-_CyrUCggLfPhHyz/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1HzSpFj8QUrvTzkvjd6gokTNITNGjlvB-/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=EGGEa4-sXgU&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=18"
-                    ];
-
-                case 'equitrian':
-                    driveLink = "https://drive.google.com/file/d/1T2tKy3mmUMBdAgQCWPYlnDPHZ4bXBOZ3/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1Vt7QGSaUr9e-m7kGb7rYbiokD6OP6sdf/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=ArnugYJGWqk&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=19"
+                        "https://www.youtube.com/watch?v=PLN9pMyRafA&list=PLYt40z3M_Cg_03XNVp9R3URZgOcsasSGS&index=1",
                     ];
 
 
@@ -1812,18 +1697,18 @@
             // Overlay background
             const overlay = document.createElement("div");
             overlay.style = `
-                                                    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-                                                    background: rgba(0,0,0,0.7); display: flex; align-items: center;
-                                                    justify-content: center; z-index: 9999;
-                                                  `;
+                                                            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+                                                            background: rgba(0,0,0,0.7); display: flex; align-items: center;
+                                                            justify-content: center; z-index: 9999;
+                                                          `;
 
             // Popup box
             const popup = document.createElement("div");
             popup.style = `
-                                                    position: relative; width: 80%; height: 80%;
-                                                    background: #fff; border-radius: 10px;
-                                                    overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
-                                                  `;
+                                                            position: relative; width: 80%; height: 80%;
+                                                            background: #fff; border-radius: 10px;
+                                                            overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                                                          `;
 
             // PDF / YouTube iframe
             const iframe = document.createElement("iframe");
@@ -4456,8 +4341,6 @@
                 { q: "At large", opts: ["In a small group", "Under control", "Not caught, free", "Hidden somewhere"], correct: 2, difficulty: "easy", currentSec: "english" },
                 { q: "At sixes and sevens", opts: ["In complete order", "Very angry", "Disorder", "In great danger"], correct: 2, difficulty: "easy", currentSec: "english" },
                 ``
-
-
             ],
             pv: [],
             narr: [],
@@ -4536,9 +4419,9 @@
                 const select = document.createElement('select');
                 select.className = 'difficulty-select';
                 select.innerHTML = `
-                                                                                  <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
-                                                                                  <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
-                                                                                `;
+                                                                                          <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
+                                                                                          <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
+                                                                                        `;
 
                 select.onchange = () => {
                     savedDifficulty[question.q] = select.value;
