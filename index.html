@@ -289,6 +289,7 @@
                 <button class="section-btn sgk cmp" data-section="cdfdfest">Classical, Folk Dance & Festivals<sup>✔✔</sup></button>
                 <button class="section-btn sgk cmp" data-section="natpark">National Parks<sup>✔✔</sup></button>
                 <button class="section-btn sgk cmp" data-section="musicinstru">Musical Instruments<sup>✔✔</sup></button>
+                <button class="section-btn sgk cmp" data-section="dams">Dams<sup>✔✔</sup></button>
 
 
                 <button class="section-btn sgk" data-section="census">Census</button>
@@ -487,6 +488,7 @@
                 case 'cdfdfest': document.getElementById("openPdf").textContent = "Classical, Folk Dance & Festivals Pdf"; break;
                 case 'natpark': document.getElementById("openPdf").textContent = "National Parks Pdf"; break;
                 case 'musicinstru': document.getElementById("openPdf").textContent = "Musical Instruments Pdf"; break;
+                case 'dams': document.getElementById("openPdf").textContent = "Dams Pdf"; break;
 
                 case 'census': document.getElementById("openPdf").textContent = "Census Pdf"; break;
                 case 'gharana': document.getElementById("openPdf").textContent = "Gharana Pdf"; break;
@@ -1422,7 +1424,8 @@
         function checkSgk(str) {
 
             var sgkArray = ['cdan', 'fdan', 'mdan', 'census', 'musicinstru', 'gharana', 'imptd', 'booksandauth',
-                'sports', 'intorg', 'natorg', 'fest', 'resinst', 'govtsch', 'unsites', 'natpark', 'abbre', 'cdfdfest', 'ntpcset'];
+                'sports', 'intorg', 'natorg', 'fest', 'resinst', 'govtsch', 'unsites', 'natpark', 'abbre', 'cdfdfest', 'ntpcset',
+                'dams'];
 
             return sgkArray.includes(str);
         }
@@ -1444,11 +1447,10 @@
                     ];
 
                 case 'booksandauth':
-                    driveLink = "https://drive.google.com/file/d/1ls_txMGBq3yY638NiMRv35KGESHGGAaH/view?usp=drive_link";
-                    driveLink2 = "";
+                    driveLink = "https://drive.google.com/file/d/1ukZfB_Kz4xKzwFPHGKuS7BDDAs6bi8WO/view?usp=drive_link";
 
                     return pdfLinks = [
-                        driveLink, driveLink2,
+                        driveLink,
                         "https://www.youtube.com/watch?v=OJHkUuuXiQs",
                         "https://www.youtube.com/watch?v=QicHHgUGShs&list=PLg0qMaBWeNGMy56oHTidubzI3lEEBfyBq&index=9",
                     ];
@@ -1467,6 +1469,14 @@
                     return pdfLinks = [
                         driveLink,
                         "https://www.youtube.com/watch?v=6OW7YA9V7mk",
+                    ];
+
+                case 'dams':
+                    driveLink = "https://drive.google.com/file/d/1eKKYeVkMLWASpBp_RvKlE5mys4uXIESz/view?usp=drive_link";
+
+                    return pdfLinks = [
+                        driveLink,
+                        "https://www.youtube.com/watch?v=hb3wvWyA3jw",
                     ];
 
 
