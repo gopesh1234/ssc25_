@@ -152,19 +152,19 @@
                 <button class="section-btn1 sgk1" data-section="sgk">Static GK</button>
                 <hr /><hr />
 
+                <button class="section-btn active eng" data-section="ows">OWS<sup>✔✔</sup></button>
                 <button class="section-btn eng cmp" data-section="adj">Adjectives<sup>✔✔</sup></button>
+                <button class="section-btn eng cmp" data-section="sva" title="Subject Verb Agreement">SVA<sup>✔✔</sup></button>
+                <button class="section-btn eng cmp" data-section="idioms">Idioms<sup>✔✔</sup></button>
                 <button class="section-btn eng cmp" data-section="prep">Preposition<sup>✔✔</sup></button>
-
+                <button class="section-btn eng cmp" data-section="phrasalverb">Phrasal Verb<sup>✔✔</sup></button>
+                <button class="section-btn eng cmp" data-section="narr">Narration<sup>✔✔</sup></button>
+                <button class="section-btn eng cmp" data-section="voice">Voice<sup>✔✔</sup></button>
 
                 <button class="section-btn eng cmp" data-section="vocab">Vocab<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="partsspeech">Parts of Speech<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="noun">Noun<sup>❗</sup></button>
-                <button class="section-btn eng cmp" data-section="idioms">Idioms<sup>❗</sup></button>
-                <button class="section-btn active eng" data-section="ows">OWS<sup>❗</sup></button>
-                <button class="section-btn eng cmp" data-section="phrasalverb">Phrasal Verb<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="article">Articles<sup>❗</sup></button>
-                <button class="section-btn eng cmp" data-section="narr">Narration<sup>❗</sup></button>
-                <button class="section-btn eng cmp" data-section="voice">Voice<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="paraJumb">Para Jumble<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="cloze">Cloze Test<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="sixtyrules">120 Rules of Grammar<sup>❗</sup></button>
@@ -172,8 +172,6 @@
                 <button class="section-btn eng cmp" data-section="sentImp">Sentence Improvement<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="mixvocab">Mix Vocab<sup>❗</sup></button>
                 <button class="section-btn eng cmp" data-section="infgerpri">Infinitive/Gerund/Principle<sup>❗</sup></button>
-
-
                 <button class="section-btn eng" data-section="atozgrmmr">AtoZ Grammar</button>
                 <button class="section-btn eng" data-section="adv">Adverb</button>
                 <button class="section-btn eng" data-section="cndsent">Conditional Sentences</button>
@@ -185,7 +183,6 @@
                 <button class="section-btn eng" data-section="pronoun">Pronoun</button>
                 <button class="section-btn eng" data-section="questag">Question Tag</button>
                 <button class="section-btn eng" data-section="supexp">Superflous Expression</button>
-                <button class="section-btn eng" data-section="sva" title="Subject Verb Agreement">SVA</button>
                 <button class="section-btn eng" data-section="tense">Tense</button>
                 <button class="section-btn eng" data-section="verb">Verb</button>
                 <button class="section-btn eng" data-section="sentencestypes">Types of Sentences</button>
@@ -521,305 +518,50 @@
         function engData(actvSec) {
 
             var driveLink = '';
-            var driveLink2 = '';
 
             switch (actvSec) {
 
-                case 'adj':
-                    driveLink = "https://drive.google.com/file/d/1lvEPCE30LntGAiRc08nTglZlwwjKIbIy/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1xnoNJn6ZIs-Pf6_fhovEr-2GeCkV8MAf/view?usp=drive_link";
-                    driveLink3 = "https://drive.google.com/file/d/1pyfNGnPIurjysMC6muYroEnyWszKY9hE/view?usp=drive_link";
-                    driveLink4 = "https://drive.google.com/file/d/1UTBPGVDq9WBDNblkJ1YUQe5V9F2MosO-/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2, driveLink3, driveLink4,
-                        "https://www.youtube.com/watch?v=6CIModa7Mw4",
-                        "https://www.youtube.com/watch?v=gD48vm5_tuk", // error based on Adj
-                    ];
-
-                case 'prep':
-                    driveLink = "https://drive.google.com/file/d/1cIWsA3DV72Mmir67-JwSeY25Q2QuFPhs/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink,
-                        "https://www.youtube.com/watch?v=p3apkptG_Ts",
-                        "https://www.youtube.com/watch?v=8pLmoW688W8",
-                    ];
-
-
-                case 'vocab':
-
-                    driveLink = "https://drive.google.com/file/d/1ZDppcrEoWcRnL-oC7SURqgyAZUadHZIR/view?usp=drive_link"; // A
-                    driveLink2 = "https://drive.google.com/file/d/1BypLs4eiCUY14QWeFlK-U8Ds6ietoQL2/view?usp=drive_link"; // A
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=88cW3hOWcpI&list=PLPUwSuGUTxG61J9yV7kyyePiS1gTIJRZ1&index=1",
-                    ];
-
-                case 'idioms':
-                    driveLink = "https://drive.google.com/file/d/1t3owVGiyeTQOymRDTIduJPPFg2efiy6G/view?usp=drive_link"; //A
-                    driveLink2 = "https://drive.google.com/file/d/1U9GT0chYfSgJory-gy17-vZ2rk9SGDzv/view?usp=drive_link"; //B&C
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=WgHnTcYJFac",
-                    ];
-
                 case 'ows':
-                    driveLink = "https://drive.google.com/file/d/1vcjaDCMT42cKmpO_n2OE6N0iptPks6z6/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/13Htijd_eliGFWjdTds-PiBrk8qLv2gKm/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=NoNFAPhEuPQ",
-                    ];
-
-                case 'phrasalverb':
-                    driveLink = "https://drive.google.com/file/d/1XgcS-UoK0_eHfRG9wbna-T77Srag4qBN/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1vbPajTU-zUYEaLdLFKUgmYTrcmebQ5H3/view?usp=drive_link";
-                    driveLink3 = "https://drive.google.com/file/d/1v3VZ_4vJiVDdQYq_F4zU_JyEK5-ne8PW/view?usp=drive_link";
-                    driveLink4 = "https://drive.google.com/file/d/1upX72piclzqn3UENgEa9PM4ex2aClxWW/view?usp=drive_link";
-                    driveLink5 = "https://drive.google.com/file/d/1lYYe_RofNIiJ50zjcjBTsqoTv2qiQitM/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2, driveLink3, driveLink4, driveLink5,
-                        "https://www.youtube.com/watch?v=gw3e7vEnFhE",
-                    ];
-
-                case 'mixvocab':
-                    driveLink = "https://drive.google.com/file/d/1eq8bCl6BGwyTk9DS_cR9hDztSsdtFSyF/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1U4vMeqfs_-5nxwmhu7DqUIKXzCc7N8sQ/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink, driveLink2,
-                        "https://www.youtube.com/watch?v=Fq4OVPswUh4",
-                    ];
-
-                case 'infgerpri':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=Zl_cEV8sRY4",
-                    ];
-
-                // case 'atozgrmmr':
-                //     driveLink = "";
-
-                //     return pdfLinks = [
-                //         "https://www.youtube.com/watch?v=alozPFBFquE&list=PLM9OY0jASMM368wfi4GU6Mq9miATnDEo8&index=1",
-                //     ];
-
-                case 'partsspeech':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=alozPFBFquE&list=PLM9OY0jASMM368wfi4GU6Mq9miATnDEo8&index=1",
-                    ];
-
-                case 'noun':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=jlGImtAkl_g&list=PLM9OY0jASMM368wfi4GU6Mq9miATnDEo8&index=2",
-                    ];
-
-
-                case 'sentencestypes':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=oKHPkD2nuu0",
-                    ];
-
-                case 'adv':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=zN-IUDfftUY",
-                    ];
-
-                case 'article':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=sd-_IuuEQQU",
-                        "https://www.youtube.com/watch?v=2cd297z8jPM",
-                    ];
-
-                case 'cndsent':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=KT0PSdENsXQ",
-                        "https://www.youtube.com/watch?v=NONaVJAThyk",
-                    ];
-
-                case 'conjunc':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=bo1PK4e9FwM",
-                        "https://www.youtube.com/watch?v=XhIZL2H2CBI",
-                    ];
-
-                case 'deter':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=txLO1sfeZp0",
-                        "https://www.youtube.com/watch?v=4C2gCVezgiU",
-                    ];
-
-                case 'fillups':
-                    driveLink = "https://drive.google.com/file/d/1HJLt1Km2f3KqroqWTdWNXARNYzmRDe7u/view?usp=drive_link";
+                    driveLink = "https://drive.google.com/file/d/14UZX4tFyYM5xc-CHgd0x-o09gEL2mu7d/view?usp=drive_link";
 
                     return pdfLinks = [
                         driveLink,
-                        "https://www.youtube.com/watch?v=ahCn6eYrzXk&list=PLM9OY0jASMM1O5hzHiTBQIVkumVktDKi5&index=8",
                     ];
 
-
-                case 'mood':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=lXy652MZfAw",
-                        "https://www.youtube.com/watch?v=xddwIcAzOg4",
-                    ];
-
-                case 'narr':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=RMZt3m-C3T4",
-                    ];
-
-                case 'noun':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=jlGImtAkl_g",
-                        "https://www.youtube.com/watch?v=eoff8BNEZ84",
-                    ];
-
-
-
-                case 'paraJumb':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=AB1jf3hZ_Fg",
-                    ];
-
-
-
-                case 'pandc':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=QVDI9ZH-too",
-                        "https://www.youtube.com/watch?v=o27selOs_QI",
-                    ];
-
-
-
-                case 'pronoun':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=EqQ18WlMa3s",
-                        "https://www.youtube.com/watch?v=C24xnEF7RKk",
-                    ];
-
-                case 'questag':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=5Twsbv1C_iY",
-                        "https://www.youtube.com/watch?v=ljGUhgJYIi4",
-                        "https://www.youtube.com/watch?v=m0GhyXweAF0",
-                    ];
-
-                case 'sentImp':
-                    driveLink = "https://drive.google.com/file/d/1NJolIcNlcbBPaLTWlIT2LiNqDZ0nFUqT/view?usp=drive_link";
+                case 'adj':
+                    driveLink = "https://drive.google.com/file/d/14zIja68dzND0yOiwA9A4mNDZULPZGs07/view?usp=drive_link";
 
                     return pdfLinks = [
                         driveLink,
-                        "https://www.youtube.com/watch?v=uPyx_dtkoNw&t=604s",
-                        "https://www.youtube.com/watch?v=2mn234qz1A8",
-                    ];
-
-                case 'spotErr':
-                    driveLink = "https://drive.google.com/file/d/1VumxUJW9jzQAvUBAOvLtqPbiYol7SIT5/view?usp=drive_link";
-
-                    return pdfLinks = [
-                        driveLink,
-                        "https://www.youtube.com/watch?v=Rvz1KKWasH4",
-                        "https://www.youtube.com/watch?v=9Wdh5_oyc-k",
-                    ];
-
-                case 'supexp':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=PB6KAMbTXaY",
-                        "https://www.youtube.com/watch?v=QzOeZRlHGho",
                     ];
 
                 case 'sva':
-                    driveLink = "";
+                    driveLink = "https://drive.google.com/file/d/1LpEUgdPgZfNghs-tb-8LNORjhoOA-r4s/view?usp=drive_link";
 
                     return pdfLinks = [
-                        "https://www.youtube.com/watch?v=7FWOB_QJES8",
-                        "https://www.youtube.com/watch?v=kBEnufQJthA&t=353s",
-                    ];
-
-                case 'tense':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=5jMo4-d3qBc",
-                        "https://www.youtube.com/watch?v=UcHAt0fbn_4",
-                    ];
-
-                case 'verb':
-                    driveLink = "";
-
-                    return pdfLinks = [
-                        "https://www.youtube.com/watch?v=HYXjgAFl2WU",
-                        "https://www.youtube.com/watch?v=Uj-6YYULL1E",
-                        "https://www.youtube.com/watch?v=F07R7TmA8AE",
+                        driveLink,
                     ];
 
 
-
-                case 'voice':
+                case 'idioms':
                     driveLink = "";
 
                     return pdfLinks = [
-                        "https://www.youtube.com/watch?v=dq7d8xPBwlU",
+                        driveLink,
                     ];
 
-                case 'sixtyrules':
-                    driveLink = "https://drive.google.com/file/d/1K-ugT4BN4quS7R3e05nTiO125T_ZHWcK/view?usp=drive_link";
-                    driveLink2 = "https://drive.google.com/file/d/1JyAfeWc3MzMBFfSdwt4oeYGck8_Pro3J/view?usp=drive_link";
-                    driveLink3 = "https://drive.google.com/file/d/17FmZoXAR1fgnqEBJ0UKCbkpq1bRoQVig/view?usp=drive_link";
-                    driveLink4 = "https://drive.google.com/file/d/1Ck5ipe5dznNohKVsz5NzTJzTcOrCW8e5/view?usp=drive_link";
-                    driveLink5 = "";
-                    driveLink6 = "";
-                    driveLink7 = "";
-                    driveLink8 = "";
-                    driveLink9 = "";
-                    driveLink10 = "";
-                    driveLink11 = "";
-                    driveLink12 = "";
+                case 'prep':
+                    driveLink = "";
 
                     return pdfLinks = [
-                        driveLink, driveLink2, driveLink3, driveLink4,
-                        "https://www.youtube.com/watch?v=I1zRIbEOn-c&list=PL4t_secZTPn7-WeSN6LSSefG5SukDLn_s&index=1",
-                        "https://www.youtube.com/watch?v=xtRqegfUNps",
-                        "https://www.youtube.com/watch?v=T2uSeSKGWeE",
+                        driveLink,
+                    ];
+
+                case 'phrasalverb':
+                    driveLink = "";
+
+                    return pdfLinks = [
+                        driveLink,
                     ];
 
 
@@ -1707,18 +1449,18 @@
             // Overlay background
             const overlay = document.createElement("div");
             overlay.style = `
-                                                            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-                                                            background: rgba(0,0,0,0.7); display: flex; align-items: center;
-                                                            justify-content: center; z-index: 9999;
-                                                          `;
+                                                                    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+                                                                    background: rgba(0,0,0,0.7); display: flex; align-items: center;
+                                                                    justify-content: center; z-index: 9999;
+                                                                  `;
 
             // Popup box
             const popup = document.createElement("div");
             popup.style = `
-                                                            position: relative; width: 80%; height: 80%;
-                                                            background: #fff; border-radius: 10px;
-                                                            overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
-                                                          `;
+                                                                    position: relative; width: 80%; height: 80%;
+                                                                    background: #fff; border-radius: 10px;
+                                                                    overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                                                                  `;
 
             // PDF / YouTube iframe
             const iframe = document.createElement("iframe");
@@ -1815,6 +1557,24 @@
         //
         // ------------------- DATA -------------------
         const questionSets = {
+
+            sports: [
+                //{ q: "<<<<<TEARS OF OLD PM>>>>> (T(territory)E(emoluments)A(affirmations)R(RS)S(SC areas) O(Other tribal areas)F(Federal Provisions (Division of powers/Lists)) O(Official Languages)L(Land reforms)D(Defection) P(Panchayats)M(Municipalities ))", opts: [""], correct: 0, difficulty: "easy", currentSec: "polity" },
+                // Schedule
+                { q: "The term 'backstick' is used in which sport?", opts: ["Cricket", "Hockey", "Badminton", "Polo"], correct: 1, difficulty: "easy", currentSec: "sports" },
+                
+                { q: "The first edition of the Youth Olympic Games was held in?", opts: ["2012 Innsbruck", "2010 Singapore", "2014 Nanjing", "2008 Beijing"], correct: 1, difficulty: "easy", currentSec: "sports" },
+                { q: "In common GK mapping, the blue Olympic ring represents which continent?", opts: ["Asia", "Africa", "Oceania", "Europe"], correct: 3, difficulty: "easy", currentSec: "sports" },
+                { q: "In common GK mapping, the yellow Olympic ring represents which continent?", opts: ["Europe", "Asia", "Africa", "Oceania"], correct: 1, difficulty: "easy", currentSec: "sports" },
+                { q: "In common GK mapping, the black Olympic ring represents which continent?", opts: ["Africa", "Asia", "Oceania", "America"], correct: 0, difficulty: "easy", currentSec: "sports" },
+                { q: "In common GK mapping, the green Olympic ring represents which continent?", opts: ["Asia", "Europe", "Oceania", "Africa"], correct: 2, difficulty: "easy", currentSec: "sports" },
+                { q: "In common GK mapping, the red Olympic ring represents which continent?", opts: ["Europe", "America", "Asia", "Oceania"], correct: 1, difficulty: "easy", currentSec: "sports" },
+                { q: "The first modern Olympic Games were held in which year?", opts: ["1900", "1912", "1888", "1896"], correct: 3, difficulty: "easy", currentSec: "sports" },
+                { q: "The first modern Olympic Games were held in which city and country?", opts: ["Paris, France", "Athens, Greece", "London, UK", "Rome, Italy"], correct: 1, difficulty: "easy", currentSec: "sports" },
+                { q: "The first Winter Olympic Games were held in which year?", opts: ["1932", "1928", "1924", "1912"], correct: 2, difficulty: "easy", currentSec: "sports" },
+                { q: "The first Winter Olympic Games were held in which city and country?", opts: ["St. Moritz, Switzerland", "Chamonix, France", "Oslo, Norway", "Innsbruck, Austria"], correct: 1, difficulty: "easy", currentSec: "sports" },
+
+            ],
             fdan: [
                 // Assam
                 {
@@ -2940,7 +2700,6 @@
                     difficulty: "easy"
                 },
             ],
-
 
             //English
             vocab: [
@@ -4429,9 +4188,9 @@
                 const select = document.createElement('select');
                 select.className = 'difficulty-select';
                 select.innerHTML = `
-                                                                                          <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
-                                                                                          <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
-                                                                                        `;
+                                                                                                  <option value="easy" ${(savedDifficulty[question.q] || question.difficulty) === 'easy' ? 'selected' : ''}>Easy</option>
+                                                                                                  <option value="hard" ${(savedDifficulty[question.q] || question.difficulty) === 'hard' ? 'selected' : ''}>Hard</option>
+                                                                                                `;
 
                 select.onchange = () => {
                     savedDifficulty[question.q] = select.value;
